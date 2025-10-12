@@ -14,10 +14,12 @@ import argparse
 import logging
 import prettytable as pt
 
-warnings.filterwarnings('ignore')
-logging.basicConfig(format='[%(asctime)s - %(levelname)s - %(name)s] %(message)s',
-                    datefmt='%m/%d/%Y %H:%M:%S',
-                    level=logging.INFO)
+warnings.filterwarnings("ignore")
+logging.basicConfig(
+    format="[%(asctime)s - %(levelname)s - %(name)s] %(message)s",
+    datefmt="%m/%d/%Y %H:%M:%S",
+    level=logging.INFO,
+)
 
 
 def Commitbleus(refs, preds):
@@ -41,12 +43,13 @@ def Commitbleus(refs, preds):
 
 
 def read_to_list(filename):
-    f = open(filename, 'r',encoding="utf-8")
+    f = open(filename, "r", encoding="utf-8")
     res = []
     for row in f:
         # (rid, text) = row.split('\t')
         res.append(row.lower().split())
     return res
+
 
 def metetor_rouge_cider(refs, preds):
 
@@ -55,30 +58,36 @@ def metetor_rouge_cider(refs, preds):
     for i in range(len(preds)):
         preds_dict[i] = [" ".join(preds[i])]
         refs_dict[i] = [" ".join(refs[i][0])]
-        
+
     score_Meteor, scores_Meteor = Meteor().compute_score(refs_dict, preds_dict)
-    print("Meteor: ", round(score_Meteor*100,2))
+    print("Meteor: ", round(score_Meteor * 100, 2))
 
     score_Rouge, scores_Rouge = Rouge().compute_score(refs_dict, preds_dict)
-    print("Rouge-L: ", round(score_Rouge*100,2))
+    print("Rouge-L: ", round(score_Rouge * 100, 2))
 
     score_Cider, scores_Cider = Cider().compute_score(refs_dict, preds_dict)
-    print("Cider: ",round(score_Cider,2) )
-
+    print("Cider: ", round(score_Cider, 2))
 
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--refs_filename', type=str, default="../saved_model/tlcodesum/UNLC/ref.txt", required=False)
-    parser.add_argument('--preds_filename', type=str, default="../saved_model/tlcodesum/UNLC/dlen500-clen30-dvoc30000-cvoc30000-bs-ddim64-cdim-rhs64-lr0_Medit_pred.txt", required=False)
+    parser.add_argument(
+        "--refs_filename", type=str, default="../saved_model/tlcodesum/UNLC/ref.txt", required=False
+    )
+    parser.add_argument(
+        "--preds_filename",
+        type=str,
+        default="../saved_model/tlcodesum/UNLC/dlen500-clen30-dvoc30000-cvoc30000-bs-ddim64-cdim-rhs64-lr0_Medit_pred.txt",
+        required=False,
+    )
     args = parser.parse_args()
     refs = read_to_list(args.refs_filename)
     refs = [[t] for t in refs]
     preds = read_to_list(args.preds_filename)
     bleus_score = Commitbleus(refs, preds)
-    print("BLEU: %.2f"%bleus_score)
+    print("BLEU: %.2f" % bleus_score)
     metetor_rouge_cider(refs, preds)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

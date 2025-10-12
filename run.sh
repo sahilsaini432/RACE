@@ -1,5 +1,3 @@
-lang=$1 
-
 # optimizer
 lr=5e-5
 batch_size=32
@@ -11,7 +9,7 @@ source_length=200
 target_length=30
 
 # data
-data_dir=dataset/$lang/contextual_medits
+data_dir=dataset/js
 train_file=$data_dir/train.jsonl
 dev_file=$data_dir/valid.jsonl
 test_file=$data_dir/test.jsonl

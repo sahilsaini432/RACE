@@ -11,3 +11,6 @@ saved_model/*
 *.tar.gz
 dataset/*
 #
+
+run_small_logs.txt
+.vscode/

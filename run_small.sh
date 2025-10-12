@@ -1,8 +1,7 @@
-lang=$1 
-
 # optimizer
 lr=5e-5
-batch_size=32
+# batch_size=32  -> breaks on m1 mac
+batch_size=16
 beam_size=10
 epochs=10
 
@@ -11,11 +10,70 @@ source_length=200
 target_length=30
 
 # data
-data_dir=dataset/$lang/contextual_medits
+data_dir=dataset/js/output
 train_file=$data_dir/train.jsonl
 dev_file=$data_dir/valid.jsonl
 test_file=$data_dir/test.jsonl
 
+# Print GPU information and number of cores
+echo "============GPU Information============"
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    echo "Running on macOS - Detecting GPU information..."
+    
+    # Check for Apple Silicon
+    if system_profiler SPHardwareDataType | grep -q "Apple M"; then
+        chip_info=$(system_profiler SPHardwareDataType | grep "Chip:" | sed 's/.*Chip: //')
+        echo "Apple Silicon detected: $chip_info"
+        
+        case "$chip_info" in
+            *"M1"*) 
+                if [[ "$chip_info" == *"M1 Max"* ]]; then
+                    echo "GPU: 32-core GPU (M1 Max)"
+                elif [[ "$chip_info" == *"M1 Pro"* ]]; then
+                    echo "GPU: 16-core GPU (M1 Pro)"
+                else
+                    echo "GPU: 8-core GPU (M1)"
+                fi
+                ;;
+            *"M2"*)
+                if [[ "$chip_info" == *"M2 Max"* ]]; then
+                    echo "GPU: 38-core GPU (M2 Max)"
+                elif [[ "$chip_info" == *"M2 Pro"* ]]; then
+                    echo "GPU: 19-core GPU (M2 Pro)"
+                else
+                    echo "GPU: 10-core GPU (M2)"
+                fi
+                ;;
+            *"M3"*)
+                if [[ "$chip_info" == *"M3 Max"* ]]; then
+                    echo "GPU: 40-core GPU (M3 Max)"
+                elif [[ "$chip_info" == *"M3 Pro"* ]]; then
+                    echo "GPU: 18-core GPU (M3 Pro)"
+                else
+                    echo "GPU: 10-core GPU (M3)"
+                fi
+                ;;
+            *) echo "GPU: Apple Silicon GPU (core count varies by model)" ;;
+        esac
+        
+        echo "Note: Apple Silicon uses unified memory architecture"
+        echo "PyTorch backend: MPS (Metal Performance Shaders)"
+    else
+        # Intel Mac with discrete GPU
+        echo "Intel Mac detected"
+        gpu_info=$(system_profiler SPDisplaysDataType | grep "Chipset Model:" | head -1 | sed 's/.*Chipset Model: //')
+        echo "GPU: $gpu_info"
+        echo "Note: CUDA not available on macOS. Use CPU or MPS backend for PyTorch"
+    fi
+    
+elif command -v nvidia-smi &> /dev/null; then
+    echo "NVIDIA GPU detected (Linux/Windows):"
+    nvidia-smi --query-gpu=index,name,memory.total,compute_cap --format=csv,noheader,nounits
+    echo "Using GPU device: ${CUDA_VISIBLE_DEVICES:-0}"
+else
+    echo "No GPU acceleration detected. Running on CPU."
+fi
+echo "========================================"
 
 pretrained_model=Salesforce/codet5-base 
 
@@ -28,7 +86,7 @@ mkdir -p $output_dir
 echo $output_dir
 echo "============TRAINING Debugging============"
 
-CUDA_VISIBLE_DEVICES=0 python  run.py  --debug --n_debug_samples 100 --do_train --do_eval --do_test --eval_frequency 1 \
+CUDA_VISIBLE_DEVICES=0 python3  run.py  --debug --n_debug_samples 100 --do_train --do_eval --do_test --eval_frequency 1 \
   --run_codet5 \
   --model_name_or_path $pretrained_model \
   --train_filename $train_file \
@@ -54,7 +112,7 @@ function retrieval_debug(){
 echo "============retrieval Debugging============"
 retrieval_filename=$1 
 load_model_path=saved_model/tmp/${lang}/checkpoint-best-bleu/pytorch_model.bin
- CUDA_VISIBLE_DEVICES=0  python run.py  --debug   --do_retrieval \
+ CUDA_VISIBLE_DEVICES=0  python3 run.py  --debug   --do_retrieval \
  --run_codet5 \
  --is_cosine_space \
  --train_filename ${train_file} \
@@ -88,7 +146,7 @@ echo $output_dir
 
 echo "============Refining Debug============"
 
-  CUDA_VISIBLE_DEVICES=0 python run.py --debug  --do_train --do_eval  --do_test --eval_frequency 100 \
+  CUDA_VISIBLE_DEVICES=0 python3 run.py --debug  --do_train --do_eval  --do_test --eval_frequency 100 \
   --load_finetuned_model_path ${load_model_path} \
   --model_name_or_path $pretrained_model \
   --train_filename $train_file \

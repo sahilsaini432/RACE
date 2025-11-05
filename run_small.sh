@@ -10,7 +10,9 @@ source_length=200
 target_length=30
 
 # data
-data_dir=dataset/js/output
+repo=Powertoys
+data_dir=dataset/Powertoys/model_data
+cache_dir=$data_dir/cache
 train_file=$data_dir/train.jsonl
 dev_file=$data_dir/valid.jsonl
 test_file=$data_dir/test.jsonl
@@ -81,7 +83,7 @@ pretrained_model=Salesforce/codet5-base
 
 
 function train_codet5_debug () {
-output_dir=saved_model/tmp/${lang}
+output_dir=saved_model/tmp/${repo}
 mkdir -p $output_dir
 echo $output_dir
 echo "============TRAINING Debugging============"
@@ -93,6 +95,7 @@ CUDA_VISIBLE_DEVICES=0 python3  run.py  --debug --n_debug_samples 100 --do_train
   --dev_filename $dev_file \
   --test_filename ${test_file} \
   --output_dir $output_dir \
+  --cache_path $cache_dir \
   --max_source_length $source_length \
   --max_target_length $target_length \
   --do_lower_case \
@@ -111,11 +114,12 @@ mkdir -p ${retrieval_result_dir}
 function retrieval_debug(){
 echo "============retrieval Debugging============"
 retrieval_filename=$1 
-load_model_path=saved_model/tmp/${lang}/checkpoint-best-bleu/pytorch_model.bin
+load_model_path=saved_model/tmp/${repo}/checkpoint-best-bleu/pytorch_model.bin
  CUDA_VISIBLE_DEVICES=0  python3 run.py  --debug   --do_retrieval \
  --run_codet5 \
  --is_cosine_space \
  --train_filename ${train_file} \
+ --cache_path $cache_dir \
  --max_source_length $source_length \
  --max_target_length $target_length \
  --train_batch_size $batch_size \
@@ -139,8 +143,8 @@ test_retireved_file=${retrieval_result_dir}/test.jsonl
 
 function refine_debug () {
 # --debug 
-load_model_path=saved_model/tmp/${lang}/checkpoint-best-bleu/pytorch_model.bin
-output_dir=saved_model/debug/ECMG/${lang}/
+load_model_path=saved_model/tmp/${repo}/checkpoint-best-bleu/pytorch_model.bin
+output_dir=saved_model/debug/ECMG/${repo}/
 mkdir -p $output_dir
 echo $output_dir
 
@@ -151,6 +155,7 @@ echo "============Refining Debug============"
   --model_name_or_path $pretrained_model \
   --train_filename $train_file \
   --dev_filename $dev_file \
+  --cache_path $cache_dir \
   --test_filename ${test_file} \
   --train_retireved_filename $train_retireved_file \
   --dev_retireved_filename $dev_retireved_file \

@@ -609,7 +609,7 @@ def load_and_commit_data_with_retrieved_result(
             input_examples = read_contextual_medit_examples(input_filename, data_num)
             retrieved_examples = read_contextual_medit_examples(retireved_filename, data_num)
     else:
-        raise RuntimeError("no such diff type")
+        raise RuntimeError("load_and_commit_data_with_retrieved_result - no such diff type")
 
     if is_sample:
         input_examples = random.sample(input_examples, min(args.n_debug_samples, len(input_examples)))

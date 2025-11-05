@@ -82,27 +82,32 @@ def parse_args():
     parser.add_argument("-d", "--data_dir", type=str, default="original")
     # Output directory
     parser.add_argument("-o", "--output_dir", type=str, default="processed")
+    # Single file mode
+    parser.add_argument("-s", "--single_file", action="store_true")
+    # Test file
+    parser.add_argument("-t", "--test_file", type=str, default=None)
     args = parser.parse_args()
     return args
 
 
 if __name__ == "__main__":
+    args = parse_args()
 
-    for part in ["train", "valid", "test"]:
-        args = parse_args()
-        logger.info(args)
-
-        filename = os.path.join(args.data_dir, "%s.jsonl" % part)
-        diff_data = read_json_file(filename)
-        logger.info("%s data has %d  files" % (part, len(diff_data)))
+    if args.single_file:
+        logger.info("Processing single file: %s", args.test_file)
+        diff_data = read_json_file(args.test_file)
+        logger.info("Data has %d files" % len(diff_data))
         ## pre-processing data
         examples = []
-        other_text = []
-        binary_file_cnt = 0
-
         commit_msgs = []
         for idx, one_diff in enumerate(diff_data):
-            test_diff_ex = one_diff["diff"].split("<nl>")
+            if one_diff.get("mod_diff") is None:
+                test_diff_ex = one_diff["diff"]
+            else:
+                test_diff_ex = one_diff["mod_diff"]
+            if not test_diff_ex or test_diff_ex == "":
+                continue
+            test_diff_ex = test_diff_ex.split("<nl>")
             test_diff_ex = [item.strip() for item in test_diff_ex if len(item.strip()) > 0]
             examples.append(test_diff_ex)
             commit_msgs.append(one_diff["msg"].lower().replace("\n", "").split())
@@ -124,6 +129,50 @@ if __name__ == "__main__":
         pool.close()
         pool.join()
 
-        filename = "%s.jsonl" % part
         logger.info(medit[1])
-        save_json_data(args.output_dir, filename, medit)
+        save_json_data(f"{args.output_dir}", "test_file_to_run.jsonl", medit)
+    else:
+        for part in ["train", "valid", "test"]:
+            logger.info(args)
+
+            filename = os.path.join(args.data_dir, "%s.jsonl" % part)
+            diff_data = read_json_file(filename)
+            logger.info("%s data has %d  files" % (part, len(diff_data)))
+            ## pre-processing data
+            examples = []
+            other_text = []
+            binary_file_cnt = 0
+
+            commit_msgs = []
+            for idx, one_diff in enumerate(diff_data):
+                if one_diff.get("mod_diff") is None:
+                    test_diff_ex = one_diff["diff"]
+                else:
+                    test_diff_ex = one_diff["mod_diff"]
+                if not test_diff_ex or test_diff_ex == "":
+                    continue
+                test_diff_ex = test_diff_ex.split("<nl>")
+                test_diff_ex = [item.strip() for item in test_diff_ex if len(item.strip()) > 0]
+                examples.append(test_diff_ex)
+                commit_msgs.append(one_diff["msg"].lower().replace("\n", "").split())
+
+            cores = cpu_count()
+            pool = Pool(cores)
+            results = pool.map(get_old_new, examples)
+            pool.close()
+            pool.join()
+
+            for diff, msg in zip(results, commit_msgs):
+                diff["msg"] = msg
+
+            cores = cpu_count()
+            pool = Pool(cores)
+
+            medit = pool.map(get_contextual_medit, results)
+
+            pool.close()
+            pool.join()
+
+            filename = "%s.jsonl" % part
+            logger.info(medit[1])
+            save_json_data(args.output_dir, filename, medit)

@@ -1,0 +1,103 @@
+To run predictions on new data using the trained PyTorch model (e.g., ECMG or CodeT5) with the attached run.py script, follow these steps. This assumes you have a saved model (e.g., pytorch_model.bin) from training, and your new data is in the expected JSONL format (each line is a JSON object with fields like "diff" for tokenized code changes and "msg_token" for tokenized commit messages, as used in training).
+
+Prerequisites
+Model Path: Ensure your trained model is saved as a .bin file (e.g., pytorch_model.bin). The script loads it via --load_model_path.
+New Data Format: Prepare your new data as a JSONL file. For example:
+If using ECMG (which requires retrieved examples), you also need a corresponding retrieved file (e.g., with "retrieved_source" and "retrieved_target"). Run retrieval first if needed (see below).
+For CodeT5, only the input diff is needed.
+Dependencies: Ensure PyTorch, Transformers, and other dependencies are installed. On Mac (M1), MPS will be used automatically.
+Mode Selection: Use --run_codet5 for CodeT5 or omit it for ECMG.
+Steps to Run Predictions
+Navigate to the Script Directory:
+
+Run the Script for Predictions:
+Use the --do_test flag to run inference on your new data.
+Specify the model path, new data file, and output directory.
+For ECMG, also provide the retrieved data file.
+Example Command for ECMG (with retrieved data):
+python run.py \
+  --do_test \
+  --load_model_path saved_model/ECMG/Powertoys/checkpoint-best-bleu/pytorch_model.bin \
+  --test_filename /path/to/your/new_data.jsonl \
+  --test_retireved_filename /path/to/your/retrieved_data.jsonl \
+  --output_dir /path/to/output/dir \
+  --beam_size 10 \
+  --max_source_length 200 \
+  --max_target_length 30 \
+  --eval_batch_size 8
+
+Replace paths with your actual files.
+--test_filename: Your new input data.
+--test_retireved_filename: Retrieved examples (required for ECMG; generate via retrieval if not available).
+Outputs: Predictions in output_dir/test.output, ground truth in test.gold, and BLEU scores logged.
+Example Command for CodeT5 (no retrieved data needed):
+python run.py \
+  --do_test \
+  --run_codet5 \
+  --load_model_path saved_model/codet5/Powertoys/checkpoint-best-bleu/pytorch_model.bin \
+  --test_filename /path/to/your/new_data.jsonl \
+  --output_dir /path/to/output/dir \
+  --beam_size 10 \
+  --max_source_length 200 \
+  --max_target_length 30 \
+  --eval_batch_size 8
+
+If Using ECMG and Retrieval is Needed:
+
+If you don't have retrieved data, run retrieval first to generate it:
+python run.py \
+  --do_retrieval \
+  --run_codet5 \
+  --load_model_path saved_model/codet5/Powertoys/checkpoint-best-bleu/pytorch_model.bin \
+  --retrieval_filename /path/to/your/new_data.jsonl \
+  --retrieval_result_dir /path/to/retrieval/output \
+  --retrieval_result_filename retrieved.jsonl
+  
+This creates retrieved.jsonl with similar examples from training data.
+Then use it as --test_retireved_filename in the prediction command.
+Output Interpretation:
+
+Predictions are saved in output_dir/test.output (tab-separated: idx\tpredicted_text).
+BLEU scores are logged for evaluation against ground truth (if provided in the data).
+For generation tasks (e.g., commit messages), the script uses beam search for multiple candidates.
+Tips
+Device: On your M1 Mac, it will automatically use MPS (Metal Performance Shaders) for GPU acceleration.
+Errors: If you get "model not found" errors, double-check paths. For ECMG, ensure retrieved data matches the input data length.
+Customization: Adjust --beam_size, --max_target_length, etc., for different generation settings.
+Batch Size: Lower --eval_batch_size if you encounter memory issues.
+If you provide more details (e.g., exact error messages or data format), I can refine this further!
+
+Command to run retrieval on new data (using codet5):
+python3 run.py --do_retrieval --run_codet5 --load_model_path saved_model/codet5/Powertoys/checkpoint-best-bleu/pytorch_model.bin --cache_path dataset/Powertoys/testing_data --output_dir dataset/Powertoys/testing_data  --train_filename dataset/Powertoys/testing_data/test_file_to_run.jsonl --retrieval_result_dir dataset/Powertoys/testing_data --retrieval_result_filename retrieved_data_for_test.jsonl
+
+Command to run test without using codet5:
+python3 run.py --do_test args.load_model_path saved_model/ECMG/Powertoys/checkpoint-best-bleu/pytorch_model.bin --train_filename dataset/Powertoys/testing_data/test_file_to_run.jsonl
+
+ECMG Test Command
+python3 run.py --do_test --load_model_path saved_model/ECMG/Powertoys/checkpoint-best-bleu/pytorch_model.bin --test_filename dataset/Powertoys/testing_data/test_file_to_run.jsonl --test_retireved_filename dataset/Powertoys/testing_data/test_file_to_run.jsonl --output_dir dataset/Powertoys/testing_data/ecmg
+
+Codet5 Test Command
+python3 run.py --do_test --run_codet5 --load_model_path saved_model/codet5/Powertoys/checkpoint-best-bleu/pytorch_model.bin --test_filename dataset/Powertoys/testing_data/test_file_to_run.jsonl --output_dir dataset/Powertoys/testing_data/codet5 --cache_path dataset/Powertoys/testing_data/codet5
+
+ECMG Test Command for c# model
+python3 run.py --do_test --load_model_path saved_model/ECMG/og_csharp/checkpoint-best-bleu/pytorch_model.bin --test_filename dataset/Powertoys/testing_data/test_file_to_run.jsonl --test_retireved_filename dataset/Powertoys/testing_data/test_file_to_run.jsonl --output_dir dataset/Powertoys/testing_data/og_model/ecmg
+
+CodeT5 for old c# model
+python3 run.py \
+--do_test \
+--run_codet5 \
+--load_model_path saved_model/codet5/og_csharp/checkpoint-best-bleu/pytorch_model.bin \
+--test_filename dataset/Powertoys/testing_data/test_file_to_run.jsonl \
+--output_dir dataset/Powertoys/testing_data/og_model/codet5 \
+--cache_path dataset/Powertoys/testing_data/og_model/codet5
+
+
+---------For Powertoys (using new model)-------------
+Codet5 Test Command
+python3 run.py --do_test --run_codet5 --load_model_path saved_model/codet5/Powertoys/checkpoint-best-bleu/pytorch_model.bin --test_filename dataset/Powertoys/testing_data/test_file_to_run.jsonl --output_dir dataset/Powertoys/testing_data/codet5 --cache_path dataset/Powertoys/testing_data/codet5
+
+Retrieval Command for new test data
+python3 run.py --do_retrieval --run_codet5 --retrieval_filename dataset/Powertoys/testing_data/test_file_to_run.jsonl --train_filename dataset/Powertoys/model_data/train.jsonl --retrieval_result_dir dataset/Powertoys/testing_data/retrieval --retrieval_result_filename retrieval_for_test_file_to_run.jsonl --load_model_path saved_model/codet5/Powertoys/checkpoint-best-bleu/pytorch_model.bin --cache_path dataset/Powertoys/testing_data/retrieval/cache
+
+ECMG Test Command
+python3 run.py --do_test --test_filename dataset/Powertoys/testing_data/test_file_to_run.jsonl --test_retireved_filename dataset/Powertoys/testing_data/retrieval/retrieval_for_test_file_to_run.jsonl --load_model_path saved_model/ECMG/Powertoys/checkpoint-best-bleu/pytorch_model.bin --base_model_type ECMG --output_dir results/Powertoys/from_new_model/ecmg

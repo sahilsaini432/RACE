@@ -45,7 +45,7 @@ from torch.utils.tensorboard import SummaryWriter
 from torch.utils.data import DataLoader, SequentialSampler, RandomSampler
 from torch.utils.data.distributed import DistributedSampler
 from transformers import get_linear_schedule_with_warmup
-from model import ECMGModel
+from model_mac import ECMGModel
 from metric import smooth_bleu
 import random
 from util import (
@@ -398,7 +398,15 @@ def build_or_load_gen_model(args):
     config_class, model_class, tokenizer_class = MODEL_CLASSES[args.model_type]
     config = config_class.from_pretrained(args.config_name if args.config_name else args.model_name_or_path)
     tokenizer = tokenizer_class.from_pretrained(args.tokenizer_name)
-    model = model_class.from_pretrained(args.model_name_or_path)
+
+    # check torch version
+    print(f"[SAHIL] torch version: {torch.__version__}")
+    if torch.__version__ == "2.2.2":
+        model = model_class.from_pretrained(
+            args.model_name_or_path, use_safetensors=True
+        )  # Use safetensors to avoid torch.load version check
+    else:
+        model = model_class.from_pretrained(args.model_name_or_path)
 
     special_tokens_dict = {
         "additional_special_tokens": [
@@ -421,7 +429,13 @@ def build_or_load_gen_model(args):
     model.resize_token_embeddings(len(tokenizer))
     if args.load_finetuned_model_path is not None:
         logger.info("Reload fine tuned model from {}".format(args.load_finetuned_model_path))
-        model.load_state_dict(torch.load(args.load_finetuned_model_path))
+        if torch.__version__ == "2.2.2":
+            model.load_state_dict(
+                torch.load(args.load_finetuned_model_path, weights_only=False)
+            )  # Bypass weights_only check for local .bin files
+        else:
+            model.load_state_dict(torch.load(args.load_finetuned_model_path))
+
     if args.base_model_type == "codet5":
         pass
     elif args.base_model_type == "ECMG":
@@ -431,7 +445,12 @@ def build_or_load_gen_model(args):
 
     if args.load_model_path is not None:
         logger.info("Reload model from {}".format(args.load_model_path))
-        model.load_state_dict(torch.load(args.load_model_path))
+        if torch.__version__ == "2.2.2":
+            model.load_state_dict(
+                torch.load(args.load_model_path, weights_only=False)
+            )  # Bypass weights_only check for local .bin files
+        else:
+            model.load_state_dict(torch.load(args.load_model_path))
 
     return config, model, tokenizer
 
@@ -476,7 +495,11 @@ def set_seed(args):
     np.random.seed(args.seed)
     torch.manual_seed(args.seed)
     if args.n_gpu > 0:
-        torch.mps.manual_seed_all(args.seed)
+        if args.device.type == "cuda":
+            torch.cuda.manual_seed_all(args.seed)
+        elif args.device.type == "mps":
+            # MPS doesn't have manual_seed_all, just use torch.manual_seed
+            pass
 
 
 def main(args):
@@ -634,12 +657,16 @@ def main(args):
                     torch.save(model_to_save.state_dict(), output_model_file)
 
             # logger.info("***** CUDA.empty_cache() *****")
-            torch.mps.empty_cache()
+            if args.device.type == "cuda":
+                torch.cuda.empty_cache()
+            elif args.device.type == "mps":
+                torch.mps.empty_cache()
         if args.local_rank in [-1, 0] and args.data_num == -1:
             tb_writer.close()
         logger.info("Finish training and take %s", get_elapse_time(t0))
 
     if args.do_test:
+        print("***** Running main test *****")
         logger.info("  " + "***** Testing *****")
         logger.info("  Batch size = %d", args.eval_batch_size)
         model = model.module if hasattr(model, "module") else model
@@ -834,6 +861,7 @@ def eval_ecmg_bleu_epoch(args, eval_data, eval_examples, model, tokenizer, split
 
 
 def ECMG(args):
+    print("***** Running ECMG Model *****")
     t0 = time.time()
     set_dist(args)
     set_seed(args)
@@ -1056,12 +1084,16 @@ def ECMG(args):
                     torch.save(model_to_save.state_dict(), output_model_file)
 
             # logger.info("***** CUDA.empty_cache() *****")
-            torch.mps.empty_cache()
+            if args.device.type == "cuda":
+                torch.cuda.empty_cache()
+            elif args.device.type == "mps":
+                torch.mps.empty_cache()
         if args.local_rank in [-1, 0] and args.data_num == -1:
             tb_writer.close()
         logger.info("Finish training and take %s", get_elapse_time(t0))
 
     if args.do_test:
+        print("***** Running ECMG test *****")
         logger.info("  " + "***** Testing *****")
         logger.info("  Batch size = %d", args.eval_batch_size)
         model = model.module if hasattr(model, "module") else model

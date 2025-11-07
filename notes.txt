@@ -93,6 +93,9 @@ python3 run.py \
 
 
 ---------For Powertoys (using new model)-------------
+Creating ECMG Model
+refine.sh script
+
 Codet5 Test Command
 python3 run.py --do_test --run_codet5 --load_model_path saved_model/codet5/Powertoys/checkpoint-best-bleu/pytorch_model.bin --test_filename dataset/Powertoys/testing_data/test_file_to_run.jsonl --output_dir dataset/Powertoys/testing_data/codet5 --cache_path dataset/Powertoys/testing_data/codet5
 
@@ -101,3 +104,11 @@ python3 run.py --do_retrieval --run_codet5 --retrieval_filename dataset/Powertoy
 
 ECMG Test Command
 python3 run.py --do_test --test_filename dataset/Powertoys/testing_data/test_file_to_run.jsonl --test_retireved_filename dataset/Powertoys/testing_data/retrieval/retrieval_for_test_file_to_run.jsonl --load_model_path saved_model/ECMG/Powertoys/checkpoint-best-bleu/pytorch_model.bin --base_model_type ECMG --output_dir results/Powertoys/from_new_model/ecmg
+
+---------For next.js (using new model)---------
+Codet5 Test Command
+python3 run.py --do_test --run_codet5 --load_model_path saved_model/codet5/next.js/checkpoint-best-bleu/pytorch_model.bin --test_filename dataset/next.js/testing_data/test_file_to_run.jsonl --output_dir results/next.js/from_new_model/codet5 --cache_path dataset/next.js/testing_data/codet5
+
+---------For next.js (using old model)---------
+Codet5 Test Command
+python3 run.py --do_test --run_codet5 --load_model_path saved_model/codet5/og_javascript/checkpoint-best-bleu/pytorch_model.bin --test_filename dataset/next.js/testing_data/test_file_to_run.jsonl --output_dir results/next.js/from_old_model/codet5 --cache_path dataset/next.js/testing_data/codet5

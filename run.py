@@ -809,40 +809,15 @@ def eval_ecmg_bleu_epoch(args, eval_data, eval_examples, model, tokenizer, split
     for batch in tqdm(
         eval_dataloader, total=len(eval_dataloader), desc="Eval bleu for {} set".format(split_tag)
     ):
-        # source_ids = batch[0].to(args.device)
-        # source_mask = source_ids.ne(tokenizer.pad_token_id)
-
         batch = tuple(t.to(args.device) for t in batch)
         input_source_ids, retrieved_source_ids, retrieved_target_ids = batch
 
         source_mask = input_source_ids.ne(tokenizer.pad_token_id)
-
         retrieved_source_mask = retrieved_source_ids.ne(tokenizer.pad_token_id)
         retrieved_target_mask = retrieved_target_ids.ne(tokenizer.pad_token_id)
 
         with torch.no_grad():
-            # if args.model_type == 'roberta':
-            # preds = model(source_ids=source_ids, source_mask=source_mask)
-
-            # top_preds = [pred[0].cpu().numpy() for pred in preds]
-            # if hasattr(model, 'module'):
-            #     preds = model.module.generate(source_ids,
-            #                            attention_mask=source_mask,
-            #                            use_cache=True,
-            #                            num_beams=beam_size,
-            #                            early_stopping=args.task == 'summarize',
-            #                            max_length=args.max_target_length)
-
-            # else:
-            #     preds = model.generate(source_ids,
-            #                     attention_mask=source_mask,
-            #                     use_cache=True,
-            #                     num_beams=beam_size,
-            #                     early_stopping=args.task == 'summarize',
-            #                     max_length=args.max_target_length)
-            # top_preds = list(preds.cpu().numpy())
-            # pred_ids.extend(top_preds)
-            # preds = model(source_ids=source_ids, source_mask=source_mask)
+            # Use the model's beam search by passing target_ids=None
             preds = model(
                 source_ids=input_source_ids,
                 source_mask=source_mask,
@@ -850,12 +825,28 @@ def eval_ecmg_bleu_epoch(args, eval_data, eval_examples, model, tokenizer, split
                 retrieved_source_mask=retrieved_source_mask,
                 retrieved_target_ids=retrieved_target_ids,
                 retrieved_target_mask=retrieved_target_mask,
+                target_ids=None,  # This triggers generation mode
+                target_mask=None,
             )
-            top_preds = [pred[0].cpu().numpy() for pred in preds]
+            # preds shape: [batch_size, beam_size, max_length]
+            # Take the top beam for each example
+            top_preds = []
+            for pred in preds:
+                print(f"[SAHIL] pred: {pred}")
+                top_preds.append(pred[0].cpu().numpy())
             pred_ids.extend(top_preds)
+
+    logger.info(f"Total pred_ids collected: {len(pred_ids)}")
+    if len(pred_ids) > 0:
+        logger.info(f"First pred_id: {pred_ids[0][:10] if len(pred_ids[0]) > 10 else pred_ids[0]}")
+
     pred_nls = [
         tokenizer.decode(id, skip_special_tokens=True, clean_up_tokenization_spaces=False) for id in pred_ids
     ]
+
+    logger.info(f"Total pred_nls decoded: {len(pred_nls)}")
+    if len(pred_nls) > 0:
+        logger.info(f"First decoded prediction: '{pred_nls[0]}'")
 
     return pred_nls
 

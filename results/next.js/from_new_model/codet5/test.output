@@ -1,0 +1,441 @@
+0	docs : fix typo in instrumentation . mdx ( # 71536 ) # # # what ? fix typo in instrumentation . mdx
+1	refactor ( turbopack ) : update react - dev - overlay to 1 . 0 . 0 ( # 71440 ) # # #
+2	refactor ( turbopack ) : update webpack - config - next . js to use webpack - config - next . js to use webpack -
+3	[ turbopack ] use ` tertiary - light ` instead of ` tertiary - light ` instead of ` tert
+4	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 70909
+5	chore ( turbopack ) : remove ` - rounded - xl : 0 ` style ( # 71440 ) # # # what ?
+6	fix ( turbopack ) : update worker - react - refresh / app / client ( # 80821 ) # # # what ? update
+7	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 70909
+8	chore ( next - build ) : update ` PHASE_PRODUCTION_BUILD ` to ` PHASE_PRODUCTION_BUILD `
+9	chore ( next / errors ) : update ` config - shared . json ` to ` config - shared . json
+10	update turbopack development test manifest ( # 71347 ) this auto - generated pr updates the development integration test manifest used when testing
+11	refactor ( turbopack ) : update ` rustc_hash ` to ` buildhasher . default ` ( # 71184
+12	chore ( turbopack ) : update ` sync - react - js ` to ` v16 . 0 . 0 ` ( # 713
+13	chore ( intercept - console - error ) : update ` error . digest ` to ` error . error
+14	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71536
+15	[ turbopack ] remove ` app - page - module ` from ` route - modules / app - page / module ` ( # 713
+16	refactor ( turbopack - ecmascript ) : update ` turbopack - ecmascript ` to ` v16 . 0
+17	fix ( turbopack ) : add a test for dynamic components ( # 72222 ) # # # what ? add a test for dynamic
+18	turbopack build : update ` development - sandbox ` to ` file - ref : file - ref ` ( # 71536 ) # #
+19	perf ( turbopack ) : improve aggregation update behavior ( # 71346 ) # # # what ? improves the behavior of the aggregation
+20	[ dev - overlay ] fix dev - tools - indicator bug ( # 71346 ) # # # what ? fix dev - tools - indicator bug
+21	refactor ( turbopack - ecmascript ) : use ` import ` instead of ` import ` instead of ` import `
+22	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v15 . 0 . 0 ` ( # 7
+23	refactor ( turbopack ) : use ` mem : : take ` instead of ` mem : : take `
+24	chore ( turbopack ) : update ` heavy - npm - deps . tsx ` to ` v16 . 0 . 0 `
+25	chore ( turbopack ) : update ` reproduction - template ` to ` v16 . 0 . 0 ` ( # 71184
+26	chore ( github ) : update ` github . com / vercel / next . js ` to ` v15 . 0 . 0 ` ( #
+27	chore ( turbopack - cli ) : update ` turbopack - cli ` to ` v16 . 0 . 0 ` (
+28	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71347
+29	chore ( turbopack ) : update experimental - - - next - core . js to 2 . 0 . 0 ( # 73434
+30	chore ( turbopack ) : update ` reproduction - template ` to ` v16 . 0 . 0 ` ( # 71536
+31	chore ( turbo - tasks - backend ) : update ` turbo_tasks_backend ` to ` vercel / turbo
+32	chore ( turbopack ) : update ` swc_core ` to ` v1 . 0 . 0 ` ( # 71284
+33	chore ( create - next - app ) : update ` next - app . js ` to ` next - app . js ` ( # 713
+34	fix ( turbopack ) : fix fallback shells test ( # 71440 ) # # # what ? fix the fallback shells test
+35	refactor ( turbopack ) : update ` require . js ` to ` v15 . 0 . 0 ` ( #
+36	turbopack build : fix cdn cache busting test ( # 71440 ) # # # what ? fix cdn cache busting
+37	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 850
+38	refactor ( turbopack ) : fix typo in https : / / github . com / vercel / next . js
+39	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v1 . 0 . 0 ` ( # 7
+40	fix ( turbopack ) : remove ` react - dev - overlay ` from ` dialog ` ( # 71440 ) # # # what
+41	refactor ( turbopack ) : remove ` react ` and ` loadable ` from ` next / dynamic . tsx ` ( # 7
+42	chore ( turbopack ) : update ` swc_core ` to ` v15 . 0 . 0 ` ( # 715
+43	fix ( turbopack ) : don ' t log errors in client - component - renderer - logger . ts ( # 71536 ) #
+44	refactor ( turbopack ) : use ` next - core . config . js ` instead of ` next - core . config . js `
+45	chore ( turbopack ) : update ` next - api . tsx ` to ` v1 . 0 . 0 ` ( # 7
+46	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71284
+47	chore ( turbo - tasks - backend ) : update ` turbo_tasks_backend ` to ` vercel / turbo
+48	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71536
+49	turbopack build : update ` test / import - order / test . tsx ` to ` 1 . 0 . 0 ` ( # 7
+50	perf ( turbopack ) : improve aggregation update behavior ( # 71346 ) # # # what ? improves the behavior of the aggregation
+51	turbopack build : update build - spinners test suite ( # 71284 ) this auto - generated pr updates the build - spinners
+52	chore ( github ) : update ` retry_test . yml ` to ` v1 . 0 . 0 ` ( # 71440 ) #
+53	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71440
+54	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71284
+55	refactor ( turbopack ) : use ` ffmpeg - static ` instead of ` ffmpeg - static ` instead of ` ffmpeg -
+56	refactor ( turbopack ) : update ` router - reducer . next . js ` to ` next . js ` ( # 71536
+57	refactor ( turbopack ) : update ` next - app - index . tsx ` to ` next - app - index . tsx
+58	refactor ( turbopack ) : fix typo in ` next . config . tsx ` ( # 71347 ) # # #
+59	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 709
+60	fix ( turbopack ) : use ` define - env - plugin ` instead of ` webpack - define - env - plugin ` ( # 7
+61	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 715
+62	refactor ( turbopack ) : update ` create - compiler - aliases . ts ` to ` v10 . 0 . 0 ` ( #
+63	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71284
+64	docs : fix typo in custom - server . mdx ( # 71536 ) # # # what ? fix typo in custom - server
+65	chore ( next - custom - transforms ) : update ` __next_internal_action_entry_do_not_use__ ` to `
+66	refactor ( turbopack ) : fix typo in ` next - app - dir . tsx ` ( # 71440 ) #
+67	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71347
+68	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 70909
+69	refactor ( turbopack ) : update ` next_import_map ` to ` v1 . 0 . 0 ` ( # 713
+70	refactor ( turbopack - dev - server ) : update ` static_assets . tsx ` to ` turbopack - dev
+71	chore ( turbopack ) : update ` launch . json ` to ` v1 . 0 . 0 ` ( # 71347 )
+72	chore ( next - codemod ) : update ` next - codemod . tsx ` to ` next - codemod . tsx ` (
+73	chore ( turbopack ) : update ` swc_core ` to ` v1 . 0 . 0 ` ( # 70952
+74	[ dev - overlay ] fix hydration error state issue ( # 71346 ) # # # what ? fix the hydration error state issue
+75	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71347
+76	chore ( turbopack ) : update ` bindgen ` to ` v16 . 0 . 0 ` ( # 71440 ) #
+77	refactor ( turbopack ) : update webpack - build - index . ts to 1 . 0 . 0 ( # 71440 ) #
+78	refactor ( turbopack - browser ) : update ` runtime_base . ts ` to ` dummy_runtime_base . ts ` (
+79	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71536
+80	refactor ( turbopack ) : update ` next - core . tsx ` to ` v10 . 0 . 0 ` ( # 7
+81	turbopack build : update ` swc_core ` to ` v15 . 0 . 0 ` ( # 71440 ) # #
+82	docs : update ` build - static - exports . mdx ` to ` 10 - static - exports . mdx ` ( # 71536 )
+83	refactor ( turbopack ) : update ` pages - api . tsx ` to ` v2 . 0 . 0 ` ( # 7
+84	refactor ( turbopack ) : fix typo in ` entry - base . tsx ` ( # 71536 ) # # #
+85	refactor ( turbopack ) : update ` dynamic_imports . tsx ` to ` turbo - tasks . tsx ` (
+86	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 70909
+87	chore ( next - codemod ) : update ` react - 18 - installed - mixed - router ` to ` 18 - installed - mixed - router
+88	chore ( turbopack ) : update ` next - api . tsx ` to ` v4 . 0 . 0 ` ( # 7
+89	chore ( turbopack ) : remove ` react - dev - overlay - style ` ( # 71440 ) # # # what ?
+90	chore ( next - server ) : update ` next - server . ts ` to ` next - server . ts ` ( #
+91	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71347
+92	turbopack build : update ` cache - components - errors . ts ` to ` v4 . 0 . 0 ` ( # 70952
+93	refactor ( turbopack - binding ) : use ` turbo_tasks ` instead of ` turbo_tasks ` ( #
+94	refactor ( turbopack ) : fix typo in app - page . ts ( # 71347 ) # # # what ? fix
+95	chore ( create - next - app ) : update ` create - next - app ` to ` v15 . 0 . 0 ` ( # 7
+96	chore ( github ) : update ` test_e2e_deploy_release ` to ` vercel / next . js ` ( # 7
+97	fix ( turbopack ) : update hot - reloader - client . tsx ( # 71536 ) # # # what ? update
+98	docs : update ` draftmode ` to ` draft - mode ` ( # 71484 )
+99	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71347
+100	chore ( github ) : update ` github . com / vercel / next . js ` to ` v15 . 0 . 0 ` ( #
+101	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v1 . 0 . 0 ` ( # 7
+102	fix ( turbopack ) : add ` empty - ssg - fallback ` test for ` empty - ssg - fallback ` ( # 7
+103	chore ( turbopack ) : update ` invalidate ` to ` v0 . 0 . 0 ` ( # 71347 ) # #
+104	[ create - next - app ] fix : https : / / github . com / vercel / next . js
+105	turbopack build : update reactrefreshlogbox test ( # 71384 ) this auto - generated pr updates the reactrefreshlogbox test
+106	refactor ( turbopack - ecmascript ) : update ` graph ` to ` turbopack - ecmascript ` ( #
+107	fix ( turbopack ) : update ` error - inspect . ts ` to ` v10 . 0 . 0 ` ( #
+108	chore ( turbopack ) : update ` readcelloptions ` to ` readcelloptions . readcelloptions . readcelloptions . read
+109	turbopack build : update hmr development test ( # 71284 ) this auto - generated pr updates the development integration test to use the
+110	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71347
+111	refactor ( turbopack ) : update ` next / build / index . ts ` to ` v10 . 0 . 0 ` ( #
+112	chore ( turbopack ) : update ` reproduction - template ` to ` v16 . 0 . 0 ` ( # 71536
+113	refactor ( turbopack - ecmascript ) : update ` turbopack - ecmascript ` to ` v16 . 0
+114	docs : update ` tsconfig . ts ` to ` v15 . 0 . 0 ` ( # 71347 )
+115	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 711
+116	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 713
+117	chore ( turbopack ) : update development - sandbox . ts ( # 71346 ) # # # what ? update development - sandbox
+118	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71347
+119	refactor ( turbopack - core ) : update ` resolvedvc ` to ` turbo_tasks ` ( #
+120	chore ( turbopack ) : update ` optimize - amd - bind - js ` to ` 2d - bind - js `
+121	chore ( turbopack ) : update ` swc_core ` to ` v15 . 0 . 0 ` ( # 71347
+122	[ turbopack ] add ` readonly ` flag to ` turbopack_tasks ` ( # 71346 ) # # # what
+123	docs : fix typo in css - modules . mdx ( # 71536 ) # # # what ? fix typo in css - modules
+124	chore ( turbopack ) : update ` reproduction - template ` to ` v16 . 0 . 0 ` ( # 71536
+125	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71347
+126	[ turbopack ] remove ` node_modules ` from ` ignore - list ` config ( # 80221 ) # # # what ?
+127	update deploy - tests - manifest ( # 71347 ) this auto - generated pr updates the deploy - tests manifest used when testing
+128	chore ( turbopack ) : update ` reproduction - template ` to ` v16 . 0 . 0 ` ( # 71184
+129	[ dev - overlay ] fix color - syntax - comment ( # 71440 ) # # # what ? fix the color - syntax - comment
+130	chore ( turbopack ) : update ` reproduction - template ` to ` v16 . 0 . 0 ` ( # 71536
+131	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 709
+132	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v2 . 0 . 0 ` ( # 7
+133	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v1 . 0 . 0 ` ( # 7
+134	refactor ( turbopack - ecmascript ) : update ` turbopack - ecmascript ` to ` v16 . 0
+135	fix ( turbopack ) : use ` httpaccesserrorfallback ` instead of ` httpaccesserror
+136	refactor ( turbopack ) : update ` next / build / index . ts ` to ` v10 . 0 . 0 ` ( #
+137	chore ( turbopack ) : update ` reproduction - template ` to ` v16 . 0 . 0 ` ( # 71536
+138	chore ( turbopack ) : update experimental cache handlers object ( # 71346 ) # # # what ? update the experimental cache handlers
+139	fix ( turbopack ) : update ` static - shell - debugging . ts ` to ` v10 . 0 . 0 ` ( # 7
+140	chore ( turbopack ) : update ` hmr_actions_sent_to_bROWSER ` to ` vercel / next
+141	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v15 . 0 . 0 ` ( # 7
+142	refactor ( turbopack - ecmascript ) : update ` graph ` to ` turbopack - ecmascript ` ( #
+143	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 709
+144	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v16 . 0 . 0 ` ( # 7
+145	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 709
+146	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v15 . 0 . 0 ` ( # 7
+147	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71536
+148	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71347
+149	fix ( turbopack ) : remove ` noop . template ` from ` noop . template ` ( # 71536 ) # # # what
+150	chore ( next - webpack ) : remove unused ` lightningcss - loader ` option ( # 71337 ) # # # what ? remove
+151	chore ( turbopack ) : update ` swc_core ` to ` v13 . 0 . 0 ` ( # 713
+152	chore ( turbopack ) : update ` swc_core ` to ` v4 . 0 . 0 ` ( # 73434
+153	fix ( turbopack ) : remove ` assertHasRedbox ` and ` getRedboxDescription ` from ` next - test - utils `
+154	chore ( next - codemod ) : update ` next - codemod . ts ` to ` next - codemod . ts ` ( # 7
+155	fix ( turbopack ) : update ` adapter - config ` to ` config - schema . ts ` (
+156	[ dev - overlay ] fix error - overlay - floating - header error overlay ( # 71346 ) # # # what ? fix the error overlay
+157	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 709
+158	chore ( github ) : update ` notify - release ` to ` v15 . 0 . 0 ` ( # 71440 ) # # #
+159	chore ( turbopack - nft ) : update ` turbopack - nft ` to ` v0 . 1 . 0
+160	chore ( turbopack ) : update ` reproduction - template ` to ` v16 . 0 . 0 ` ( # 71536
+161	chore ( turbopack ) : update ` start - release . tsx ` to ` v16 . 0 . 0 ` ( # 7
+162	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v1 . 0 . 0 ` ( # 7
+163	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71347
+164	fix ( turbopack ) : use ` freevar ` instead of ` freevar ( EdgeRuntime ) ` instead of ` freevar ` (
+165	chore ( turbopack - browser ) : update ` turbopack - browser ` to ` v16 . 0 . 0 ` (
+166	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71347
+167	chore ( turbopack ) : update ` next - core . config . js ` to ` v15 . 0 . 0 ` ( #
+168	chore ( github ) : update ` github . com / vercel / next . js ` to ` v15 . 0 . 0 ` ( #
+169	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v15 . 0 . 0 ` ( # 7
+170	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71536
+171	chore ( github ) : update ` build_and_deploy . yml ` to ` v15 . 0 . 0 ` ( # 71347
+172	update reproduction - template example ( # 85825 ) this auto - generated pr updates the reproduction - template example
+173	[ dev - overlay ] remove ` css ` from ` error - pagination . css ` ( # 71440 ) # # # what ? remove `
+174	chore ( turbopack ) : update ` reproduction - template ` to ` v16 . 0 . 0 ` ( # 71536
+175	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v1 . 0 . 0 ` ( # 7
+176	[ dev - overlay ] fix : error feedback in error overlay footer ( # 71346 ) # # # what ? this pr fixes a bug where
+177	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 709
+178	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71536
+179	[ dev - overlay ] fix stitched - error ( # 71359 ) # # # what ? fix stitched - error
+180	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 709
+181	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71536
+182	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 709
+183	refactor ( turbopack ) : update webpack - config - next . js to use webpack - config - next . js to use webpack -
+184	chore ( github ) : update ` build_and_deploy . yml ` to ` v15 . 0 . 0 ` ( # 71347
+185	chore ( turbo - tasks ) : update ` rust - toolchain ` to ` v15 . 0 . 0 ` ( # 7
+186	docs : update ` tailwind . css ` to ` v15 . 0 . 0 ` ( # 71584 )
+187	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v15 . 0 . 0 ` ( # 7
+188	[ turbopack ] fix missing dependency error in typescript ( # 71346 ) # # # what ? fix missing dependency error in
+189	refactor ( turbopack - trace - server ) : use ` span_ref ` instead of ` span ` instead of ` span ` (
+190	docs ( turbopack ) : fix typo in turbopack . mdx ( # 71536 ) # # # what ?
+191	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 70909
+192	fix ( turbopack ) : use ` define - env - plugin ` instead of ` webpack - define - env - plugin ` ( # 7
+193	chore ( turbopack ) : update ` sync - react - js ` to ` v16 . 0 . 0 ` ( # 713
+194	update reproduction - template example ( # 68686 ) this auto - generated pr updates the reproduction - template example
+195	refactor ( turbopack ) : update ` turbo_core ` to ` v2 . 0 . 0 ` ( # 709
+196	refactor ( turbopack ) : add ` no - context - snapshot ` to ` no - context - snapshot . yml ` ( # 7
+197	chore ( turbopack - ecmascript - runtime ) : update ` turbopack - ecmascript - runtime ` to `
+198	chore ( turbopack ) : update ` reproduction - template ` to ` v16 . 0 . 0 ` ( # 71536
+199	refactor ( turbopack ) : remove dynamic io prospective fallback test ( # 80952 ) # # # what ? remove dynamic
+200	chore ( turbopack ) : update ` swc_core ` to ` v10 . 0 . 0 ` ( # 71536
+201	update reproduction - template example ( # 69486 ) this auto - generated pr updates the reproduction - template example
+202	refactor ( next / app ) : use ` next / app ` instead of ` next / app ` instead of ` next /
+203	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71347
+204	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v15 . 0 . 0 ` ( # 7
+205	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v15 . 0 . 0 ` ( # 7
+206	fix ( turbopack ) : use ` console . error ( message ) ` instead of ` console . error ( message
+207	update eslint - plugin - internal to v0 . 0 . 0 ( # 80221 ) this auto - generated pr updates the eslint - plugin -
+208	turbopack build : update ` nx - handling . ts ` to ` vercel / vercel / vercel
+209	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71184
+210	refactor ( turbopack ) : update ` iconcode ` to ` iconcode_esm ` ( # 71384 ) # #
+211	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v16 . 0 . 0 ` ( # 7
+212	chore ( turbopack ) : update ` next - api . tsx ` to ` v1 . 0 . 0 ` ( # 7
+213	[ dev - overlay ] fix dev - tools - indicator error ( # 71346 ) # # # what ? fix dev - tools - indicator error
+214	chore ( github ) : update ` react - version ` to ` 6230622a1a - 20240610 ` ( # 7
+215	perf ( turbopack ) : improve aggregation update behavior ( # 71346 ) # # # what ? improves the behavior of the aggregation
+216	chore ( next - codemod ) : update ` next - codemod - upgrade . ts ` to ` v10 . 0 . 0 ` (
+217	turbopack build : fix link - ref test test ( # 71346 ) # # # what ? fix link - ref test
+218	refactor ( turbopack ) : use ` stackframesgroup ` instead of ` stackframegroup ` ( # 71440 ) # #
+219	refactor ( turbopack ) : fix typo in https : / / github . com / vercel / next . js
+220	chore ( turbopack ) : update ` turbo - tasks - macros ` to ` v4 . 0 . 0 ` ( #
+221	chore ( next / cache ) : remove revalidate buttons from cache ( # 71359 ) # # # what ? remove revalidate buttons from
+222	refactor ( turbopack ) : remove ` is - error ` from ` next_api / project ` ( # 71536 ) #
+223	chore ( turbo - esregex ) : update ` turbo - esregex ` to ` 0 . 1 . 0 ` ( #
+224	refactor ( turbo - tasks - macros ) : use ` turbo_tasks_macros ` instead of ` turbo_
+225	chore ( next - custom - transforms ) : use ` cache ` instead of ` cache ` instead of ` cache `
+226	chore ( github ) : update ` build_and_test . yml ` to ` v15 . 0 . 0 ` ( # 71347
+227	chore ( next - codemod ) : update ` next - codemod . tsx ` to ` next - codemod . tsx ` (
+228	chore ( turbopack ) : update ` turbopack - tracing . json ` to ` turbopack - tracing . json
+229	refactor ( turbopack ) : update ` modelcontextprotocol ` to ` vercel / vercel / vercel / vercel / ver
+230	refactor ( turbopack ) : remove ` tryToParsePath ` from ` next / dist / compiled / zod ` ( # 7
+231	chore ( turbopack ) : update ` next - core . config . js ` to ` v15 . 0 . 0 ` ( #
+232	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71347
+233	fix ( turbopack ) : use ` define - env - plugin ` instead of ` webpack - define - env - plugin ` ( # 7
+234	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v15 . 0 . 0 ` ( # 7
+235	chore ( next - codemod ) : update ` next - codemod . ts ` to ` next - codemod . ts ` ( # 7
+236	chore ( next - runtime ) : update rspack - core to 2 . 0 . 0 ( # 73434 ) # # # what ?
+237	chore ( with - opentelemetry ) : update ` with - opentelemetry ` to ` v15 . 0 . 0 ` ( # 7
+238	chore ( turbopack ) : fix font smoothing in dev - overlay ( # 71440 ) # # # what ? fix font smoothing
+239	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v15 . 0 . 0 ` ( # 7
+240	fix ( turbopack ) : update ` turbo ` to ` turbopack ` in ` next dev ` script ( # 7
+241	chore ( turbopack ) : update ` swc_core ` to ` v4 . 0 . 0 ` ( # 70952
+242	refactor ( turbopack - core ) : fix sourcemaps in turbopack - core . tsx ( # 71236 )
+243	refactor ( turbopack - core ) : use ` turbo_core ` instead of ` turbo_core ` ( #
+244	chore ( next - devtools ) : add support for shadow dom in devtools ( # 71346 ) # # # what ? add support
+245	refactor ( turbopack ) : update ` next - core . segment_config . tsx ` to ` turbo_core .
+246	chore ( github ) : update ` trigger_release . yml ` to ` vercel / next . js ` ( # 71534 )
+247	chore ( next - codemod ) : update ` next - codemod . ts ` to ` next - codemod . ts ` ( # 7
+248	chore ( turbopack ) : update ` swc_core ` to ` v15 . 0 . 0 ` ( # 709
+249	chore ( next - codemod ) : update ` next - codemod . tsx ` to ` next - codemod . tsx ` (
+250	refactor ( turbopack ) : update ` error - loger ` to ` v16 . 0 . 0 ` (
+251	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71347
+252	refactor ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71347
+253	fix ( turbopack ) : use ` stackframe ` instead of ` stackframe ` instead of ` stackframe ` (
+254	chore ( next - custom - transforms ) : update ` __next_internal_action_entry_do_not_use__ ` to `
+255	[ dev - overlay ] fix react - dev - overlay bug ( # 71346 ) # # # what ? fix react - dev - overlay bug
+256	turbopack build : update ` error - overlay . tsx ` to ` v15 . 0 . 0 ` ( # 71440 )
+257	[ turbopack ] cleanup old edges ( # 80221 ) # # # what ? cleanup old edges
+258	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71347
+259	[ dev - overlay ] fix error overlay layout bug ( # 71346 ) # # # what ? fix the error overlay layout bug
+260	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71347
+261	refactor ( turbopack ) : fix typo in ` next / app - route . tsx ` ( # 71347 ) #
+262	fix ( turbopack ) : don ' t use ` next . js ` for ` next . js ` for ` next . js `
+263	chore ( turbopack ) : update ` reproduction - template ` to ` v16 . 0 . 0 ` ( # 71536
+264	refactor ( turbopack ) : update prefetch cache . ts ( # 71536 ) # # # what ? update prefetch cache . ts
+265	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 713
+266	chore ( next - codemod ) : update ` next - codemod . ts ` to ` next - codemod . ts ` ( # 7
+267	examples : add ` with - fauna - client - secret ` example to ` with - fauna - client - secret ` example ( # 713
+268	chore ( turbopack ) : update ` build - and - test . tsx ` to ` v10 . 0 . 0 ` (
+269	refactor ( turbopack ) : update hot - reloader - turbopack to 1 . 0 . 0 ( # 71347
+270	turbopack build : update ` app - hmr ` to ` v4 . 0 . 0 ` ( # 70952 ) # #
+271	chore ( turbopack ) : update ` swc_core ` to ` v17 . 0 . 0 ` ( # 709
+272	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v2 . 0 . 0 ` ( # 7
+273	chore ( next - codemod ) : update ` next - codemod . tsx ` to ` next - codemod . tsx ` (
+274	chore ( turbopack ) : update ` swc_core ` to ` v1 . 0 . 0 ` ( # 70952
+275	chore ( github ) : update ` react - version ` to ` 20240613 ` ( # 71379 ) # # # what ?
+276	[ css - minimizer ] remove unused ` css - minimizer - plugin ` option ( # 71337 ) # # # what ? remove unused
+277	chore ( turbopack ) : update ` swc_core ` to ` v4 . 0 . 0 ` ( # 70952
+278	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 709
+279	refactor ( turbopack ) : update ` next - core . tsx ` to ` v1 . 0 . 0 ` ( # 7
+280	chore ( github ) : update ` react - version ` to ` 6230622a1a - 20240610 ` ( # 7
+281	examples : update hello - world . json example ( # 71347 ) this auto - generated pr updates the hello - world . json example used when
+282	[ dev - overlay ] remove experimental font middleware ( # 71346 ) # # # what ? remove experimental font middleware
+283	[ turbopack ] add ` loading - boundary ` option to ` loading - boundary ` ( # 71536 ) # # # what ?
+284	refactor ( turbo - tasks - backend ) : use ` kv_backing_storage ` instead of ` turbo_tasks_
+285	refactor ( turbopack ) : update ` collect - build - traces . ts ` to ` v15 . 0 . 0 ` ( #
+286	chore ( github ) : update react - version to 187dd6a7 - 20240806 ( # 80952 ) # #
+287	chore ( next / webpack ) : update webpack build manifest plugin ( # 71347 ) this auto - generated pr updates the webpack build manifest
+288	chore ( next - custom - transforms ) : update ` unstable_cache ` and ` revalidate ` to ` revalidate ` ( # 7
+289	perf ( turbopack ) : improve aggregation update behavior ( # 71346 ) # # # what ? improves the behavior of the aggregation
+290	chore ( turbopack ) : update ` hash_extract_if ` to ` next . turbo - tasks . js ` (
+291	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 709
+292	refactor ( turbopack ) : update ` create - compiler - aliases . ts ` to ` v10 . 0 . 0 ` ( #
+293	refactor ( turbopack ) : remove ` react - dev - overlay ` and ` react - dev - overlay - overlay ` ( # 7
+294	chore ( turbopack ) : update ` bundler ` to use ` turbopack - webpack - bundler ` ( # 71347
+295	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v16 . 0 . 0 ` ( # 7
+296	chore ( turbopack ) : update ` create - next - install . js ` to ` v16 . 0 . 0 ` ( #
+297	chore ( turbopack ) : update ` reproduction - template ` to ` v16 . 0 . 0 ` ( # 71536
+298	chore ( turbopack ) : update ` next - api . json ` to ` v1 . 0 . 0 ` ( # 713
+299	refactor ( turbopack ) : fix typo in https : / / github . com / vercel / next . js
+300	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71347
+301	[ dev - overlay ] fix typo in devtools indicator ( # 71346 ) # # # what ? fix typo in devtools indicator
+302	refactor ( turbopack - cli ) : update ` turbopack - cli ` to ` v15 . 0 . 0 ` (
+303	refactor ( turbopack ) : update ` next - core ` to ` v16 . 0 . 1 ` ( # 71536 )
+304	refactor ( turbopack ) : update ` next / build / index . ts ` to ` v10 . 0 . 0 ` ( #
+305	fix ( turbopack ) : improve segment explorer behavior ( # 71346 ) # # # what ? improve segment explorer behavior
+306	refactor ( turbopack ) : update ` next - api . tsx ` to ` v4 . 0 . 0 ` ( # 7
+307	perf ( turbopack ) : improve aggregation update behavior ( # 71346 ) # # # what ? improves the behavior of the aggregation
+308	chore ( turbopack ) : update ` next . js ` to ` next . js ` ( # 73434 ) # # #
+309	feat ( next / metadata ) : add ` metadataroute ` to ` alternativeurls - types ` ( # 71440 ) # # # what ?
+310	perf ( turbo - persistence - tools ) : add ` collector_entry : : { collector_entry : : { collector_entry : :
+311	refactor ( turbo - tasks - macros ) : update ` turbo_tasks_macros ` to ` vercel / tur
+312	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v15 . 0 . 0 ` ( # 7
+313	fix ( turbopack ) : remove ` componentname ` from ` error [ 4 ] ` and ` error [ 7 ]
+314	fix ( turbopack ) : update hmr - env test ( # 71346 ) # # # what ? update hmr - env
+315	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 709
+316	fix ( turbopack ) : use ` root ` instead of ` root . children ` ( # 71536 ) # # # what ?
+317	fix ( turbopack ) : update ` rootlayout ` to ` v0 . 1 . 0 ` ( # 71536 ) # #
+318	[ create - next - app ] fix : https : / / github . com / vercel / next . js
+319	chore ( next - swc ) : update ` next - import - map ` to ` v15 . 0 . 0 ` ( # 713
+320	fix ( turbopack ) : use ` ref ` instead of ` ref ` instead of ` ref ` instead of ` ref `
+321	examples : update ` reproduction - template ` to ` v16 . 0 . 0 ` ( # 71440 ) # # # what ? update
+322	fix ( turbopack ) : update ` cachenode . headdata ` to ` headdata . cachenode . headdata ` ( # 7
+323	docs ( experimental - ppr ) : update ` experimental - ppr ` to ` experimental - ppr ` (
+324	[ turbopack ] use ` asyncstorage ` instead of ` workitemasyncstorage ` ( # 71440 ) # # # what ?
+325	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v1 . 0 . 0 ` ( # 7
+326	turbopack build : update ` capture - console - error - owner - stack ` to ` v10 . 0 . 0 ` ( # 7
+327	refactor ( turbopack ) : update ` config - shared . tsx ` to ` v1 . 0 . 0 ` ( # 7
+328	[ dev - overlay ] fix dev - tools - indicator error message ( # 71346 ) # # # what ? this pr fixes a bug where
+329	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71347
+330	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v1 . 0 . 0 ` ( # 7
+331	refactor ( turbopack ) : add ` eslintignore ` option to ` eslintignore ` ( # 71440 ) # # # what
+332	docs : fix typo in ` next . js ` ( # 71536 ) # # # what ? fix typo in ` next . js
+333	turbopack build : remove unstable_cacheTag and revalidateTag from use - cache / app / form / page ( # 712
+334	chore ( github ) : update ` retry_test . yml ` to ` v1 . 0 . 0 ` ( # 71440 ) #
+335	refactor ( next - errors ) : remove ` react - react ` from ` next - errors . js ` ( # 71536 ) # #
+336	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71347
+337	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 70909
+338	refactor ( turbopack ) : update ` global_module_id_strategy ` to ` next - api . js ` ( # 7
+339	chore ( turbopack ) : update ` reproduction - template ` to ` v16 . 0 . 0 ` ( # 71184
+340	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v15 . 0 . 0 ` ( # 7
+341	turbopack build : update ` use - cache ` test ( # 71384 ) this auto - generated pr updates the ` use - cache
+342	turbopack build : update reactrefreshlogbox test ( # 71384 ) this auto - generated pr updates the reactrefreshlogbox test
+343	refactor ( turbopack - core ) : update ` module_id_strategies ` to ` module_id_strategy ` ( #
+344	chore ( turbo - tasks - backend ) : update ` turbo_tasks_backend ` to ` vercel / turbo
+345	turbopack build : update ` react - performance - track ` to ` v16 . 0 . 0 ` ( # 70952 )
+346	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71347
+347	perf ( turbopack ) : improve aggregation update behavior ( # 71346 ) # # # what ? improves the behavior of the aggregation
+348	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v15 . 0 . 0 ` ( # 7
+349	[ client - resolve - href ] fix : https : / / github . com / vercel / next / issues /
+350	chore ( next - custom - transforms ) : remove ` use cache ` function ( # 71440 ) # # # what ? remove ` use
+351	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71347
+352	chore ( turbo - tasks ) : update ` turbo_tasks ` to ` v15 . 0 . 0 ` ( # 7
+353	chore ( turbopack ) : update ` reproduction - template ` to ` v16 . 0 . 0 ` ( # 71536
+354	chore ( turbo - rcstr ) : update ` turbo - rcstr ` to ` vercel / turbo # 8
+355	fix ( turbopack ) : add ` dynamic <p>dynamic< / p> <p>dynamic< / p> <p>
+356	chore ( github ) : update ` github . com / vercel / next . js ` to ` v15 . 0 . 0 ` ( #
+357	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 762
+358	chore ( next - custom - transforms ) : remove ` ts - ignore - that ` from ` . / a ` (
+359	turbopack build : update ` cachehandler ` to ` latest - bulldogs - dress - vercel / next . js `
+360	refactor ( turbopack ) : remove ` segment explorer ` from ` devtools_info ` ( # 71536 ) # # #
+361	[ create - next - app ] fix : fileURLToPath in eslint config ( # 71346 ) # # # what ? fixes a bug
+362	chore ( next - custom - transforms ) : update ` next - custom - transforms ` to ` next - custom - transforms . js ` ( #
+363	chore ( turbopack ) : update ` reproduction - template ` to ` v16 . 0 . 0 ` ( # 71184
+364	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71347
+365	chore ( dev - overlay ) : update dev - tools - indicator ( # 71440 ) # # # what ? update dev - tools -
+366	chore ( turbopack ) : update ` reproduction - template ` to ` v16 . 0 . 0 ` ( # 71184
+367	fix ( turbopack ) : don ' t error on hydration error state ( # 80221 ) # # # what ? this pr
+368	docs : fix typo in index . mdx file ( # 71536 ) # # # what ? fix typo in index . mdx
+369	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71347
+370	refactor ( turbopack ) : fix typo in ` next . js ` ( # 71347 ) # # # what ? fix
+371	chore ( dev - overlay ) : add overlay state to app - dev - overlay . tsx ( # 71536 ) # # # what
+372	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71440
+373	chore ( turbopack ) : update ` swc_core ` to ` v10 . 0 . 0 ` ( # 709
+374	examples : update ` reproduction - template ` example to ` v0 . 10 . 0 ` ( # 71440 )
+375	turbopack build : fix typo in error log test ( # 71346 ) # # # what ? fix typo in error log
+376	chore ( next - codemod ) : update ` react - 18 - installed - mixed - router ` to ` 18 - installed - mixed - router
+377	chore ( next - codemod ) : update react - 19 - installed - mixed - router to 2 . 0 . 0 ( # 71347
+378	refactor ( turbopack ) : update ` react ` to ` v16 . 0 . 0 ` ( # 71536 ) # #
+379	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71347
+380	chore ( github ) : update retry_deploy_test_test . yml ( # 67772 ) this auto - generated pr updates the retry
+381	docs : fix typo in next . js docs ( # 71359 ) # # # what ? fix typo in next . js docs
+382	chore ( turbopack ) : update ` swc_core ` to ` v4 . 0 . 0 ` ( # 70952
+383	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 70952
+384	chore ( next / webpack ) : remove ` webpack ` and ` normalmodule ` from ` next / dist / compiled / webpack ` ( # 7
+385	fix ( turbopack ) : update segment cache staleness test ( # 71440 ) # # # what ? update segment cache st
+386	refactor ( turbopack ) : use ` next / build / entries . ts ` instead of ` build / entries . ts ` ( #
+387	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v15 . 0 . 0 ` ( # 7
+388	fix ( turbopack ) : remove ` devtools / dev - overlay ` from ` next - overlay . tsx ` ( # 713
+389	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71184
+390	refactor ( turbopack - ecmascript ) : use ` turbo_core ` instead of ` turbo_core `
+391	chore ( turbopack ) : update ` swc_core ` to ` v1 . 0 . 0 ` ( # 71536
+392	refactor ( turbopack - ecmascript - runtime ) : update ` turbopack - ecmascript - runtime ` to `
+393	chore ( next / check - error - codes ) : update ` check - error - codes ` to ` 1 . 0 . 0 ` ( #
+394	chore ( turbopack ) : update ` swc_core ` to ` v15 . 0 . 0 ` ( # 71347
+395	[ dev - overlay ] fix : use effect and transition in dev - overlay ( # 71440 ) # # # what ? use effect and transition
+396	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 755
+397	refactor ( turbopack ) : remove ` force - dynamic ` option from ` next / link ` - export ( # 71536 )
+398	docs : fix typo in ` memory - usage . mdx ` ( # 71384 ) # # # what ? fix typo in `
+399	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 739
+400	refactor ( turbopack - ecmascript - runtime ) : update ` turbopack - ecmascript - runtime ` to `
+401	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v1 . 0 . 0 ` ( # 7
+402	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v15 . 0 . 0 ` ( # 7
+403	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 70952
+404	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71347
+405	chore ( dev - overlay ) : update react - dev - overlay . md ( # 71536 ) # # # what ? update react -
+406	refactor ( turbopack ) : fix path delimiters in ` next / router / utils / escape - path - delimiters . ts ` ( #
+407	chore ( turbopack ) : update ` swc_core ` to ` v16 . 0 . 0 ` ( # 71184
+408	refactor ( turbopack ) : update ` next_api . endpoint ` to ` v2 . 0 . 0 ` ( # 709
+409	chore ( next - prerender - current - time ) : update ` next - prerender - current - time . md ` ( #
+410	docs : update ` self - hosting . mdx ` to ` v15 . 0 . 0 ` ( # 71584 )
+411	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v1 . 0 . 0 ` ( # 7
+412	fix ( turbopack ) : use ` params ` instead of ` request . params ` ( # 71536 ) # # # what ?
+413	refactor ( turbopack ) : fix typo in ` next - app - render . tsx ` ( # 71536 ) #
+414	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v15 . 0 . 0 ` ( # 7
+415	chore ( next / mkcert ) : update ` node : path ` to ` node : path ` (
+416	chore ( turbopack ) : update ` next - api . tsx ` to ` v4 . 0 . 0 ` ( # 7
+417	[ turbopack ] fix side effects optimization test ( # 80221 ) # # # what ? fix side effects optimization test
+418	refactor ( turbopack ) : update ` next - core . metadata . route ` to ` v2 . 0 . 0 ` ( #
+419	chore ( github ) : update ` test_e2e_deploy_release ` to ` vercel / next . js ` ( # 7
+420	refactor ( turbo - tasks - backend ) : use ` kv_backing_storage ` instead of ` turbo_tasks_
+421	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v15 . 0 . 0 ` ( # 7
+422	update reproduction - template example ( # 76825 ) this auto - generated pr updates the reproduction - template example
+423	chore ( turbopack ) : update ` swc_core ` to ` v1 . 0 . 0 ` ( # 71347
+424	fix ( turbopack ) : remove ` withAmp ` from ` next / amp ` ( # 71347 ) # # # what ?
+425	chore ( turbo - tasks - backend ) : update ` turbo_tasks_backend . db_versioning ` to ` v
+426	refactor ( turbopack - core ) : update ` resolve . alias_map ` to ` resolvedvc . alias_map ` ( #
+427	chore ( turbopack ) : update ` reproduction - template ` to ` v16 . 0 . 0 ` ( # 71584
+428	chore ( github ) : update ` github . com / vercel / next . js ` to ` v15 . 0 . 0 ` ( #
+429	chore ( turbo - tasks - fs ) : update ` turbo_tasks_fs ` to ` v4 . 0 . 0
+430	fix ( turbopack ) : update ` tsconfig . json ` to ` next . js . ts ` ( # 71536 )
+431	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v1 . 0 . 0 ` ( # 7
+432	chore ( turbo - persistence ) : update ` turbo - persistence . md ` to ` v4 . 0 . 0 ` (
+433	chore ( next - codemod ) : update ` next - codemod . ts ` to ` v15 . 0 . 0 ` ( # 7
+434	fix ( turbo - tasks ) : add ` tertiary - light ` to ` tertiary - tasks ` ( # 7
+435	chore ( turbopack ) : update ` swc_core ` to ` v15 . 0 . 0 ` ( # 709
+436	chore ( turbo - tasks ) : update ` turbo - tasks ` to ` v15 . 0 . 0 ` ( # 7
+437	chore ( turbopack ) : update ` swc_core ` to ` v15 . 0 . 0 ` ( # 71584
+438	refactor ( turbopack ) : fix typo in https : / / github . com / vercel / next . js
+439	chore ( next - custom - transforms ) : update ` next - custom - transforms ` to ` next - custom - transforms ` ( # 709
+440	refactor ( turbopack ) : add support for ` usecache ` flag in ` canary + - - - +

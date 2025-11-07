@@ -1,0 +1,441 @@
+0	[ breaking ] rename instrumentation onrequesterror ` context . routetype ` from ` middleware ` to ` proxy ` ( # 85006 ) follow up on https : / / github . com / vercel / next . js / pull / 84710 , ` instrumentation ` docs had ` onrequesterror ` function ' s param ` context . routetype ` has value of ` ' middleware ' ` . as it ' s a user - facing value , update it to ` ' proxy ' ` .
+1	only force stack frame color in tty ( # 71860 )
+2	revert " fix : alternate bundler support for dropping client page " ( # 78974 ) this reverts commit fa6f96f0
+3	upgrade react from ` 197d6a04 - 20250424 ` to ` 79d9aed7 - 20250620 ` ( # 79477 )
+4	upgrade react from ` 914319ae - 20250423 ` to ` 197d6a04 - 20250424 ` ( # 78516 )
+5	[ devoverlay ] adjust border style for header and footer ( # 74480 ) this pr removed margins and added paddings based on the new design , covering the style to not break on the change . note that the call stack ' s style ( missing padding ) is affected but will be followed up with the new style change . # # # before # # # # light ! [ cleanshot 2025 - 01 - 03 at 11 51 22 ] ( https : / / github . com / user - attachments / assets / 3b207ff4 - 5720 - 46a6 - 8ab4 - 56bb940b71e4 ) # # # # dark ! [ cleanshot 2025 - 01 - 03 at 11 51 38 ] ( https : / / github . com / user - attachments / assets / 87670d4e - d7b7 - 4cc9 - a1e5 - 86fb29d3fe8d ) # # # after # # # # light ! [ cleanshot 2025 - 01 - 03 at 11 51 56 ] ( https : / / github . com / user - attachments / assets / 9d545baf - d0df - 4850 - a689 - cc6ca1c251ef ) # # # # dark ! [ cleanshot 2025 - 01 - 03 at 11 51 47 ] ( https : / / github . com / user - attachments / assets / 2105d887 - e6a4 - 49de - 9662 - 95ccee92790a ) closes ndx - 622
+6	turbopack : add react refresh runtime stubs to workers ( # 78433 ) analogous to https : / / github . com / vercel / next . js / pull / 15145 , this adds no - op stubs to take the place of the react refresh runtime in workers . this prevents workers from failing when they use react components , such as in non - dom react renderers like [ ` @ react - three / offscreen ` ] ( https : / / github . com / pmndrs / react - three - offscreen ) . this code is only added in dev , and the base runtime was parameterized to allow this . test plan : - manually create a worker that uses ` @ react - three / offscreen ` to render a component and use it in dev . - [ x ] automated test
+7	upgrade react from ` e03ac20f - 20250305 ` to ` 029e8bd6 - 20250306 ` ( # 76870 )
+8	update types and more test coverage for adapters ( # 82919 ) this tweaks the output structure a bit and makes types more strong / specific for easier handling . also adds additional test coverage .
+9	add response handling inside handlers ( # 80189 ) this continues the ` handler ` signature work from https : / / github . com / vercel / next . js / pull / 78166 and moves the cache / response handling work inside of the pages , app pages , and app route handlers which allows them to be fully invoked independent of ` next - server ` / ` router - server ` . validated against our deploy tests https : / / github . com / vercel / vercel / actions / runs / 15583209888 / job / 43883202911 ? pr = 13433 and https : / / github . com / vercel / next . js / actions / runs / 15583265934 / job / 43883389321
+10	update turbopack dev manifest for flakey loading test ( # 68373 ) x - ref : https : / / github . com / vercel / next . js / actions / runs / 10187317004 / job / 28181107833 ? pr = 68372 x - ref : https : / / github . com / vercel / next . js / actions / runs / 10187288542 / job / 28181035408 ? pr = 68369
+11	revert " perf ( turbopack / rcstr ) : add serialization - time optimization ( # 78645 ) " ( # 81112 ) this reverts commit 2689a741014f57c3fbda32cb488f67607fbc6fe6 . reverts https : / / github . com / vercel / next . js / pull / 78645 as it causes an incremental build regression
+12	react sync : handle react prs landed via ghstack ( # 66069 )
+13	capture console issues as console errors ( # 72468 )
+14	upgrade react from ` f1222f76 - 20250812 ` to ` 379a083b - 20250813 ` ( # 82642 )
+15	add types for ` __next_app__ ` module loading functions ( # 74566 ) ` __next_app__ . require ` and ` __next_app__ . loadchunk ` were typed as ` any ` for no good reason . i made them more strict + adjusted callsites as needed . also contains a drive - by fix for ` wrapclientcomponentloader ` - - it was using a ` try . . . finally ` without awaiting , so it wasn ' t measuring anything ( because ` loadchunk ` , being async , would always return immediately )
+16	turbopack : include more details in panic ( # 81773 )
+17	module id strategies tests ( # 69110 ) adding tests for turbopack ' s module id strategies , including ids minification .
+18	revert " separate hydration tests for pages router " ( # 70218 )
+19	turbopack : use type alias ( # 75300 ) # # # what ? use type alias to avoid repeating
+20	[ devoverlay ] close popover / overlay on esc ( # 74889 ) closes the popover or overlay when pressing the escape key . https : / / github . com / user - attachments / assets / 20eb7bab - c753 - 40cf - 8182 - e655c6f31b35
+21	turbopack : analyze ` new worker ` calls ( # 69584 ) step 1 : detect ` new worker ( new url ( . . . , import . meta ) ) ` calls detect ` new url ( " . . " , import . meta . url ) ` and turn into ` jsvalue : : url `
+22	upgrade react from ` 3b009b4c - 20250102 ` to ` 3ce77d55 - 20250106 ` ( # 74557 )
+23	revert " turbopack : avoid using rayon in favor of tokio tasks ( # 82256 ) " ( # 82658 ) reverts https : / / github . com / vercel / next . js / pull / 82256 because there appears to be a race condition ( even in the unit tests ) https : / / vercel . slack . com / archives / c04kc8a53t7 / p1755180908771559
+24	revert " turbopack build : add mantine and mermaid to heavy npm deps benchmark " ( # 70561 ) reverts vercel / next . js # 70554
+25	upgrade react from ` 7ac8e612 - 20241113 ` to ` 380f5d67 - 20241113 ` ( # 72819 )
+26	update labeler ( # 84623 )
+27	turbopack : instrument scope hoisting with tracing spans ( # 81078 )
+28	upgrade react from ` 5b51a2b9 - 20250116 ` to ` 9b62ee71 - 20250122 ` ( # 75187 )
+29	mark react compiler integration as stable ( # 84220 )
+30	upgrade react from ` 603e6108 - 20241029 ` to ` 7c8e5e7a - 20241101 ` ( # 72199 )
+31	[ turbopack ] add active_counter to keep tasks active ( # 74772 ) rename aggregateroot to activeness and split into both sources improve readablility add active_counter as source of activeness add debug for dequeset
+32	upgrade react from ` c492f975 - 20250128 ` to ` a4b2d0d5 - 20250203 ` ( # 75649 )
+33	[ cna ] preserve existing config option when enabling react compiler ( # 84663 )
+34	temporarily disable failing ` fallback - shells ` deploy test ( # 81593 ) something may have changed in infra that causes a fallback shell revalidation instead of the expected route shell revalidation . until this is resolved we disable the deploy test to unblock .
+35	[ chore ] remove unused __next_private_runtime_type ( # 78230 )
+36	[ test ] skip flaky cdn - cache - busting test ( # 81429 ) https : / / vercel . slack . com / archives / c07uchrbwgk / p1752001887137129
+37	upgrade react from ` de68d2f4 - 20241204 ` to ` 1c9b1387 - 20241204 ` ( # 73565 )
+38	fix : use in operator to check dev indicator option when its obj ( # 82629 )
+39	upgrade react from ` 5e0c951b - 20250916 ` to ` 128abcfa - 20250917 ` ( # 83906 )
+40	[ devoverlay ] remove dialog banner ( # 74464 ) this pr removed the dialog banner as it is removed in the renewal design . ! [ cleanshot 2025 - 01 - 02 at 22 . 04 . 02 . png ] ( https : / / graphite - user - uploaded - assets - prod . s3 . amazonaws . com / dqeakpg78rap6ullhqtz / c24349a8 - c4c4 - 40e8 - 9c62 - d2580812ec1c . png )
+41	update type for next / dynamic ` loading ` option to accept ` reactnode ` ( # 76402 )
+42	upgrade react from ` 3ce77d55 - 20250106 ` to ` 7b402084 - 20250107 ` ( # 74599 )
+43	reenable otel test for turbopack ( # 73093 ) turbopack has supported instrumentation . js for a long time now
+44	turbopack : remove useless ' default ' built - in webpack loader condition ( # 84111 ) follow up to https : / / github . com / vercel / next . js / pull / 83246 # discussion_r2366553689 discussed this with @ lukesandberg and we can ' t find a place where it would be very useful , it seems it might ' ve been useful with the old builtin condition syntax ( which i removed ) . it also looks like maybe i forgot to actually wire this up to anything ? whoops . whelp , now it ' s gone .
+45	turbopack : make ` modulepart ` a ` taskinput ` ( # 75364 ) no significant perf impact
+46	upgrade react from ` df38ac9a - 20250926 ` to ` d15d7fd7 - 20250929 ` ( # 84347 )
+47	[ turbopack ] new backend cleanup ( # 71132 ) # # # what ? review comments from https : / / github . com / vercel / next . js / pull / 70945
+48	upgrade react from ` f6a48828 - 20251019 ` to ` 2bcbf254 - 20251020 ` ( # 85112 )
+49	turbopack build : add test skip that is also skipped for dev ( # 79241 ) # # what ? this test was already skipped for dev , seems i missed skipping it for build , added that here .
+50	turbopack : use unsigned values for follower and upper edges ( # 79489 )
+51	stop importing from ` next / dist / bin / next ` ( # 68830 )
+52	report build - and - deploy failures ( # 75749 )
+53	turbopack : remove verbose output ( # 80044 ) # # # what ? remove unactionable log line . make log line shorter .
+54	upgrade react from ` 8a8e9a7e - 20250912 ` to ` 5e0c951b - 20250916 ` ( # 83850 )
+55	turbopack : add ffmpeg - static nft test ( # 82985 ) include test added by https : / / github . com / vercel / nft / pull / 539
+56	avoid prefetch request before meta - tag - based redirect ( # 70350 )
+57	fully enable custom error callbacks for app router ( # 71794 )
+58	turbopack : remove canary version check for turbopackpersistentcachingfordev ( # 84277 )
+59	upgrade react from ` 65c4decb - 20250630 ` to ` 7216c0f0 - 20250630 ` ( # 81133 )
+60	disable " use cache " outside of dynamicio ( # 70538 )
+61	upgrade react from ` f1e70b5e - 20250811 ` to ` ac7820a9 - 20250811 ` ( # 82543 )
+62	[ build ] remove obsolete module field alias for barrel optimized pkg ( # 80769 )
+63	upgrade react from ` 33a1095d - 20250827 ` to ` 8d7b5e49 - 20250827 ` ( # 83164 )
+64	revert " support custom servers with minimal node modules " ( # 73003 ) reverts vercel / next . js # 72966
+65	omit unnecessary cache wrapper import ( # 73160 ) when a ` " use cache " ` module has no exported or annotated cache function , we can omit the import statement for the cache wrapper function .
+66	removes onnavigate from transition scope ( # 78605 )
+67	turbopack : use parallel execution helpers ( # 82667 )
+68	upgrade react from ` c69a5fc5 - 20250318 ` to ` db7dfe05 - 20250319 ` ( # 77295 )
+69	turbopack : add app - dir alias for ` next / * ` subpackages ( # 78447 )
+70	turbopack : remove dead code ( # 79280 ) - ` includeidentmodule ` is unused ( and incompatible with the modulegraph anyway ) - cleanup some ` todo ! ( ) ` s
+71	configure source map overrides for turbopack ( # 67497 ) follow - up from # 66254 to add debugging support for turbopack .
+72	next - upgrade : allow custom selection of codemods ( # 70634 )
+73	upgrade react from ` 3fbfb9ba - 20250409 ` to ` c44e4a25 - 20250409 ` ( # 78031 )
+74	[ error overlay ] display different error info individually ( # 75916 )
+75	update react from 04b058868c to 81c5ff2e04 ( # 65869 )
+76	turbopack : make ` napi ` crate rust 2024 ( # 79123 ) this required explicitly wrapping certain calls in ` unsafe ` blocks .
+77	revert " ensure webpack worker exits bubble to parent process ( # 72921 ) " ( # 73136 )
+78	base js runtime for builds ( # 70169 )
+79	upgrade react from ` a96a0f39 - 20250815 ` to ` f508edc8 - 20250818 ` ( # 82747 )
+80	turbopack : change eager import to lazy import for loader_tree ( # 83115 ) # # what ? switch to matching webpack behavior where module in the loader_tree are initialized later .
+81	revert " ( e2e ) log which config file is used for ` next start ` " ( # 80666 ) reverts vercel / next . js # 73105
+82	docs : add server actions to unsupported features of static exports ( # 67507 ) server actions require running code on - demand ( as an api route ) and cannot be used without a server environment .
+83	pages api handler interface follow - ups ( # 78638 ) applies some clean - up / follow - ups from review on https : / / github . com / vercel / next . js / pull / 78166
+84	[ turbopack ] stop exposing globals from turbopack runtime ( # 81727 )
+85	turbopack : improve next / dynamic eventual consistentcy ( # 84560 ) use bail instead of panic to better recover from eventual consistency situations .
+86	upgrade react from ` 74ea0c73 - 20250109 ` to ` 056073de - 20250109 ` ( # 74754 )
+87	next - upgrade : add testfixtures ( # 71377 )
+88	turbopack : ` outputasset : : path ( ) ` ( # 75659 )
+89	[ dev - overlay ] control scrollbar by selected theme ( # 76553 )
+90	ensure next - server prepare only execute once ( # 68616 )
+91	upgrade react from ` 372ec00c - 20241209 ` to ` 518d06d2 - 20241219 ` ( # 74155 )
+92	[ test ] exclude next . js internal stack frames from cache - component - error cli output assertions ( # 85421 )
+93	support ` compiler . removeconsole ` with turbopack ( # 67849 ) should ` remove_console ` and ` react_remove_properties ` be dependencies of the ` next - next ` crate or reuse the dependencies from ` next - custom - transforms ` ?
+94	implement handler interface for app - page ( # 79568 ) continuation of https : / / github . com / vercel / next . js / pull / 78166 this implements the handler interface for app router pages , this does not move the response handling inside of the handler yet as that will be in a follow - up pr to keep the changes isolated . this still returns the renderresult for the base - server to continue to handle . validated against deploy tests https : / / github . com / vercel / vercel / pull / 13389 and https : / / github . com / vercel / next . js / actions / runs / 15358616431 / job / 43222466204
+95	feat : ` - - rspack ` flag for create next app ( # 79077 )
+96	tweak deploy test concurrency & fail condition ( # 66779 ) [ x - ref ] ( https : / / github . com / vercel / next . js / actions / runs / 9475354204 / job / 26106589121 )
+97	stop adding owner stacks from internals ( # 76231 )
+98	docs : remove unstable_after from dynamic apis ( # 72595 ) this pull request removes the unstable_after from the dynamic apis , as it does not cause a route to become dynamic .
+99	bump swc to v45 ( # 85143 )
+100	add arlyon to turbopack team ( # 66177 )
+101	upgrade react from ` 93f85932 - 20251016 ` to ` 1324e1bb - 20251016 ` ( # 84999 )
+102	ignore error pages for cache revalidate ( # 72412 )
+103	[ turbopack ] include task name in dirty cause of output change ( # 72574 )
+104	create - next - app : default to eslint disabled ( # 73864 ) you can optionally enable it , if desired , but this gives you one less config file by default .
+105	disable flaky turbopack tests ( # 76760 )
+106	invert if check for iife to reduce indentation ( # 69112 ) i had to do a little work in this function and the indentation was getting a little out of hand .
+107	shorten unsourcemapped absolute locations in terminal stacktraces ( # 72764 )
+108	[ turbopack ] add ` final_read_hint ` api and change ` clone_value ` to ` owned ` ( # 75852 ) # # # what ? * add readcelloptions to cell reads * refactor read future api and add final_read_hint * add ` readref : : try_unwrap ` , ` . owned ` * remove ` . clone_value ` * remove cell on final_read_hint
+109	update flakey hmr test with turbopack ( # 68495 ) x - ref : https : / / github . com / vercel / next . js / actions / runs / 10228171055 / job / 28301119519 x - ref : https : / / github . com / vercel / next . js / actions / runs / 10231169480 / job / 28307004087 x - ref : https : / / github . com / vercel / next . js / actions / runs / 10230841136 / job / 28306121160
+110	upgrade typescript to 5 . 5 . 3 ( # 67454 )
+111	[ turbopack ] update turbopack build warning message ( # 82591 ) drop the scare text about not running turbopack in production . instead clarify that builds are beta and direct people to our documentation site . for example : ! [ image . png ] ( https : / / graphite - user - uploaded - assets - prod . s3 . amazonaws . com / awj29efopcpdlswczxaz / a50ca03c - 7065 - 4fc4 - ad3a - 2232e14984d3 . png ) compared to the old notice : ! [ image . png ] ( https : / / graphite - user - uploaded - assets - prod . s3 . amazonaws . com / awj29efopcpdlswczxaz / c802c577 - 39d6 - 4408 - bd9e - 144d3f9c23dd . png ) notably * mission critical applications are a good idea ! just be careful with compatibility issues * the source maps issues is fixed ! no need to talk about it at all * a discussion of bundle size issues and build caches is being added in # 82560 closes pack - 5237
+112	upgrade react from ` 77b637d6 - 20241016 ` to ` bf7e210c - 20241017 ` ( # 71436 )
+113	turbopack : rename simple tree shaking ( # 81181 )
+114	use the automatic runtime for type checking ( # 83159 ) co - authored - by : sebastian " sebbie " silbermann <silbermann . sebastian @ gmail . com>
+115	upgrade react from ` 60b5271a - 20250709 ` to ` 96c61b7f - 20250709 ` ( # 81505 )
+116	upgrade react from ` d7215b49 - 20251013 ` to ` 56e84692 - 20251014 ` ( # 84860 )
+117	return ` null ` if redbox has no component stack ( # 75744 )
+118	[ types ] refactor shared types ( # 82844 )
+119	turbopack : add dedicated tracedasset ( # 75510 )
+120	upgrade react from ` 197d6a04 - 20250424 ` to ` 5dc00d6b - 20250428 ` ( # 78640 )
+121	revert " feat : update ` swc_core ` to ` v9 . 0 . 0 ` " ( # 73866 ) builds are failing on canary so attempting revert to allow investigation separate x - ref : https : / / github . com / vercel / next . js / actions / runs / 12292495270 / job / 34303267911 x - ref : https : / / github . com / vercel / next . js / actions / runs / 12292495270 / job / 34303267654 x - ref : https : / / github . com / vercel / next . js / actions / runs / 12292495270 / job / 34303267358 reverts vercel / next . js # 73696
+122	types : improve napi binding typing using generated types ( # 69680 ) # # # why ? all the ` any ` and ` unknown ` types kept bothering me . i ' ve also removed some unused napi functions
+123	📝 docs : add missing example code file name ( # 66251 )
+124	upgrade react from ` 70fb1363 - 20241010 ` to ` cd22717c - 20241013 ` ( # 71223 )
+125	increase max cache tags to 128 ( # 73124 )
+126	pass down ignored field to error overlay ( # 72925 )
+127	add app - action deploy test to manifest ( # 68308 ) this test is currently a known failure case in deploy mode which is being investigated but we should disable to reduce noise while it ' s investigated . x - ref : [ slack thread ] ( https : / / vercel . slack . com / archives / c07bva6hm17 / p1722011813463959 ) x - ref : [ slack thread ] ( https : / / vercel . slack . com / archives / c02k2hch5v4 / p1722035835457319 ) x - ref : https : / / github . com / vercel / next . js / actions / runs / 10153430071 / job / 28077706487
+128	upgrade react from ` 19baee81 - 20250725 ` to ` eaee5308 - 20250728 ` ( # 82120 )
+129	[ dev - overlay ] improve color contrast for terminal ( # 76525 ) adjusted them to pass wcag color contrast aaa .
+130	upgrade react from ` 66855b96 - 20241106 ` to ` 5c56b873 - 20241107 ` ( # 72469 )
+131	upgrade react from ` ac7820a9 - 20250811 ` to ` 1dc3bdea - 20250812 ` ( # 82575 )
+132	upgrade react from ` c44e4a25 - 20250409 ` to ` 1d6c8168 - 20250411 ` ( # 78067 )
+133	upgrade react from ` ae9017ce - 20250122 ` to ` de1eaa26 - 20250124 ` ( # 75286 )
+134	turbopack : generate shorter variable idents ( # 75611 )
+135	add forbidden and unauthorized apis ( # 72785 )
+136	run export child process with runtime ' s default ` max - old - space - size ` ( # 78712 )
+137	upgrade react from ` 5c56b873 - 20241107 ` to ` 7ac8e612 - 20241113 ` ( # 72768 )
+138	[ cache components ] move experimental . cachehandlers out of experimental ( # 85157 ) moves this flag out of experimental so that custom ` use cache ` handlers can be configured alongside the cache components release .
+139	specify ppr test dimension via environment variable only ( # 74031 )
+140	feat : dev build indicator for app router ( # 74618 ) add the implementation of https : / / nextjs . org / docs / app / api - reference / config / next - config - js / devindicators to app router . co - authored - by : vercel - release - bot <infra + release @ vercel . com>
+141	upgrade react from ` d415fd3e - 20250919 ` to ` 1eca9a27 - 20250922 ` ( # 84093 )
+142	turbopack : jsanalyzer parse assignexpr ( # 83962 )
+143	upgrade react from ` 7b402084 - 20250107 ` to ` 42687267 - 20250108 ` ( # 74649 )
+144	upgrade react from ` b158439a - 20250115 ` to ` 5b51a2b9 - 20250116 ` ( # 74993 )
+145	upgrade react from ` f83903bf - 20250212 ` to ` cbbe8666 - 20250213 ` ( # 76010 )
+146	upgrade react from ` cd90a4d8 - 20250210 ` to ` f83903bf - 20250212 ` ( # 75967 )
+147	upgrade react from ` 56e84692 - 20251014 ` to ` 93f85932 - 20251016 ` ( # 84963 )
+148	upgrade lightningcss ( # 79096 )
+149	[ devoverlay ] add color palette script ( # 74465 ) added a color palette based on the renewal design . included only the used scales : - background - syntax ( used in code frame ) - gray - gray alpha - red - green - blue
+150	use relative sources in ` require ( ) ` instead of ` next / dist / ` if possible ( # 80054 ) makes it easier to get types for those previously untyped ` require ` calls .
+151	upgrade react from ` 5dc00d6b - 20250428 ` to ` 408d055a - 20250430 ` ( # 78715 )
+152	turbopack : hash next / font filename to shorten it ( # 79089 )
+153	[ dev - overlay ] move ` error . name ` to label ( # 78198 )
+154	next - upgrade : remove extraneous if no channel is specified ( # 70628 )
+155	add initial modifyconfig hook ( # 79162 )
+156	[ devoverlay ] add next . js version staleness indicator ( # 74601 ) this pr added style for the version staleness indicator . the " turbopack - ness " will be added in the follow up pr . # # # light ! [ cleanshot 2025 - 01 - 08 at 03 03 42 ] ( https : / / github . com / user - attachments / assets / 2e8fc270 - bf5a - 4437 - 88f5 - 4a4f0ea0813c ) # # # dark ! [ cleanshot 2025 - 01 - 08 at 03 03 13 ] ( https : / / github . com / user - attachments / assets / 932ff217 - b50e - 4d02 - 97ca - 4b4cf26d7b7f ) closes ndx - 575
+157	upgrade react from ` 6aa8254b - 20250312 ` to ` 5398b711 - 20250314 ` ( # 77129 )
+158	automatically trigger sync with front on release ( # 66453 )
+159	turbopack : add a cli to nft ( # 82815 )
+160	upgrade react from ` 7c8e5e7a - 20241101 ` to ` 66855b96 - 20241106 ` ( # 72415 )
+161	add missing - y to start - release
+162	upgrade react from ` 63779030 - 20250328 ` to ` 040f8286 - 20250402 ` ( # 77742 )
+163	prevent failing ` types - and - precompiled ` from corrupting terminal output ( # 84799 )
+164	revert " add ` effect : typeof ` and give ` typeof ` s . . . # 68842 ) " ( # 69156 ) reverts https : / / github . com / vercel / next . js / pull / 68842
+165	turbopack : inline minify into code generation and make it a plain function instead of a turbo tasks function ( # 76628 ) # # # what ? this avoids celling the input code for minification and passes is directly to magnification
+166	[ turbopack ] remove the ` _for_input ` options from ` turbo_tasks : : value ` and the ` typedforinput ` trait . ( # 80185 ) # remove ` auto_for_input ` serialization mode from turbo - tasks this pr removes the ` auto_for_input ` and ` custom_for_input ` serialization modes from turbo - tasks , along with the ` typedforinput ` marker trait . these were used for values passed via the ` value<> ` type , but that is dead .
+167	turbopack : derive de / serialize for loader config ( # 79581 )
+168	update labeler config for ci approved ( # 66335 )
+169	upgrade react from ` 540efebc - 20250112 ` to ` cabd8a0e - 20250113 ` ( # 74828 )
+170	upgrade react from ` a4b2d0d5 - 20250203 ` to ` 0a82580b - 20250203 ` ( # 75660 )
+171	only retry if canary fails on required jobs ( # 83851 )
+172	upgrade react from ` a99d8e8d - 20240916 ` to ` 5dcb0097 - 20240918 ` ( # 70225 )
+173	[ devoverlay ] add pagination ( # 74583 ) this pr added style for pagination and has no logic difference . changed the filename from ` errorpagination ` to ` error - overlay - pagination ` for consistency . # # # light ! [ cleanshot 2025 - 01 - 07 at 21 37 29 ] ( https : / / github . com / user - attachments / assets / dd7d63e8 - cb1c - 4c5b - bd10 - 939501e2ef1d ) # # # dark ! [ cleanshot 2025 - 01 - 07 at 21 37 37 ] ( https : / / github . com / user - attachments / assets / 41012b6a - 9d9c - 4463 - 863b - 8a200d4fc057 ) closes ndx - 576
+174	upgrade react from ` 1b1283ad - 20241203 ` to ` de68d2f4 - 20241204 ` ( # 73525 )
+175	upgrade react from ` 2bcbf254 - 20251020 ` to ` 6160773f - 20251023 ` ( # 85277 )
+176	ui polish : dev overlay feedback button ( # 75400 ) right align feedback button when there is no ` footermessage ` . before : ! [ cleanshot 2025 - 01 - 28 at 12 . 05 . 22 @ 2x . png ] ( https : / / graphite - user - uploaded - assets - prod . s3 . amazonaws . com / rkseewxbnzdfs9t0yyxn / f5a53b41 - e97e - 4489 - a426 - 9608c60311f3 . png ) after : ! [ cleanshot 2025 - 01 - 28 at 12 . 04 . 48 @ 2x . png ] ( https : / / graphite - user - uploaded - assets - prod . s3 . amazonaws . com / rkseewxbnzdfs9t0yyxn / e0084c5c - 2d53 - 4202 - 8226 - 7b4302d548c0 . png ) closes https : / / linear . app / vercel / issue / ndx - 688 / fix - footer - feedback - style - regression
+177	upgrade react from ` c260b38d - 20250731 ` to ` be11cb5c - 20250804 ` ( # 82339 )
+178	upgrade react from ` bc6184dd - 20250417 ` to ` 914319ae - 20250423 ` ( # 78468 )
+179	append owner stack for captured string console error ( # 72115 )
+180	upgrade react from ` 9be531cd - 20250729 ` to ` 9784cb37 - 20250730 ` ( # 82207 )
+181	upgrade react from ` 7deda941 - 20250804 ` to ` 3958d5d8 - 20250807 ` ( # 82447 )
+182	upgrade react from ` 39cad7af - 20250411 ` to ` b04254fd - 20250415 ` ( # 78253 )
+183	normalize vendored entrypoints ( # 68502 )
+184	revert " de - dupe build_and_deploy run for prs " ( # 78809 )
+185	revert toolchain update to 2025 - 05 - 12 ( # 79117 ) this partially reverts commit 1866e4403b0956a8325489a67811032cca05fc19 , reverting the toolchain update but keeping the clippy fixes .
+186	docs : tailwind v4 ( # 76801 )
+187	upgrade react from ` 4a36d3ea - 20250416 ` to ` bc6184dd - 20250417 ` ( # 78322 )
+188	mention ` app ` dir in ts setup tip ( # 70337 )
+189	[ turbopack ] remove unneeded type annotation ( # 72390 ) # # # what ? cleanup closes pack - 3393
+190	turbopack : add docs for debugids option ( # 84375 ) # # what ? adds documentation for # 84319 .
+191	upgrade react from ` 32b0cad8 - 20250213 ` to ` 662957cc - 20250221 ` ( # 76333 )
+192	add feature flag for new dev overlay ( # 73977 ) this pr enabled feature flag for the new dev overlay , no behavioral change . - added ` experimental . newdevoverlay ` next . js option , which handles ` __next_experimental_new_dev_overlay ` env value . - added ` __next_experimental_new_dev_overlay ` env to be resolved at build time so that it can be used to render the overlay conditionally
+193	include base commit in changes included by a react sync ( # 65868 ) include the base commit in the generated changelog for react syncs .
+194	upgrade react from ` 1631855f - 20241023 ` to ` 02c0e824 - 20241028 ` ( # 71979 )
+195	turbopack : optimize client manifest generation ( # 75248 ) * * view diff without whitespace changes ! * * this brings the number of ` assetident : : path ` calls down from 5m to 100k ` ` ` # # # canary ( de984c2695b ) : ~ 16 , 60gb 582 . 76s user 109 . 72s system 815 % cpu 1 : 24 . 95 total 583 . 30s user 108 . 45s system 805 % cpu 1 : 25 . 86 total # # # plus mischnic / client - manifest - optimization : still ~ 16 , 60gb 547 . 70s user 105 . 24s system 811 % cpu 1 : 20 . 48 total 550 . 16s user 108 . 14s system 782 % cpu 1 : 24 . 10 total ` ` `
+196	add ' turbopack / ' from commit ' fb033c4917bb1bb98b238f1b4c7a928b66a90887 ' git - subtree - dir : turbopack git - subtree - mainline : 344ddbf093e575e0c92521ecc8c82deb0c072fd3 git - subtree - split : fb033c4917bb1bb98b238f1b4c7a928b66a90887
+197	turbopack : improve missing factory message ( # 84881 ) don ' t mention hmr for prod builds
+198	upgrade react from ` 45804af1 - 20241021 ` to ` 28668d39 - 20241023 ` ( # 71745 )
+199	[ dio ] prospective fallback render ( # 71450 )
+200	upgrade react from ` aad7c664 - 20250829 ` to ` bb6f0c8d - 20250901 ` ( # 83296 )
+201	upgrade react from ` eb3ad065 - 20240822 ` to ` f90a6bcc - 20240827 ` ( # 69415 )
+202	reland " ensure bail out on ssr error in static generation " ( # 68999 ) relands # 68764 - - no additional changes were made , the errors were expected due to faulty user code .
+203	downgrade react from ` 408d055a - 20250430 ` to ` 197d6a04 - 20250424 ` ( # 78834 )
+204	upgrade react from ` 8d7b5e49 - 20250827 ` to ` aad7c664 - 20250829 ` ( # 83232 )
+205	upgrade react from ` 1c9b1387 - 20241204 ` to ` 7283a213 - 20241206 ` ( # 73608 )
+206	capture console . error into error overlay ( # 71424 )
+207	typecheck ` require ( ) ` calls ( # 80056 )
+208	revert " [ test ] workaround test that needs stylus " ( # 81981 )
+209	upgrade react from ` bb6f0c8d - 20250901 ` to ` b1b0955f - 20250901 ` ( # 83307 )
+210	revert " upgrade @ vercel og ( # 82201 ) " ( # 82219 ) this reverts commit ac5fdf56d5650faca8f1c70a0496212bd3d52a7d . reverts https : / / github . com / vercel / next . js / pull / 82201 as our e2e deploy tests are still failing it seems . x - ref : https : / / github . com / vercel / next . js / actions / runs / 16636039524 / job / 47078880946 # step : 33 : 321
+211	upgrade react from ` 9784cb37 - 20250730 ` to ` c260b38d - 20250731 ` ( # 82247 )
+212	[ turbopack ] remove the final uses of ` value< . . > ` and delete the type ( # 80144 ) remove the final uses of ` value< . . > ` and destroy it . # # # why ? the ` value<> ` type is confusing and error prone , lets destroy it ! as discussed over slack , turbo_tasks : : value type always implements is_resolved as true and is_transient as false which is incorrect and can enable smuggling transient vcs into turbo tasks . • https : / / vercel . slack . com / archives / c03ewr7lgen / p1743456121241529 • https : / / vercel . slack . com / archives / c04ngv98tps / p1743455453764879
+213	[ dev - tools ] navigation header replaces close button ( # 80097 ) this pr implements the latest changes from @ pranathip to our info popovers . | before | after | | : - - - - - - : | : - - - - - : | | ! [ cleanshot 2025 - 06 - 03 at 13 54 48 @ 2x ] ( https : / / github . com / user - attachments / assets / 164109f9 - ae41 - 4c8a - 9154 - 9ec1f6b8297d ) | ! [ cleanshot 2025 - 06 - 03 at 13 54 29 @ 2x ] ( https : / / github . com / user - attachments / assets / 267e9e88 - 2f61 - 48f1 - 88a9 - d639e4750734 ) |
+214	update react from 6230622a1a - 20240610 to dfd30974ab - 20240613 ( # 66711 )
+215	[ turbopack ] add fast path for increase active count ( # 75900 ) # # # what ? avoid the extra work when increasing active count
+216	next - upgrade : reduce formatting artifacts when overrides are added ( # 71379 )
+217	explicitly assert on errors instead of the error number ( # 69512 )
+218	delete unused ` groupedstackframes . tsx ` ( # 74028 ) following of https : / / github . com / vercel / next . js / pull / 74017 # discussion_r1888652701 . this pr removed unused file from dev overlay : ` groupedstackframes . tsx ` .
+219	revert " partial fallback prerendering route shells ( # 69282 ) " ( # 79258 )
+220	turbopack : make ` turbo - macros ` crate rust 2024 ( # 79126 ) this was mostly https : / / rust - lang . github . io / rust - clippy / master / index . html # let_and_return
+221	revalidate ` " use cache " ` caches during on - demand revalidation ( # 76100 ) # # # what ? when doing an on demand revalidation ( with ` res . revalidate ` or using ` x - prerender - revalidate ` header ) , ` use cache ` entry will never get revalidated # # # why ? it should behave the same as the fetch cache or ` unstable_cache ` # # # how ? we force revalidation of ` use cache ` entry when doing an on demand revalidation - - - - - - - - - co - authored - by : hendrik liebau <mail @ hendrik - liebau . de>
+222	use consistent error formatting in terminal ( # 71909 )
+223	turbopack : extract ` esregex ` into ` turbo - esregex ` crate ( # 78639 )
+224	[ turbopack ] move static type id variables into getters ( # 81150 ) simplify some of the static macro variables by moving them into their only callsites . delete dead ` ident ` factories just a tiny cleanup motivated by reading through the ` registry ` codegen and realizing that many of the ` ident ` s aren ' t needed .
+225	adjust transforms for cached functions imported from client components ( # 71401 ) this fixes the server reference id generation in client modules so that they can be import and called from client components . in addition , support for cached functions with decoupled export declarations is added .
+226	[ test ] rename " cache component " ci shards to " experimental " ( # 83101 )
+227	revert " chore ( next - upgrade ) : use process exit instead of throwing ( # 7… ( # 71021 ) # # # why ? from @ eps1lon : > . . . the process . exit ( ) since it ' s not safe . it may not exit immediate whereas throwing does and it doesn ' t give stack .
+228	turbopack : run nft unit test ( # 83233 ) port the unit tests from https : / / github . com / vercel / nft / tree / 941be1cb3b9d38fbc99a8a6f07af568a64ed0f12 / test / unit
+229	revert " next mcp router " this reverts commit 48d9966c54ab469fda90a8796bb0a902229c3587 .
+230	refactor : added more strict app segment config validation ( # 70480 )
+231	cleanup ` config . experimental . reactownerstack ` ( # 78021 )
+232	update turbopack to turbopack - 240621 . 2 ( # 67110 ) includes : - vercel / turbo # 8562 - vercel / turbo # 8556 - vercel / turbo # 8563 - vercel / turbo # 8546
+233	enable owner stack in experimental build ( # 71716 )
+234	upgrade react from ` 4123f6b7 - 20250826 ` to ` 33a1095d - 20250827 ` ( # 83119 )
+235	next - upgrade : hide install output by default ( # 70632 )
+236	re - land updated bundler for pre - bundling ( # 79164 ) re - lands https : / / github . com / vercel / next . js / pull / 75294 which uses rspack for our prebundling of runtimes which can be slow when developing locally .
+237	experimental . instrumentationhook is not necessary anymore ( # 71808 )
+238	[ dev - overlay ] align border color ( # 76288 )
+239	upgrade react from ` 3958d5d8 - 20250807 ` to ` f1e70b5e - 20250811 ` ( # 82534 )
+240	next - upgrade : change ` - - turbo ` to ` - - turbopack ` if applicable ( # 71737 )
+241	upgrade react from ` 662957cc - 20250221 ` to ` 25677265 - 20250224 ` ( # 76437 )
+242	turbopack : slightly improve resolve_source_map_sources ( # 84147 ) - slightly fewer clones - slightly fewer turbotask calls
+243	turbopack : support resolving to index . js with fully_specified ( # 71367 ) closes pack - 3303 ` next - mdx - remote ` has no ` main ` field , only the fallback ` next - mdx - remote / index . js ` entry . this failed when using ` fully_specified : true ` because internally - ` resolve_module_request ( " next - md - remote " , " " ) ` calls - ` resolve_into_package ( " . . . / node_modules / next - mdx - remote " ) ` calls - ` resolve_into_folder ( " . . . / node_modules / next - mdx - remote " ) ` . this codepath via ` resolve_into_package ` should work however even when ` fully_specified ` , as ` await import ( " next - mdx - remote " ) ` is also allowed by node . js .
+244	[ devtool ] css imports and share css variables ( # 81236 )
+245	turbopack : fix issue source location for special exports ( # 69132 ) before : ` ` ` ✓ compiled / in 2 . 4s ⚠ . / bench / basic - app / app / page . js : 7 : 25 unable to parse config export in source file1 5 | } 6 | > 7 | export const dynamic = ' force - dynamicc ' | ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ > 8 | | ^ ` ` ` after : ` ` ` ⚠ . / bench / basic - app / app / page . js : 7 : 24 unable to parse config export in source file1 5 | } 6 | > 7 | export const dynamic = ' force - dynamicc ' | ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ 8 | ` ` `
+246	check access token early during release ( # 66133 )
+247	next - upgrade : default to release channel that ' s used ( # 70638 )
+248	upgrade react from ` 96c61b7f - 20250709 ` to ` 97cdd5d3 - 20250710 ` ( # 81551 )
+249	next - upgrade : stop interleaving user - input with long tasks ( # 70636 ) we now ask for all input in a single phase at the beginning followed by a single phase of long running tasks that processes this input . interleaving is unintuitive and may leave the process hanging if people tab out when the install takes more than a few seconds .
+250	reapply " dedupe sync access warning on the server by callsite " ( # 70672 ) ( # 70738 ) relands https : / / github . com / vercel / next . js / pull / 70672 with fixes that were failing in ci . [ x - ref ] ( https : / / github . com / vercel / next . js / actions / runs / 11153352206 / job / 31002090099 )
+251	sync cargo . lock with turbo ( # 66539 )
+252	[ turbopack ] add more options for production chunking ( # 75544 ) add more options for production chunking adjust chunking options
+253	[ dev - overlay ] change button to lowercase except leading letter ( # 76565 )
+254	transform ` " use cache " ` functions exported via export default expression ( # 71512 ) follow - up to # 71497 , adding support for exporting a function from a ` " use cache " ` module using a default export expression , e . g . : ` ` ` ts " use cache " const foo = async ( ) = > { } export default foo ` ` `
+255	[ devoverlay ] hydration error code frame ( # 74822 ) this pr added hydration error code frame . # # # light https : / / github . com / user - attachments / assets / 1e44cf6b - f3f3 - 498d - a771 - 876282d485b3 # # # dark https : / / github . com / user - attachments / assets / 1098cb51 - 54ff - 4bec - a12b - 27d09b469be9 closes ndx - 611
+256	revert " fix flakey overlay feedback test " ( # 84819 )
+257	[ turbopack ] add count method to storage ( # 74830 ) add count method to storage avoid tracking children count
+258	revert " next - swc : update from tokio 1 . 32 . 0 to 1 . 37 . 0 ( # 66087 ) " ( # 66391 ) this reverts commit 99fff19d974ca4adaae1d6f55878e2b8b296435a . see https : / / github . com / vercel / turbo / pull / 8246 for context .
+259	[ devoverlay ] pass footer message from error containers ( # 74493 ) this pr passes the " footer notes " to the actual footer . # # # before ! [ cleanshot 2025 - 01 - 04 at 01 28 02 ] ( https : / / github . com / user - attachments / assets / 1fd32a22 - 3456 - 4c1f - 99e8 - c0e8ddb518ce ) # # # after ! [ cleanshot 2025 - 01 - 04 at 01 28 15 ] ( https : / / github . com / user - attachments / assets / 6ab94490 - dee8 - 4a05 - b2bd - f8b4f2f159d6 )
+260	upgrade to typescript 5 . 7 ( # 73594 )
+261	migrate app route to handler interface ( # 80008 ) continuation of https : / / github . com / vercel / next . js / pull / 78166 this implements the handler interface for app router route handlers . this does still return the cache entry for isr route handlers for the incremental cache to handle but response handling is moved into the handler here . validated against deploy tests https : / / github . com / vercel / vercel / pull / 13413 and https : / / github . com / vercel / next . js / actions / runs / 15359464126 / job / 43224461919
+262	remove handling on finddomnode warning ( # 67054 )
+263	upgrade react from ` 86181134 - 20251001 ` to ` a757cb76 - 20251002 ` ( # 84463 )
+264	disable prefetch aliasing in development ( # 69168 ) we don ' t prefetch in development so the aliasing handling doesn ' t really make sense . we still technically create an " auto " prefetch on navigation , but we ' d never benefit from the alias handling because we wouldn ' t have prefetched any loading states .
+265	upgrade react from ` 1d6c8168 - 20250411 ` to ` 39cad7af - 20250411 ` ( # 78152 )
+266	next - upgrade : select codemods by canary version ( # 70630 )
+267	remove with - fauna example ( # 80440 )
+268	extend support of pages router to react 18 ( # 70219 )
+269	[ turbopack ] return cached promise from ` __turbopack_load_by_url__ ` ( # 81663 )
+270	( e2e ) : improve app - hmr test stability ( # 72345 )
+271	upgrade react from ` d55cc79b - 20250228 ` to ` 443b7ff2 - 20250303 ` ( # 76804 )
+272	upgrade react from ` 7283a213 - 20241206 ` to ` 372ec00c - 20241209 ` ( # 73749 )
+273	next - upgrade : stop adding empty overrides ( # 71380 )
+274	upgrade react from ` 33661467 - 20250407 ` to ` 3fbfb9ba - 20250409 ` ( # 77982 )
+275	downgrade react from ` dfd30974ab - 20240613 ` to ` 6230622a1a - 20240610 `
+276	disable ` colormin ` feature from ` cssnano ` ( # 53393 ) cssnano by default tries to convert ` rgb ` colors to an ` hsla ` color when the ` hsla ` color is shorter for minification purposes . the issue with this is that the colors aren ' t the same and we are losing data when converting to ` hsla ` . input : ` ` ` css html { background - color : rgb ( 143 101 98 / 43 % ) ; } ` ` ` output : ` ` ` css html { background - color : hsla ( 4 , 19 % , 47 % , . 43 ) ; } ` ` ` ( i pretty printed it to make the diff a bit nicer ) . if we would convert this ` hsla ` color back to ` rgb ` syntax , then it results in : ` ` ` css html { background - color : rgb ( 143 100 97 / 43 % ) ; } ` ` ` comparing the original value with the last value , then you can see the difference : ` ` ` diff html { - background - color : rgb ( 143 101 98 / 43 % ) ; + background - color : rgb ( 143 100 97 / 43 % ) ; / * ^ ^ * / } ` ` ` to solve this issue , we can just disable the ` colormin ` minification of ` cssnano ` entirely . < ! - - thanks for opening a pr ! your contribution is much appreciated . to make sure your pr is handled as smoothly as possible we request that you follow the checklist sections below . choose the right checklist for the change ( s ) that you ' re making : # # for contributors # # # improving documentation - run ` pnpm prettier - fix ` to fix formatting issues before opening the pr . - read the docs contribution guide to ensure your contribution follows the docs guidelines : https : / / nextjs . org / docs / community / contribution - guide # # # adding or updating examples - the " examples guidelines " are followed from our contributing doc https : / / github . com / vercel / next . js / blob / canary / contributing / examples / adding - examples . md - make sure the linting passes by running ` pnpm build & & pnpm lint ` . see https : / / github . com / vercel / next . js / blob / canary / contributing / repository / linting . md # # # fixing a bug - related issues linked using ` fixes # number ` - tests added . see : https : / / github . com / vercel / next . js / blob / canary / contributing / core / testing . md # writing - tests - for - nextjs - errors have a helpful link attached , see https : / / github . com / vercel / next . js / blob / canary / contributing . md # # # adding a feature - implements an existing feature request or rfc . make sure the feature request has been accepted for implementation before opening a pr . ( a discussion must be opened , see https : / / github . com / vercel / next . js / discussions / new ? category = ideas ) - related issues / discussions are linked using ` fixes # number ` - e2e tests added ( https : / / github . com / vercel / next . js / blob / canary / contributing / core / testing . md # writing - tests - for - nextjs - documentation added - telemetry added . in case of a feature if it ' s used or not . - errors have a helpful link attached , see https : / / github . com / vercel / next . js / blob / canary / contributing . md # # for maintainers - minimal description ( aim for explaining to someone not on the team to understand the pr ) - when linking to a slack thread , you might want to share details of the conclusion - link both the linear ( fixes next - xxx ) and the github issues - add review comments if necessary to explain to the reviewer the logic behind a change # # # what ? # # # why ? # # # how ? closes next - fixes # - - > - - - - - - - - - co - authored - by : zack tanner <1939140 + ztanner @ users . noreply . github . com>
+277	upgrade react from ` b9a04536 - 20250904 ` to ` 6b70072c - 20250909 ` ( # 83627 )
+278	upgrade react from ` 9eabb373 - 20250124 ` to ` 37906d4d - 20250127 ` ( # 75398 )
+279	turbopack : remove unused code ( # 75897 )
+280	update react from ` 6230622a1a - 20240610 ` to ` 76002254 - 20240724 ` ( # 68149 )
+281	examples : change ` - - turbo ` to ` - - turbopack ` ( # 72125 )
+282	[ dev - overlay ] refactor to group the middleware response utils ( # 76199 )
+283	revert " [ link ] add prefetch = " auto " option " ( # 78820 )
+284	turbopack : avoid storing task data and task cache concurrenctly ( # 78775 ) # # # what ? avoid to concurrently write task data and task cache as it increases memory usage by a lot .
+285	delete code from flying shuttle experiment ( # 73710 )
+286	update react from ` 187dd6a7 - 20240806 ` to ` 49496d49 - 20240814 ` ( # 68898 )
+287	use ` compilation . { emitasset , updateasset } ` api rather than mutating ` assets ` object ( # 75927 )
+288	add new updatetag api and new signature for revalidatetag ( # 83822 )
+289	turbopack : remove unused code ( # 81411 ) # # # what ? remove unused code . also improves performance by avoid unnecessary checks
+290	turbopack : update toolchain to 2025 - 04 - 14 ( reapply # 78062 ) ( # 78167 ) this reverts commit dedf6d3ad96ecefb8681bd53dcf67ea7d7a3a694 . test plan : confirmed that 2025 - 04 - 10 crashed and created rustc - ice dumps whenever rust - analyzer was used , even lightly . confirmed that 2025 - 04 - 14 no longer produces these files after multiple restarts and light changes to some turbopack crates .
+291	upgrade react from ` cabd8a0e - 20250113 ` to ` b3a95caf - 20250113 ` ( # 74868 )
+292	turbopack : exclude resolve - rewrites if possible ( # 80939 ) implement this https : / / github . com / vercel / next . js / blob / 6c4ca1cb12a36d23ddd86fd13e0c87c72d628317 / packages / next / src / build / create - compiler - aliases . ts # l174 - l181 in turbopack as well . this would not be necessary if we consumed next . js internal files in esm and they were marked as ` sideeffects : free ` . . .
+293	simplify static indicator ( # 68961 )
+294	revert " add a - - webpack flag and default - - turbopack to true ( # 84216 ) " ( # 84348 )
+295	upgrade react from ` 5398b711 - 20250314 ` to ` c69a5fc5 - 20250318 ` ( # 77249 )
+296	[ test ] use same pnpm in temporary repo directory ( # 81540 )
+297	upgrade react from ` 3edc000d - 20240926 ` to ` 2d16326d - 20240930 ` ( # 70629 )
+298	turbopack : hierarchical output asset trace ( # 83041 )
+299	stop manually setting stacktrace limit ( # 84968 )
+300	bump react types ( # 82541 ) to enable ` name ` on ` activity ` .
+301	polish indicator loading behaviour for new dev overlay ( # 75149 )
+302	turbopack : add flag to switch between envs ( # 74135 )
+303	introduce ` ' use cache : private ' ` ( # 81816 )
+304	refactor : include new option for including prefixes ( # 75015 ) added option for preserving the prefix on regular expressions for internal use constructing paths .
+305	revert " [ devtool ] merge segment explorer flag into panel ui flag ( # 81085 ) " ( # 81131 ) reverts # 81085 to keep the flags separate so can test separately
+306	turbopack : consistently name runtime chunk ( # 81769 ) name runtime chunks like this : ` bench / basic - app / . next / static / chunks / turbopack - 5356a889447ffe6d . js `
+307	turbopack : only schedule tasks when task becomes active on active counter increase ( # 81414 ) # # # what ? we only need to schedule the task when it was not active before when the active counter is increased
+308	remove tracestate header from fetch cache key ( # 76041 )
+309	implement metadata types support for ` exactoptionalpropertytypes ` ( # 72936 )
+310	turbopack : allow to customize the parallel execution of turbo - persistence ( # 82668 )
+311	[ turbopack ] transient when the self argument is transient ( # 69657 ) # # # what ? for calls with self argument , we also need to flag a task a transient when the self argument is transient .
+312	upgrade react from ` eaee5308 - 20250728 ` to ` 9be531cd - 20250729 ` ( # 82159 )
+313	upgrade react from ` 4db4b21c - 20250626 ` to ` 65c4decb - 20250630 ` ( # 81077 )
+314	[ test ] separate hmr env test ( # 80802 )
+315	upgrade react from ` 1bd1f01f - 20251001 ` to ` 86181134 - 20251001 ` ( # 84427 )
+316	[ next - server ] ensure prepare is done before preloading entry ( # 78454 )
+317	initial implementation of ` export const prefetch ` ( # 82905 ) no behavior changes yet , just the plumbing for a segment - level config to control the prefetch behavior
+318	[ cna ] use linter preference ( # 83194 ) linter preference is not used .
+319	revert " middleware rsc bundling changes " ( # 66422 ) revert # 66052 revert # 66294
+320	[ dev - overlay ] make badge draggable ( # 78716 )
+321	downgrade react and react - dom to 19 . 0 . 0 - rc . 0 ( # 67788 )
+322	[ metadata ] change the array head to single node in flight data ( # 74299 )
+323	docs : add missing codemod docs ( # 84980 ) - middleware - to - proxy - remove - unstable - prefix
+324	dim console logs from prospective prerender in dev ( # 81515 )
+325	upgrade react from ` 6160773f - 20251023 ` to ` b4455a6e - 20251027 ` ( # 85464 )
+326	cleanup ` experimental . reactownerstack ` ( # 76123 )
+327	misc : remove leftover ` clientinstrumentationhook ` type ( # 79701 ) remaining of https : / / github . com / vercel / next . js / pull / 77649 co - authored - by : devjiwonchoi <devjiwonchoi @ gmail . com>
+328	[ dev - overlay ] use stop icon for hide devtools button ( # 76212 ) this pr replaced the " stop icon " with the " hide dev tools " button . | light | dark | | - - - - - - - - | - - - - - - - - | | ! [ cleanshot 2025 - 02 - 19 at 23 02 45 ] ( https : / / github . com / user - attachments / assets / 85e372f9 - 5093 - 45d7 - 84be - a4edf9913d24 ) | ! [ cleanshot 2025 - 02 - 19 at 23 01 09 ] ( https : / / github . com / user - attachments / assets / 3436e867 - fe75 - 40ea - bbb8 - c3546aa74253 ) | closes ndx - 850
+329	revert " use turbo - tasks - malloc on all platforms " ( # 66884 ) reverting while we investigate further reverts vercel / next . js # 66815
+330	upgrade react from ` 22e39ea7 - 20250225 ` to ` d55cc79b - 20250228 ` ( # 76680 )
+331	ignore generated ` @ next / swc - wasm - nodejs ` js code during linting ( # 77971 )
+332	docs : move ` src ` folder page to api reference ( # 78499 )
+333	test cached form action with revalidate ( # 71591 )
+334	only send notification if canary fails on required jobs ( # 83953 )
+335	revert " [ ppr ] rdc for rscs " ( # 80794 )
+336	switch back to upstream lightningcss ( # 80863 ) these are merged and released now : - https : / / github . com / parcel - bundler / lightningcss / pull / 1015 - https : / / github . com / parcel - bundler / lightningcss / pull / 1011
+337	upgrade react from ` d15d7fd7 - 20250929 ` to ` ef889445 - 20250930 ` ( # 84383 )
+338	add support for instrumentation and middleware in global module id optimization ( # 68993 )
+339	upgrade react from ` e4953922 - 20240919 ` to ` 5d19e1c8 - 20240923 ` ( # 70351 )
+340	upgrade react from ` 443b7ff2 - 20250303 ` to ` e03ac20f - 20250305 ` ( # 76842 )
+341	disable ` " use cache " ` deploy tests ( # 79586 )
+342	re - enable fetch logging test - hmr ( # 72640 )
+343	changed module id map key from assetident to rcstr ( # 69076 )
+344	turbopack : improve var names , add some unit tests ( # 81412 ) # # # what ? * improve variables names * add unit tests
+345	[ test ] improve react performance track tests ( # 81359 )
+346	upgrade react from ` fa3feba6 - 20250623 ` to ` cee7939b - 20250625 ` ( # 80904 ) co - authored - by : sebastian sebbie silbermann <sebastian . silbermann @ vercel . com>
+347	[ turbopack ] improve race condition handling of scheduling ( # 75748 )
+348	upgrade react from ` db7dfe05 - 20250319 ` to ` 740a4f7a - 20250325 ` ( # 77507 )
+349	allow url schemes that include ` + ` , ` - ` or ` . ` ( # 77932 ) co - authored - by : sebastian sebbie silbermann <sebastian . silbermann @ vercel . com>
+350	forbid ` super ` in static class methods with server function directives ( # 73061 )
+351	reapply " turbopack : register react refresh exports in module factory ( # 8191 ) " ( # 66298 )
+352	gc auto increase memory limit on inefficient gc ( vercel / turbo # 8687 ) # # # description when gc is inefficient and can ' t collect enough memory , increase the provided memory limit automatically . we rather want to consume more memory than requested then crashing or hanging the compilation due to gc .
+353	upgrade react from ` 02c0e824 - 20241028 ` to ` 603e6108 - 20241029 ` ( # 72089 )
+354	turbopack : make ` turbo - rcstr ` crate rust 2024 ( # 79124 ) this required explicitly wrapping certain calls in ` unsafe ` blocks . the calling functions were already marked ` unsafe ` .
+355	[ metadata ] set bypass ua regex string for ppr routes ( # 75977 )
+356	misc : add rauno to ci approved ( # 75269 )
+357	upgrade react from ` f3a80361 - 20250911 ` to ` 93d7aa69 - 20250912 ` ( # 83729 )
+358	turbopack : don ' t fail on export type in use server ( # 85054 ) allow ` export type . . . from " . . . " ; `
+359	always pass implicit / soft tags into the ` cachehandler . get ` method ( # 79213 ) this allows a cache handler to check the timestamp of a cache entry against the latest expiration of the given soft tags , and discarding the entry if it ' s stale . subsequently , it does not need to consult a potentially separate tags service to retrieve a value in the ` cachehandler . getexpiration ` call for those tags , so that next . js could handle the expiration check . it can return ` infinity ` instead .
+360	[ devtool ] merge segment explorer flag into panel ui flag ( # 81085 )
+361	cna : update template to use eslint flat config ( # 84917 ) stacked on https : / / github . com / vercel / next . js / pull / 84874
+362	emit build error if ` ' use action ' ` directive is used ( # 74954 )
+363	upgrade react from ` b01722d5 - 20241114 ` to ` 1b1283ad - 20241203 ` ( # 73506 )
+364	[ repo ] upgrade ts ` 5 . 8 . 2 ` ( # 76709 )
+365	[ dev badge ] focus states and fluid transitioning between states ( # 75141 ) this pr builds a foundation for better keyboard support with good - looking focus states and sensible focus management . for example , we now transfer focus back to the badge when collapsing the issues from × . https : / / github . com / user - attachments / assets / 75df867b - 0ab2 - 4e7c - 9bb3 - 2edab2dda629 furthermore , there are now animated transitions between states ` idle ` → ` errored ` → ` collapsed errored ` ( notice the animated badge ⚪️ indicator . https : / / github . com / user - attachments / assets / c13b04f2 - 4e39 - 4d8c - 9122 - a8e669a1f9b4
+366	upgrade react from ` e740d4b1 - 20240919 ` to ` e4953922 - 20240919 ` ( # 70290 )
+367	[ dev - overlay ] harden types when handling hydration mismatches ( # 77334 )
+368	revert " docs : change ` nextauth . js ` to ` auth . js ` " ( # 72257 )
+369	[ turbopack ] remove the ` issue_path ` feature and related functionality ( # 83920 ) this has been disabled for a long time and is superceeded by importtraces
+370	strip internals from ` nextrequest ` types ( # 82172 )
+371	[ dev - overlay ] move redbox open / close into dispatcher ( # 79698 )
+372	turbopack : only benchmark file io on ` next dev ` ( # 84474 ) i added this in https : / / github . com / vercel / next . js / pull / 66057 it ' s too noisy and not useful on ci . ci machines are often multi - tenant and / or running many other processes during initialization . we could check for ` process . env . ci ` , but i think just having the check in ` next dev ` is enough . https : / / vercel . slack . com / archives / c01a2m9r8rz / p1759349240395449
+373	upgrade react from ` be11cb5c - 20250804 ` to ` 7deda941 - 20250804 ` ( # 82373 )
+374	revert " support react 18 in pages router " ( # 69911 ) reverts vercel / next . js # 69484
+375	skip invalid deploy tests ( # 67563 ) these newly added tests don ' t pass in a deployed environment .
+376	next - upgrade : stop prompting for react 19 upgrade on pure app router apps ( # 71486 )
+377	next - upgrade : only run react 19 codemods when we upgrade to react 19 ( # 71389 )
+378	allow ` " use cache " ` with ` output : ' export ' ` ( # 75794 )
+379	revert " reapply " turbopack : register react refresh exports in module factory ( # 8191 ) " " ( # 66322 ) reverts vercel / next . js # 66298
+380	skip alert as well for non - canary e2e deploy ( # 81210 ) follow - up to https : / / github . com / vercel / next . js / pull / 81207
+381	updated upgrade to v15 command in docs ( # 71643 )
+382	upgrade react from ` f0edf41e - 20250115 ` to ` b158439a - 20250115 ` ( # 74936 )
+383	upgrade react from ` de1eaa26 - 20250124 ` to ` 9eabb373 - 20250124 ` ( # 75367 )
+384	flight loader : use ` normalmodule . type ` to determine module type ( # 76338 ) this uses ` normalmodule . type ` to determine the source module’s type rather than accessing a value on ` normalmodule . parser ` , which doesn’t exist with rspack .
+385	allow ` beforepageload ` to be async ( # 81650 )
+386	built - in app loader plugin for additional bundler ( # 76017 ) ported from https : / / github . com / vercel / next . js / tree / wbinnssmith / try - ci - test , originally by @ hardfist . adds support for a built - in app loader through the ` builtin_app_loader ` environment variable .
+387	upgrade react from ` 93b58361 - 20250209 ` to ` cd90a4d8 - 20250210 ` ( # 75914 )
+388	[ devtool ] migrate css reset to global . css ( # 81783 ) css reset component can stay in global . css now , no need to keep it as inline css component
+389	upgrade react from ` b3a95caf - 20250113 ` to ` f0edf41e - 20250115 ` ( # 74890 )
+390	turbopack : remove unused ` ecmascriptinputtransform : : commonjs ` ( # 79148 )
+391	upgrade react from ` 37906d4d - 20250127 ` to ` c492f975 - 20250128 ` ( # 75434 )
+392	reapply " turbopack : register react refresh exports in module factory ( vercel / turbo # 8191 ) " ( vercel / turbo # 8214 ) ( vercel / turbo # 8237 ) this reverts commit a32f556caebd2a2f7c42b85a710d64688ea6bd45 .
+393	write errors . json fully formatted ( # 74753 )
+394	turbopack : add manual worker count override ( # 84454 )
+395	revert " remove usesyncexternalstore from useisdevrendering ( # 77651 ) " ( # 77672 )
+396	upgrade react from ` 8759c5c8 - 20250207 ` to ` 93b58361 - 20250209 ` ( # 75868 )
+397	[ test ] speed up prefetching suite ( # 85417 )
+398	[ memory ] add docs for new experimental . webpackmemoryoptimizations option ( # 66096 )
+399	upgrade react from ` 1eca9a27 - 20250922 ` to ` e2332183 - 20250924 ` ( # 84189 )
+400	turbopack : register react refresh exports in module factory ( vercel / turbo # 8191 ) this moves registration of a module’s exports with react refresh to within the module factory itself , rather than the code that executes the factory . this colocates this conditional code with the code that registers individual symbols , and allows us to only run it on modules that truly require refresh ( i . e . user app code , not ` node_modules ` ) .
+401	upgrade react from ` 128abcfa - 20250917 ` to ` 84af9085 - 20250917 ` ( # 83959 )
+402	upgrade react from ` a7a11657 - 20250708 ` to ` 60b5271a - 20250709 ` ( # 81463 ) co - authored - by : sebastian sebbie silbermann <sebastian . silbermann @ vercel . com>
+403	upgrade react from ` 379a083b - 20250813 ` to ` a96a0f39 - 20250815 ` ( # 82691 )
+404	upgrade react from ` 518d06d2 - 20241219 ` to ` 3b009b4c - 20250102 ` ( # 74492 )
+405	[ dev - overlay ] control dark theme in one place ( # 76528 )
+406	escape backslash in delimiters ( # 68889 ) this adds ` % 5c ` to ` escapepathdelimiters ` as it can be a win32 path separator .
+407	upgrade react from ` dffacc7b - 20250717 ` to ` e9638c33 - 20250721 ` ( # 81899 )
+408	[ turbopack ] revert " refactor filesystem writes to an effect based system " ( # 73287 ) revert " turbopack : apply effects in tests ( # 72952 ) " this reverts commit b6b5ab88acdce8fbea623402d3fe97b5d5333d20 . revert " [ turbopack ] fix effects tracing ( # 72928 ) " this reverts commit 0714c457376bda1d0821fe06ed27e89e0dd3712a . revert " [ turbopack ] refactor filesystem writes to an effect based system ( # 72847 ) " this reverts commit be9b2ddbf117a2c659126b331695d39c9fc0707d .
+409	docs : remove ` " use cache " ` on before code snippet ( # 71815 ) removed ` " use cache " ` directive on the before example of the code snippet .
+410	add missing / to deploying link
+411	upgrade react from ` 9b62ee71 - 20250122 ` to ` ae9017ce - 20250122 ` ( # 75233 )
+412	[ dynamicio ] don ' t abort on sync request data access ( # 81162 )
+413	pass only required props to nonindex ( # 77685 )
+414	upgrade react from ` b1b0955f - 20250901 ` to ` 2805f0ed - 20250903 ` ( # 83394 )
+415	skip generating cert each time ( # 67122 )
+416	turbopack : remove unneeded manifests for api routes ( # 81536 )
+417	turbopack : improve unit tests ( # 80940 )
+418	[ metadata ] refactor metadata sitemap loader code ( # 83443 )
+419	add trigger for v0 sync workflow ( # 81645 )
+420	turbopack : add parallel execution helpers ( # 82666 )
+421	upgrade react from ` 3302d1f7 - 20250903 ` to ` b9a04536 - 20250904 ` ( # 83446 )
+422	upgrade react from ` 5d19e1c8 - 20240923 ` to ` 778e1ed2 - 20240926 ` ( # 70486 )
+423	auto import with ` create : : ` prefix ( # 70774 ) # # # why ? consistency
+424	[ breaking ] remove amp codemod ( # 84356 )
+425	turbopack : rename persistent caching ( # 84896 )
+426	turbopack : better errors for strip_prefix_len ( # 84882 ) to help debugging
+427	upgrade react from ` 5dcb0097 - 20240918 ` to ` e740d4b1 - 20240919 ` ( # 70260 )
+428	chore : add self to labelers ( # 80924 )
+429	turbopack : rename some fields in fs ( # 83808 ) apply suggestions from https : / / github . com / vercel / next . js / pull / 83805
+430	[ type ] dynamic skip generating unused types ( # 82755 )
+431	upgrade react from ` 313332d1 - 20250326 ` to ` 63779030 - 20250328 ` ( # 77643 )
+432	turbopack : move block offsets from header to footer ( # 82047 ) # # # what ? move block offset map to the end of the file to enable streaming write of the sst file .
+433	next - upgrade : ensure install packages works on exotic package revisions ( # 70625 )
+434	downgrade react from ` 79d9aed7 - 20250620 ` to ` 197d6a04 - 20250424 ` ( # 80762 )
+435	upgrade react from ` 42687267 - 20250108 ` to ` 74ea0c73 - 20250109 ` ( # 74693 )
+436	upgrade react from ` 0a82580b - 20250203 ` to ` d85cf3e5 - 20250205 ` ( # 75698 )
+437	upgrade react from ` 2f0e7e57 - 20250715 ` to ` d85ec5f5 - 20250716 ` ( # 81708 )
+438	revert " turbopack : remove matchers . reload ( ) call on each request " ( # 83819 ) reverts vercel / next . js # 83720
+439	turbopack : remove unused transforms ( # 83567 ) - ` next_shared / transforms / next_shake_exports . rs ` : dead code - ` turbopack - ecmascript - plugins / src / transform / modularize_imports . rs ` : dead code - ` next_shared / transforms / next_page_config . rs ` : amp , unsupported anyway - ` next_shared / transforms / next_amp_attributes . rs ` : amp , unsupported anyway see also https : / / nextjs . org / blog / next - 15 - 5 # amp - support
+440	introduce standalone ` experimental . usecache ` flag ( # 75240 )

@@ -1,1428 +1,465 @@
-0	<extra_id_0> :
-1	<extra_id_0> image resizer properties
-2	<extra_id_0> mmm a
-3	<extra_id_0> mmm
-4	<extra_id_0> mmm a
-5	<extra_id_0> include <FancyZonesLib / ModuleConstants / ModuleConstants . h> + <extra_id_1> include <FancyZonesLib / ModuleConstants / ModuleConstants
-6	<extra_id_0> mmm a
-7	<extra_id_0> mmm a mmm a mmm a mmm a mmm a
-8	<extra_id_0> mmm a
-9	<extra_id_0> if ( ! ( Get - Command <extra_id_1> git " - ErrorAction SilentlyContinue ) ) { <extra_id_2> } else { + if ( ! <extra_id_3>
-10	<extra_id_0> / <extra_id_1> / schemas . microsoft . com <extra_id_2> / schemas . microsoft . com <extra_id_3> / schemas . microsoft . com <extra_id_4> / schemas .
-11	<extra_id_0> using Microsoft . VisualStudio . VisualStudio . VisualStudio .
-12	<extra_id_0> mmm a mmm a
-13	<extra_id_0> mmm a
-14	<extra_id_0> mmm a
-15	<extra_id_0> a
-16	<extra_id_0> mmm a
-17	<extra_id_0> mmm a
-18	<extra_id_0> / projects / status / bfktntb
-19	<extra_id_0> fancyzones
-20	<extra_id_0> to
-21	<extra_id_0> - using System . Collections . Generic ;
-22	<extra_id_0> mmm
-23	<extra_id_0> mmm
-24	<extra_id_0> mmm a
-25	<extra_id_0> mmm a
-26	<extra_id_0> :
-27	<extra_id_0> + using System ; + <extra_id_1> ; + using System . <extra_id_2> ; + using System . <extra_id_3> ; + using System . <extra_id_4> ; + using System .
-28	<extra_id_0> the
-29	<extra_id_0> settings - ui
-30	<extra_id_0> action_runner
-31	<extra_id_0> + using System . Collections . Generic ; <extra_id_1> ; + using System . Text ; <extra_id_2> using System . Text <extra_id_3> ; + using System . Text <extra_id_4>
-32	<extra_id_0> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SettingsHelper.html
-33	<extra_id_0> mmm a
-34	<extra_id_0> mmm
-35	<extra_id_0> mmm a
-36	<extra_id_0> the
-37	<extra_id_0> mmm a
-38	<extra_id_0> mmm a
-39	<extra_id_0> using System . Collections . Generic ; + using System.Linq; + using System.Text; + using System.Text;
-40	<extra_id_0> - ' modules\ImageResizerExt exe ' - ' modules\ImageResizerExt dll ' - ' modules\KeyboardManagerExt exe
-41	<extra_id_0> to use JetBrains
-42	<extra_id_0> mmm
-43	<extra_id_0> + using Microsoft . Xaml . Interactivity ; <extra_id_1> ; + using Microsoft . Xaml . Interactivity <extra_id_2> ; + using System . Linq
-44	<extra_id_0> mmm
-45	<extra_id_0> mmm
-46	<extra_id_0> mmm
-47	<extra_id_0> mmm a
-48	<extra_id_0> mmm a
-49	<extra_id_0> issue bugs : https : // https://github.com/wox-launcher/Wox - launcher / Wox / wiki / bugs
-50	<extra_id_0> / src / action_runner
-51	<extra_id_0> a
-52	<extra_id_0> mmm a
-53	<extra_id_0> a
-54	<extra_id_0> mmm a mmm a
-55	<extra_id_0> mmm a mmm a mmm a mmm a mmm a
-56	<extra_id_0> . microsoft . com / developer / <extra_id_1> . microsoft . com / <extra_id_2> . microsoft . com / <extra_id_3> . microsoft . com /
-57	<extra_id_0> to use the ReleaseReleaseBuild as the ReleaseReleaseBuild as the ReleaseReleaseBuild
-58	<extra_id_0> mmm
-59	<extra_id_0> mmm a
-60	<extra_id_0> System . Collections . Generic ; using System.IO; using System.Collections.Generic; using System.IO; using System.IO; using
-61	<extra_id_0> mmm a
-62	<extra_id_0> mmm
-63	<extra_id_0> + using System . Runtime . InteropServices ; <extra_id_1> using System . Windows ; <extra_id_2> using System . Windows <extra_id_3> ; <extra_id_4> using System . Windows .
-64	<extra_id_0> " ) ] + [ assembly : AssemblyDescription <extra_id_1> " ) ] + [ assembly : AssemblyTitle <extra_id_2> " ) ] + [ assembly <extra_id_3>
-65	<extra_id_0> https://github.com/Microsoft/PowerOCR/blob/master/src/modules/PowerOCR/Helpers/WindowUtilities.
-66	<extra_id_0> a
-67	<extra_id_0> $env = APPVEYOR_APPVEYOR_APPVEYOR_APPVEYOR_APPVEYOR_ENV
-68	<extra_id_0> mmm
-69	<extra_id_0> mmm a mmm a mmm a mmm a mmm a
-70	<extra_id_0> a
-71	<extra_id_0> mmm
-72	<extra_id_0> mmm
-73	<extra_id_0> class EspressoProperties : EspressoProperties { <extra_id_1> EspressoProperties : EspressoProperties { <extra_id_2> : EspressoProperties {
-74	<extra_id_0> / Plugins / Wox . Plugin . BrowserBookmark / Bookmark . cs <extra_id_1> . Plugin . BrowserBookmark / Bookmark . cs + <extra_id_2> .
-75	<extra_id_0> mmm a mmm a mmm a mmm a mmm a mmm a
-76	<extra_id_0> a
-77	<extra_id_0> FancyZone_HitTest . sln + ﻿ + FancyZone_HitTest . sln + ﻿
-78	<extra_id_0> mmm a mmm a mmm a mmm a mmm a mmm a
-79	<extra_id_0> mmm
-80	<extra_id_0> mmm
-81	<extra_id_0> : Class : Wox . Plugin .
-82	<extra_id_0> :
-83	<extra_id_0> mmm a
-84	<extra_id_0> mmm
-85	<extra_id_0> ] = process . title + <extra_id_1> ] = process . pid + <extra_id_2> res [ "Process" ] = process <extra_id_3> res [ "Process" ]
-86	<extra_id_0> mmm
-87	<extra_id_0> configuration - dsc - schema <extra_id_1> configuration - dsc - schema <extra_id_2> configuration - dsc - schema <extra_id_3> configuration - dsc - schema <extra_id_4> schema
-88	<extra_id_0> :
-89	<extra_id_0> a
-90	<extra_id_0> for
-91	<extra_id_0> mmm a
-92	<extra_id_0> mmm a mmm a mmm a mmm
-93	<extra_id_0> mmm a mmm a
-94	<extra_id_0> to use this module.  public class BasePTModuleSettings {
-95	<extra_id_0> settings - ui / settings - ui / colorformatmodel
-96	<extra_id_0> plugin metadata
-97	<extra_id_0> on_thread_executor . on_thread_executor . on_thread_executor . on_thread_executor . on_thread_executor
-98	<extra_id_0> mmm a
-99	<extra_id_0> mmm a
-100	<extra_id_0> mmm
-101	<extra_id_0> mmm a
-102	<extra_id_0> mmm
-103	<extra_id_0> fancyzones
-104	<extra_id_0> mmm a
-105	<extra_id_0> :
-106	<extra_id_0> gitattributes <extra_id_1> # <extra_id_2> # # # # # # <extra_id_3> # # # # # # <extra_id_4> # # # # # # <extra_id_5> # # #
-107	<extra_id_0> mmm a mmm a mmm a mmm a
-108	<extra_id_0> / ControlPanelList
-109	<extra_id_0> mmm a
-110	<extra_id_0> mmm a
-111	<extra_id_0> + using System ; + using System . Threading ; <extra_id_1> ; + using System . Threading <extra_id_2> ; + using System . Threading <extra_id_3> ;
-112	<extra_id_0> / <extra_id_1> / winfx / 2006 / xaml / <extra_id_2> + xmlns : xaml = " http : <extra_id_3> / schemas . microsoft . com
-113	<extra_id_0> a
-114	<extra_id_0> + using System . Windows . Media <extra_id_1> + using System . Windows . <extra_id_2> + using System . Windows . <extra_id_3> + using System . Windows . <extra_id_4>
-115	<extra_id_0> path : APPVEYOR_BUILD_PATH . APPVEYOR_BUILD_PATH . APPVEYOR_BUILD_PATH .
-116	<extra_id_0> mmm a mmm a mmm a mmm a
-117	<extra_id_0> class ContextMenuLoader : System . Collections . Generic <extra_id_1> : System . Collections . Generic <extra_id_2> : System . Collections . Generic <extra_id_3> . Collections . Generic
-118	<extra_id_0> mmm a
-119	<extra_id_0> mmm a mmm a mmm a mmm a
-120	<extra_id_0> + using System . <extra_id_1> + using System . <extra_id_2> ; + using System . <extra_id_3> ; + using System . <extra_id_4> ; + using System . <extra_id_5> ;
-121	<extra_id_0> mmm a
-122	<extra_id_0> mmm a
-123	<extra_id_0> https : // github . com / Squirrel/Squirrel . Windows / blob / master / src/modules/launcher
-124	<extra_id_0> to be used to be
-125	<extra_id_0> a
-126	<extra_id_0> installWiX
-127	<extra_id_0> mmm
-128	<extra_id_0> - ﻿<UserControl x : Class = <extra_id_1> FileSystemSettings " + ﻿<UserControl x : Class = "
-129	<extra_id_0> mmm a
-130	<extra_id_0> the resource dictionary in the resource dictionary
-131	<extra_id_0> / src / settings / PowerToysModulesEnum . cs
-132	<extra_id_0> mmm
-133	<extra_id_0> mmm
-134	<extra_id_0> mmm
-135	<extra_id_0> to use job-build - ui - tests
-136	<extra_id_0> mmm
-137	<extra_id_0> mmm a
-138	<extra_id_0> - using Wox . InfrastructureLoader ; - using Wox . InfrastructureLoader ;
-139	<extra_id_0> a
-140	<extra_id_0> mmm
-141	<extra_id_0> mmm a
-142	<extra_id_0> - using System . Collections . Generic ; - using System.Linq ; - using System.Text; - using System.Linq
-143	<extra_id_0> mmm a
-144	<extra_id_0> mmm a
-145	<extra_id_0> mmm
-146	<extra_id_0> a
-147	<extra_id_0> mmm a
-148	<extra_id_0> mmm
-149	<extra_id_0> mmm a
-150	<extra_id_0> mmm a mmm a mmm a mmm a mmm a
-151	<extra_id_0> mmm a
-152	<extra_id_0> mmm a mmm a mmm a mmm a mmm a
-153	<extra_id_0> / plugins / Wox <extra_id_1> : " 2140FC9819AD43A3A616E2735816E27358
-154	<extra_id_0> https://github.com/spellcheck/spellcheck/blob/master/src/spellcheck/expect.js#L
-155	<extra_id_0> / ExceptionFormatter / ExceptionFormatter / ExceptionFormatter .
-156	<extra_id_0> a
-157	<extra_id_0> mmm a
-158	<extra_id_0> for each power toy module in the machine .  public class PowerToyHooks {
-159	<extra_id_0> mmm
-160	<extra_id_0> fancyzones
-161	<extra_id_0> :
-162	<extra_id_0> /  public class EnvironmentHelper { }
-163	<extra_id_0> the
-164	<extra_id_0> mmm a
-165	<extra_id_0> mmm a
-166	<extra_id_0> mmm
-167	<extra_id_0> WoxJsonStorage
-168	<extra_id_0> mmm a
-169	<extra_id_0> System . Collections . Generic ; + using System.Linq ; + using System.Text; + using System.Linq; +
-170	<extra_id_0> mmm
-171	<extra_id_0> / v2 / nightly - prewarm <extra_id_1> / v2 / nightly - prewarm <extra_id_2> / v2 / nightly
-172	<extra_id_0> / wox . py / wox . py <extra_id_1> / wox . py / wox . py <extra_id_2> / wox . py / w
-173	<extra_id_0> / src / modules / fancyzones / editor / FancyZonesEditor /
-174	<extra_id_0> > ﻿<xml version = 1 . 0 encoding = <extra_id_1> > ﻿<xml version = 1 . 0 encoding <extra_id_2>
-175	<extra_id_0> file previewer
-176	<extra_id_0> + using System ; + using System . Threading ; <extra_id_1> ; + using System . Threading <extra_id_2> ; + using System . Threading <extra_id_3> ;
-177	<extra_id_0> :
-178	<extra_id_0> / Wox . Infrastructure / Image / ImageCache . cs <extra_id_1> / Wox . Infrastructure / Image / ImageCache . cs <extra_id_2> .
-179	<extra_id_0> mmm a
-180	<extra_id_0> a
-181	<extra_id_0> a
-182	<extra_id_0> mmm a
-183	<extra_id_0> actions / spell - check / expect <extra_id_1> unitsnet . <extra_id_2> ) . <extra_id_3> unitsnet . <extra_id_4> . <extra_id_5> unitsnet . <extra_id_6> unitsnet . <extra_id_7>
-184	<extra_id_0> - Write - Host " Current config is $config" <extra_id_1> config is $config" <extra_id_2> config is $config" <extra_id_3> config is $config"
-185	<extra_id_0> to be used to be used to be
-186	<extra_id_0> espresso
-187	<extra_id_0> mmm a
-188	<extra_id_0> using Wox . Text <extra_id_1> using Wox . Text <extra_id_2> using Wox . Text <extra_id_3> using Wox . Text <extra_id_4> using Wox . Text
-189	<extra_id_0> / gabime / spdlog . git + <extra_id_1> / gabime / spdlog . git + <extra_id_2> deps / cxxopts
-190	<extra_id_0> mmm a
-191	<extra_id_0> appPathsProgramSource
-192	<extra_id_0> mmm
-193	<extra_id_0> version = 1 encoding = 1 encoding = 1 encoding = 1 encoding
-194	<extra_id_0> + using System ; + using System ; <extra_id_1> ; + using Wox . <extra_id_2> ; + using Wox . <extra_id_3> ; + using Wox .
-195	<extra_id_0> plugin
-196	<extra_id_0> mmm
-197	<extra_id_0> bug report
-198	<extra_id_0> mmm
-199	<extra_id_0> mmm a
-200	<extra_id_0> mmm
-201	<extra_id_0> version
-202	<extra_id_0> : APPVEYOR_BUILD_FOLDER = Convert - Path . <extra_id_1> : APPVEYOR_BUILD_FOLDER = Convert - Path .
-203	<extra_id_0> mmm a
-204	<extra_id_0> to be used to be used for
-205	<extra_id_0> mmm
-206	<extra_id_0> mmm
-207	<extra_id_0> fancyzones
-208	<extra_id_0> mmm
-209	<extra_id_0> xmlns : xaml = " http : // <extra_id_1> xmlns : xaml = " http : // <extra_id_2> / schemas . microsoft . com / <extra_id_3>
-210	<extra_id_0> mmm b / <extra_id_1> spell - check / expect . txt + <extra_id_2> . txt + # pragma once <extra_id_3> . txt + # pragma once <extra_id_4>
-211	<extra_id_0> mmm a
-212	<extra_id_0> mmm a
-213	<extra_id_0> mmm a
-214	<extra_id_0> target_state
-215	<extra_id_0> mmm a
-216	<extra_id_0> include <common\utils\string_utils.h> + + # include <common\utils\string_utils.h> + +
-217	<extra_id_0> using Microsoft . PowerLauncher . MainWindow .
-218	<extra_id_0> mmm
-219	<extra_id_0> to
-220	<extra_id_0> mmm a
-221	<extra_id_0> / status / bfktntbivg32e103 / branch /
-222	<extra_id_0> mmm a
-223	<extra_id_0> - using System . Collections . Generic ; - using System . Diagnostics ; - using System.Linq ; - using System.Linq
-224	<extra_id_0> mmm
-225	<extra_id_0> https : // github . com / <extra_id_1> > + <Wix xmlns = " http://schemas.microsoft.com/wix / 2006 /
-226	<extra_id_0> - ﻿<winuiex : WindowEx x : WindowEx >
-227	<extra_id_0> mmm
-228	<extra_id_0> mmm a
-229	<extra_id_0> / installer / pl / bootstrapper
-230	<extra_id_0> mmm a
-231	<extra_id_0> fancyzones
-232	<extra_id_0> mmm
-233	<extra_id_0> xmlns : xaml = " http : // <extra_id_1> / 2006 / xaml / presentation <extra_id_2> " xmlns : xaml = " http : // <extra_id_3>
-234	<extra_id_0> - using System . Drawing . Printing ; - using System.Runtime.InteropServices ; - using System.Runtime.InteropServices
-235	<extra_id_0> mmm a
-236	<extra_id_0> mmm
-237	<extra_id_0> Wox
-238	<extra_id_0> class WinAlfredPluginSystem : WinAlfredPluginSystem { + <extra_id_1> WinAlfredPluginSystem : WinAlfredPlugin
-239	<extra_id_0> [ Serializable ] + <extra_id_1> [ Serializable ] + [ Serializable <extra_id_2> [ Serializable ] + [ Serializable <extra_id_3> [ Serializable ] + [ Serializable <extra_id_4> [ Serializable ]
-240	<extra_id_0> mmm a
-241	<extra_id_0> windowwalker
-242	<extra_id_0> mmm
-243	<extra_id_0> StringMatcher stringMatcher ; private static StringMatcher stringMatcher ; private static StringMatcher stringMatcher ; private static StringMatcher stringMatcher ; private static String
-244	<extra_id_0> <Project ToolsVersion = " 12 . 0 <extra_id_1> > + <Project ToolsVersion = " 12 . 0 <extra_id_2> > + <Project ToolsVersion <extra_id_3>
-245	<extra_id_0> + using Newtonsoft . Json <extra_id_1> + using Newtonsoft . Json <extra_id_2> + using Newtonsoft . Json <extra_id_3> + using Newtonsoft
-246	<extra_id_0> action_runner
-247	<extra_id_0> / ControlPanelList
-248	<extra_id_0> - namespace Wox - { - namespace Wox - { - namespace DispatcherExtensions }
-249	<extra_id_0> mmm
-250	<extra_id_0> . microsoft . com / appx / makeappx / 2017 <extra_id_1> . microsoft . com / appx / makeappx / 2017
-251	<extra_id_0> mmm a
-252	<extra_id_0> define EVERYTHINGUSERAPI __declspec ( dllexport ) + <extra_id_1> + # include EVERYTHINGUSERAPI __declspec
-253	<extra_id_0> - <Import Project = " WindowsDesktop" > - <Import Project = "WindowsDesktop" > - <Import Project = "WindowsDesktop"
-254	<extra_id_0> mmm a
-255	<extra_id_0> mmm a
-256	<extra_id_0> mmm a
-257	<extra_id_0> mmm a
-258	<extra_id_0> / Stopwatch / Stopwatch . cs + <extra_id_1> / Stopwatch / Stopwatch . cs + <extra_id_2> / Stopwatch / Stopwatch . cs <extra_id_3>
-259	<extra_id_0> mmm
-260	<extra_id_0> System . Collections . Generic ; + using System.Linq; + using System.Text; + using System.Linq; +
-261	<extra_id_0> + using NLog ; + using NLog ; <extra_id_1> ; <extra_id_2> ; + using System . <extra_id_3> ; + using System . <extra_id_4> ; + using System
-262	<extra_id_0> / <extra_id_1> : / schemas . microsoft . com <extra_id_2> / schemas . microsoft . com <extra_id_3> / schemas . microsoft . com <extra_id_4> + xmlns
-263	<extra_id_0> mmm
-264	<extra_id_0> mmm
-265	<extra_id_0> include <tchar > - # include <future> - #include <thread> - #include <future> - #include <future>
-266	<extra_id_0> mmm a mmm a mmm a mmm a mmm a mmm a mmm a mmm a mmm a
-267	<extra_id_0> wixproj
-268	<extra_id_0> mmm
-269	<extra_id_0> mmm a
-270	<extra_id_0> a
-271	<extra_id_0> espresso
-272	<extra_id_0> plugin
-273	<extra_id_0> mmm a
-274	<extra_id_0> mmm a
-275	<extra_id_0> mmm
-276	<extra_id_0> . Plugin . FindFileContextMenuStorage . cs + <extra_id_1> . Plugin . FindFileContextMenuStorage . <extra_id_2> . Plugin . FindFileContextMenuStorage . <extra_id_3>
-277	<extra_id_0> mmm a
-278	<extra_id_0> PluginManagement
-279	<extra_id_0> api / projects / status / bfktntbivg32e103 )
-280	<extra_id_0> + using Wox . Infrastructure . ContextMenuLoader ; <extra_id_1> + using Wox . Infrastructure . ContextMenuLoader <extra_id_2> . ContextMenuLoader
-281	<extra_id_0> from webSearch . webSearch to webSearch . webSearch . webSearch . webSearch . webSearch . webSearch . webSearch . web
-282	<extra_id_0> . microsoft . com / developer / <extra_id_1> . microsoft . com / <extra_id_2> . microsoft . com / <extra_id_3> . microsoft . com /
-283	<extra_id_0> previewpane / previewpane
-284	<extra_id_0> :
-285	<extra_id_0> a
-286	<extra_id_0> a
-287	<extra_id_0> mmm a
-288	<extra_id_0> https://github.com/wox/wox-plugin/blob/master/Wox.Plugin.SystemPlugins/UrlPlugin.
-289	<extra_id_0> mmm a / bug_report_template / bug_report_template / bug_report_template
-290	<extra_id_0> mmm a
-291	<extra_id_0> Wox . Infrastructure . Logger ; <extra_id_1> Wox . Infrastructure . Logger <extra_id_2> . Infrastructure . Logger <extra_id_3> . Infrastructure . Logger <extra_id_4>
-292	<extra_id_0> mmm
-293	<extra_id_0> mmm a
-294	<extra_id_0> settings - ui .
-295	<extra_id_0> mmm a
-296	<extra_id_0> b/Plugins / Wox . Plugin . BrowserBookmark / Commands / Bookmarks <extra_id_1> System . <extra_id_2> System . <extra_id_3> ; + using System . <extra_id_4>
-297	<extra_id_0> mmm
-298	<extra_id_0> . PowerToys . Settings . UI . Activation <extra_id_1> . PowerToys . Settings . UI . Activation <extra_id_2> . PowerToys . Settings .
-299	<extra_id_0> mmm
-300	<extra_id_0> to agree to a + Contributor License Agreement ( CLA ) <extra_id_3> to agree to a + Contributor License <extra_id_4> to agree to
-301	<extra_id_0> mmm a
-302	<extra_id_0> a
-303	<extra_id_0> mmm a
-304	<extra_id_0> mmm
-305	<extra_id_0> mmm
-306	<extra_id_0> mmm a
-307	<extra_id_0> / ControlPanelList
-308	<extra_id_0> mmm a
-309	<extra_id_0> mmm a
-310	<extra_id_0> { IndexPrograms ( ) ; IndexPrograms ( ) ; <extra_id_1> ; IndexPrograms ( ) ; IndexPrograms ( ) ; } <extra_id_2>
-311	<extra_id_0> actions / spell - check / expect <extra_id_1> unitsnet . <extra_id_2> ) . <extra_id_3> unitsnet . <extra_id_4> . <extra_id_5> unitsnet . <extra_id_6> unitsnet . <extra_id_7>
-312	<extra_id_0> mmm a
-313	<extra_id_0> mmm a
-314	<extra_id_0> a
-315	<extra_id_0> mmm
-316	<extra_id_0> ' - ' modules\launcher\Woxer Launcher dll ' - ' modules\launcher\Woxer
-317	<extra_id_0> mmm
-318	<extra_id_0> mmm a mmm a mmm a mmm a
-319	<extra_id_0> mmm a
-320	<extra_id_0> :
-321	<extra_id_0> from http : / www . getwox . com / theme / builder
-322	<extra_id_0> ( self , key ) : <extra_id_1> ( self , key ) : <extra_id_2> ( self , key ) : <extra_id_3> ( self , key ) : <extra_id_4> (
-323	<extra_id_0> mmm
-324	<extra_id_0> . Plugin . SystemPlugins / ControlPanel / ControlPanel . cs <extra_id_1> . Plugin . SystemPlugins / ControlPanel / ControlPanel . cs <extra_id_2> .
-325	<extra_id_0> > ﻿< / UserControl > ﻿<UserControl > ﻿<UserControl x : Class =
-326	<extra_id_0> mmm a
-327	<extra_id_0> mmm a
-328	<extra_id_0> mmm a
-329	<extra_id_0> mmm
-330	<extra_id_0> mmm a mmm a
-331	<extra_id_0> mmm a
-332	<extra_id_0> for
-333	<extra_id_0> mmm a
-334	<extra_id_0> fancyzones
-335	<extra_id_0> https://github.com/Microsoft/Microsoft/blob/master/src/modules/fancyzones/editor/FancyZonesEditor/
-336	<extra_id_0> using AutoHotkey . Interop ; ﻿using AutoHotkey . Interop ; ﻿using AutoHotkey .
-337	<extra_id_0> mmm a
-338	<extra_id_0> mmm a
-339	<extra_id_0> + using System . Windows . Forms ; <extra_id_1> using System . Windows . Forms <extra_id_2> using System . Windows . Forms <extra_id_3> using System .
-340	<extra_id_0> mmm a
-341	<extra_id_0> to update the update generator for the update generator for the update generator
-342	<extra_id_0> mmm
-343	<extra_id_0> mmm
-344	<extra_id_0> mmm a
-345	<extra_id_0> a
-346	<extra_id_0> mmm a
-347	<extra_id_0> to use System . Collections . Generic <extra_id_1> using System . ComponentModel ; using System.ComponentModel; using System.ComponentModel; using System.
-348	<extra_id_0> / ControlPanelList
-349	<extra_id_0> a
-350	<extra_id_0> from the browserbookmarks to the browserbookmarks
-351	<extra_id_0> / installer / PowerToysBootstrapper
-352	<extra_id_0> license .  public class PasteFormatTemplateSelector : PasteFormatTemplateSelector { <extra_id_1> license .  public class PasteFormatTemplate
-353	<extra_id_0> <ResourceDictionaryDictionary > + <ResourceDictionaryDictionary > + <ResourceDictionaryDictionary > + <ResourceDictionaryDictionary > + <ResourceDictionaryDictionary >
-354	<extra_id_0> mmm a
-355	<extra_id_0> - using System . Threading . Tasks ; <extra_id_1> - using System . Threading . Tasks ; <extra_id_2> using System . Threading . Tasks ; <extra_id_3>
-356	<extra_id_0> mmm a
-357	<extra_id_0> mmm a
-358	<extra_id_0> mmm
-359	<extra_id_0> - using System . Runtime . InteropServices ; - using System.Windows.Forms ;
-360	<extra_id_0> using System . <extra_id_1> using System . <extra_id_2> using System . <extra_id_3> using System . <extra_id_4> using System . <extra_id_5> using System . <extra_id_6> using System . <extra_id_7> using
-361	<extra_id_0> mmm a
-362	<extra_id_0> a
-363	<extra_id_0> mmm a
-364	<extra_id_0> mmm a
-365	<extra_id_0> mmm a
-366	<extra_id_0> for
-367	<extra_id_0> - using System . Collections . Generic ; - using System.Linq; - using System.Linq;
-368	<extra_id_0> mmm a mmm a
-369	<extra_id_0> / src / modules / launcher /
-370	<extra_id_0> h> + # include <extra_id_1> h> + # include <extra_id_2> h> + # include <extra_id_3> h> + #include <extra_id_4> h> + #include
-371	<extra_id_0> colorPicker
-372	<extra_id_0> mmm a
-373	<extra_id_0> mmm a
-374	<extra_id_0> # include <winrt / base . h> + <extra_id_1> # include <winrt / base . h> + <extra_id_2> # include <winrt
-375	<extra_id_0> mmm a
-376	<extra_id_0> mmm
-377	<extra_id_0> a
-378	<extra_id_0> - ﻿using System ; - ﻿using System . IO ;
-379	<extra_id_0> mmm a
-380	<extra_id_0> mmm
-381	<extra_id_0> mmm a
-382	<extra_id_0> mmm a mmm a mmm a mmm a mmm a
-383	<extra_id_0> mmm a
-384	<extra_id_0> . wox - launcher / Wox . svg <extra_id_1> . wox . svg ) <extra_id_2> . wox . svg ) <extra_id_3> . wox .
-385	<extra_id_0> mmm a
-386	<extra_id_0> / <extra_id_1> / schemas . microsoft . com <extra_id_2> / schemas . microsoft . com <extra_id_3> / schemas . microsoft . com / <extra_id_4> xaml
-387	<extra_id_0> mmm a
-388	<extra_id_0> in / [ Oo ] in / [ Bb ] in/ [ Oo ] in/ [ Bb ] in/ [ Oo
-389	<extra_id_0> mmm a
-390	<extra_id_0> mmm
-391	<extra_id_0> mmm a mmm a mmm a mmm a
-392	<extra_id_0> https://github.com/MicrosoftCorporation/FindMyMouse/blob/master/src/modules/MouseUtils/FindMyMouse.
-393	<extra_id_0> gitignore = / . gitignore gitignore = / . gitignore gitignore = / . gitignore + <extra_id_3> / CompareSize> + <extra_id_4>
-394	<extra_id_0> to create the fadeout <extra_id_1> to create the fadeout <extra_id_2> to create the fadeout <extra_id_3> to create the fadeout <extra_id_4> to create the fadeout
-395	<extra_id_0> a
-396	<extra_id_0> mmm
-397	<extra_id_0> a
-398	<extra_id_0> mmm a
-399	<extra_id_0> mmm
-400	<extra_id_0> mmm
-401	<extra_id_0> mmm a
-402	<extra_id_0> to be used to be used
-403	<extra_id_0> mmm
-404	<extra_id_0> :
-405	<extra_id_0> xaml : XamlApplication + xmlns : xaml = <extra_id_1> xmlns : xaml = " xaml : XamlApplication <extra_id_2> xmlns : x
-406	<extra_id_0> a
-407	<extra_id_0> mmm a
-408	<extra_id_0> mmm a
-409	<extra_id_0> mmm a
-410	<extra_id_0> + xmlns : xaml = <extra_id_1> schemas . microsoft . com / winfx <extra_id_2> + xmlns : xaml <extra_id_3> + xmlns : xaml <extra_id_4>
-411	<extra_id_0> mmm a
-412	<extra_id_0> bug report
-413	<extra_id_0> fancyzones
-414	<extra_id_0> build - powertoys - ci . yml  public function enableCaching ( ) {
-415	<extra_id_0> mmm
-416	<extra_id_0> mmm a mmm a mmm a mmm a mmm a mmm a
-417	<extra_id_0> mmm
-418	<extra_id_0> + using System . Threading ; + <extra_id_1> System . Threading . <extra_id_2> System . Threading . <extra_id_3> System . Threading <extra_id_4> . Threading
-419	<extra_id_0> import Wox . Plugin . Indexer . SearchHelper ; <extra_id_1> + namespace Wox . Plugin . Indexer . SearchHelper + <extra_id_2> SearchHelper
-420	<extra_id_0> / installer / PowerToysBootstrapper
-421	<extra_id_0> mmm
-422	<extra_id_0> mmm a
-423	<extra_id_0> / src / modules /
-424	<extra_id_0> mmm a
-425	<extra_id_0> mmm
-426	<extra_id_0> mmm a
-427	<extra_id_0> using System . Collections . Generic ; + using System.Linq; + using System.Text; + using System.Linq;
-428	<extra_id_0> mmm a mmm a mmm a mmm a mmm a
-429	<extra_id_0> / schemas . xml <extra_id_1> / schemas . xml / resourcedictionary . xml?version = 1 . 0 <extra_id_2> . xml?version = 1 . 0
-430	<extra_id_0> a
-431	<extra_id_0> / images / Logo <extra_id_1> toys <extra_id_2> toys toys toys toys toys <extra_id_3> toys toys toys toys <extra_id_4>
-432	<extra_id_0> a
-433	<extra_id_0> mmm
-434	<extra_id_0> : / www . getwox . com <extra_id_1> : / www . getwox . com <extra_id_2> : / www . getwox . com
-435	<extra_id_0> include <FancyZonesLib / ZoneIndexSetBitmask . h > <extra_id_1> include <FancyZonesLib / ZoneIndexSetBitmask .
-436	<extra_id_0> System . Collections . Generic ; + using System.Linq ;
-437	<extra_id_0> mmm a
-438	<extra_id_0> mmm a
-439	<extra_id_0> mmm a
-440	<extra_id_0> mmm a mmm a mmm a mmm a mmm a
-441	<extra_id_0> mmm a
-442	<extra_id_0> mmm a mmm a mmm a mmm a mmm a mmm a
-443	<extra_id_0> - task : PublishBuildArtifacts <extra_id_1> - PathtoPublish : doc\gpo\assets - PathtoPublish : src\gpo\assets
-444	<extra_id_0> a
-445	<extra_id_0> a
-446	<extra_id_0> using System . Collections . Generic ; + ﻿using System . Diagnostics ;
-447	<extra_id_0> mmm a mmm a mmm a mmm a mmm a mmm a
-448	<extra_id_0> mmm
-449	<extra_id_0> a
-450	<extra_id_0> mmm a mmm a mmm a mmm a
-451	<extra_id_0> a
-452	<extra_id_0> :
-453	<extra_id_0> mmm a
-454	<extra_id_0> mmm a
-455	<extra_id_0> mmm
-456	<extra_id_0> mmm
-457	<extra_id_0> include <FancyZonesLib / Zone . h > + <extra_id_1> + namespace + <extra_id_2> + namespace + <extra_id_3> + namespace + <extra_id_4> + namespace + <extra_id_5>
-458	<extra_id_0> mmm a mmm a
-459	<extra_id_0> / PowerToys . sln ﻿using System; + using System; + using System; + using System; + using System
-460	<extra_id_0> for
-461	<extra_id_0> / src / core / core /
-462	<extra_id_0> :
-463	<extra_id_0> is a dummy file
-464	<extra_id_0> mmm a
-465	<extra_id_0> mmm
-466	<extra_id_0> / projects / status / bfktntbivg32e103 )
-467	<extra_id_0> https://github.com/lightswitch/lightswitch/blob/master/src/modules/LightSwitchModuleInterface/ThemeHelperModuleInterface
-468	<extra_id_0> keyboardmanager
-469	<extra_id_0> . Plugin . SystemPlugins / ControlPanel / ControlPanel . cs <extra_id_1> . Plugin . SystemPlugins / ControlPanel / ControlPanel . cs <extra_id_2> .
-470	<extra_id_0> license for details .  public class PowerToys {
-471	<extra_id_0> mmm a
-472	<extra_id_0> mmm a
-473	<extra_id_0> : shared_ptr : shared_ptr : shared_ptr : shared_ptr : shared_ptr : shared_ptr : shared_ptr :
-474	<extra_id_0> the
-475	<extra_id_0> mmm a
-476	<extra_id_0> - New - Alias nuget <extra_id_1> \packages\NuGet . CommandLine . * \tools\NuGet . exe <extra_id_2> \packages\
-477	<extra_id_0> winuiex : WindowEx + ﻿<winuiex : WindowEx + ﻿<Window x : Class="
-478	<extra_id_0> mmm a
-479	<extra_id_0> + using System . Runtime . InteropServices ; <extra_id_1> using System . Runtime . InteropServices ; <extra_id_2> using System . Runtime . InteropServices
-480	<extra_id_0> mmm
-481	<extra_id_0> mmm a
-482	<extra_id_0> mmm a
-483	<extra_id_0> / gabime / spdlog . git + <extra_id_1> / gabime / spdlog . git + <extra_id_2> deps / cxxopts
-484	<extra_id_0> mmm
-485	<extra_id_0> using System . <extra_id_1> using System . <extra_id_2> using System . <extra_id_3> using System . <extra_id_4> using System . <extra_id_5> using System . <extra_id_6> using System . <extra_id_7> using
-486	<extra_id_0> a
-487	<extra_id_0> :
-488	<extra_id_0> - ﻿< ? xml version
-489	<extra_id_0> mmm a mmm a
-490	<extra_id_0> mmm
-491	<extra_id_0> mmm
-492	<extra_id_0> wox . ProgramSourceSetting ﻿<Window x : Class = <extra_id_1> xmlns = "http://schemas.microsoft.com/win
-493	<extra_id_0> mmm a
-494	<extra_id_0> mmm a
-495	<extra_id_0> https : // github . com / ISSUE_TEMPLATE / config . yml <extra_id_1> / > + <extra_id_2> = " . . . . . <extra_id_3>
-496	<extra_id_0> Wox
-497	<extra_id_0> mmm a mmm a mmm a mmm a mmm a
-498	<extra_id_0> / src /
-499	<extra_id_0> mmm
-500	<extra_id_0> plugin command
-501	<extra_id_0> license : https://github.com/Microsoft Corporation / Microsoft Corporation <extra_id_1> license .  public class BooleanToBrushConverter { <extra_id_2>
-502	<extra_id_0> mmm
-503	<extra_id_0> a
-504	<extra_id_0> / src /
-505	<extra_id_0> . wox . customqueryhotkeysetting . wox . customqueryhotkeysetting . customqueryhotkeysetting .
-506	<extra_id_0> / Copyright ( c ) Microsoft Corporation + / / Copyright(c) Microsoft Corporation+ / / Copyright(c) Microsoft Corporation+
-507	<extra_id_0> mmm
-508	<extra_id_0> a
-509	<extra_id_0> PluginManagement
-510	<extra_id_0> mmm a
-511	<extra_id_0> mmm a
-512	<extra_id_0> colorPickerUI
-513	<extra_id_0> / lib / powerrename / lib / powerrenamelib / powerrenamelib
-514	<extra_id_0> mmm
-515	<extra_id_0> Wox . Plugin . WebSearch . Commands + <extra_id_1> WebSearchWebCommand { public static <extra_id_2> WebSearchWebCommand <extra_id_3> WebSearchWebCommand {
-516	<extra_id_0> - using System . Collections . Generic ; - using System.IOErrors ; - using System.IOErrors ;
-517	<extra_id_0> include <keyboardmanager / common / KeyboardManagerCommon . <extra_id_1> . vcxproj + # include <keyboardmanager / common <extra_id_2> . h " +
-518	<extra_id_0> mmm a mmm a mmm a mmm a mmm a
-519	<extra_id_0> to be used to be used
-520	<extra_id_0> fancyzones
-521	<extra_id_0> https : // github . com / WinAlfred / WinAlfred <extra_id_1> + using System . <extra_id_2> ; + using System . <extra_id_3> ;
-522	<extra_id_0> icon_helpers . icon_helpers . icon_helpers . icon_helpers . <extra_id_1> icon_helpers . icon_helpers . icon_helpers .
-523	<extra_id_0> mmm a mmm a mmm a mmm a mmm a mmm a
-524	<extra_id_0> mmm a
-525	<extra_id_0> mmm a
-526	<extra_id_0> using System . <extra_id_1> using System . <extra_id_2> using System . <extra_id_3> using System . <extra_id_4> using System . <extra_id_5> using System . <extra_id_6> using System . <extra_id_7> using
-527	<extra_id_0> mmm a
-528	<extra_id_0> a
-529	<extra_id_0> espresso . Shell . Core <extra_id_1> + ES_AWAY + <extra_id_2> + ES_AWAY + <extra_id_3> + ES_AWAY + ES
-530	<extra_id_0> System . Collections . Generic ; + using System.Collections.IO; + using System.Linq; + using System.Linq
-531	<extra_id_0> mmm a
-532	<extra_id_0> a / Deploy / NAppUpdate / FeedBuilder . config + cd / d%~d%~d%~d%~d%
-533	<extra_id_0> version ﻿< ? xml version ﻿using Microsoft
-534	<extra_id_0> colorPicker
-535	<extra_id_0> + using System . Windows ; <extra_id_1> ; + using System . <extra_id_2> ; + using System . <extra_id_3> ; + using System . <extra_id_4> ; + using System
-536	<extra_id_0> mmm a
-537	<extra_id_0> mmm a mmm a
-538	<extra_id_0> toys
-539	<extra_id_0> mmm a
-540	<extra_id_0> mmm a
-541	<extra_id_0> issue + description : 📖 Localization / Translation issue + <extra_id_1> incorrect translations + author : 📖 Localization
-542	<extra_id_0> mmm a
-543	<extra_id_0> mmm a
-544	<extra_id_0> + using System . Threading ; <extra_id_1> ; + using System . <extra_id_2> ; + using System . Threading <extra_id_3> ; + using System . Threading
-545	<extra_id_0> for
-546	<extra_id_0> / Wox . Plugin . CMD / CMD . cs <extra_id_1> . Collections . <extra_id_2> ; + using System . <extra_id_3> . <extra_id_4> ; + using System .
-547	<extra_id_0> for
-548	<extra_id_0> https : / / civeyor . com / status / bfktntbivg32e103 ) ]
-549	<extra_id_0> Wox . Infrastructure . Logger ; <extra_id_1> Wox . Infrastructure . Logger <extra_id_2> . Infrastructure . Logger <extra_id_3> . Infrastructure . Logger <extra_id_4>
-550	<extra_id_0> mmm
-551	<extra_id_0> fancyzones
-552	<extra_id_0> mmm
-553	<extra_id_0> / <extra_id_1> / schemas . microsoft . com <extra_id_2> / schemas . microsoft . com <extra_id_3> / schemas . microsoft . com / <extra_id_4> xaml
-554	<extra_id_0> https : // github . com / <extra_id_1> # <extra_id_2> # # # # # # # <extra_id_3> # # # # # <extra_id_4> # # # # #
-555	<extra_id_0> mmm a
-556	<extra_id_0> for
-557	<extra_id_0> colorPickerUI
-558	<extra_id_0> / powerrename / dll / powerrenameext / powerrenameext / powerrenameext / powerrenameext / powerrenameext / powerrename
-559	<extra_id_0> mmm a
-560	<extra_id_0> version = 1 . 0 encoding = utf8 encoding = utf8 encoding = utf8
-561	<extra_id_0> mmm a
-562	<extra_id_0> mmm a
-563	<extra_id_0> mmm a
-564	<extra_id_0> mmm a mmm a mmm a mmm a
-565	<extra_id_0> incorporate material from third parties . <extra_id_1> .  def incorporate_material_from_third_parties
-566	<extra_id_0> mmm
-567	<extra_id_0> mmm a
-568	<extra_id_0> Wox . Plugin . WebSearch . Commands . SearchWeb . cs <extra_id_1> SearchWeb . cs <extra_id_2> . WebSearch . Commands . SearchWeb <extra_id_3>
-569	<extra_id_0> + xmlns : xaml = <extra_id_1> winfx / 2006 / xaml / <extra_id_2> + xmlns : xaml = " <extra_id_3> + xmlns : xaml
-570	<extra_id_0> / wox . py / wox . py <extra_id_1> / wox . py / wox . py <extra_id_2> / wox . py / w
-571	<extra_id_0> - ﻿using System . Collections . Generic ;
-572	<extra_id_0> mmm a
-573	<extra_id_0> / ContextMenuLoader . cs + <extra_id_1> / ContextMenuLoader . cs + <extra_id_2> / ContextMenuLoader . cs + <extra_id_3> / ContextMenuLoader .
-574	<extra_id_0> + using Wox . Plugin ; <extra_id_1> + using Wox . Plugin <extra_id_2> + using Wox . Plugin <extra_id_3> + using Wox . Plugin <extra_id_4>
-575	<extra_id_0> mmm a
-576	<extra_id_0> mmm a
-577	<extra_id_0> / Helper / DataWebRequestFactory . cs + <extra_id_1> / Helper / DataWebRequestFactory . cs + <extra_id_2> / Helper / DataWebRequestFactory
-578	<extra_id_0> + @echo on + setlocal + @echo on + setlocal + @echo off+ setlocal + @echo off+ setlocal +
-579	<extra_id_0> fancyzones
-580	<extra_id_0> System . IO ; using System . Linq ; using System.IO; using System.Linq; using System.Linq;
-581	<extra_id_0> mmm
-582	<extra_id_0> mmm a
-583	<extra_id_0> mmm a
-584	<extra_id_0> config / applicationhost config / applicationhost config / applicationhost config
-585	<extra_id_0> mmm
-586	<extra_id_0> mmm a
-587	<extra_id_0> mmm a
-588	<extra_id_0> mmm a
-589	<extra_id_0> mmm a
-590	<extra_id_0> mmm
-591	<extra_id_0> / BrowserBookmark / Commands / Bookmarks . cs + <extra_id_1> . BrowserBookmark . Commands / Bookmarks . cs + <extra_id_2> . BrowserBookmark . Commands
-592	<extra_id_0> / Wox . Infrastructure / Storage / UserSettingStorage / UserSettingStorage . cs + <extra_id_1> . Windows . Data ; <extra_id_2> . Windows .
-593	<extra_id_0> mmm
-594	<extra_id_0> wox . Plugin . SystemPlugins / CMD / CMD . cs﻿using System; + using System.Windows.Documents; +
-595	<extra_id_0> a
-596	<extra_id_0> mmm a
-597	<extra_id_0> mmm a mmm a mmm a mmm a mmm a mmm a
-598	<extra_id_0> System . Windows . Media <extra_id_1> System . Windows . Media ; <extra_id_2> using System . Windows . Media ; <extra_id_3> using System . Windows . Media ; <extra_id_4>
-599	<extra_id_0> mmm a
-600	<extra_id_0> mmm
-601	<extra_id_0> to be set in directory props in build props in build props in build props in build props <extra_id_3> properties in build props <extra_id_4> properties in build props <extra_id_5>
-602	<extra_id_0> - ' modules\launcher\PowerToysInterop ' - ' modules\launcher\PowerToysInterop
-603	<extra_id_0> / src / core
-604	<extra_id_0> / WinAlfred . Plugin . System / CMD <extra_id_1> ; + using System . <extra_id_2> ; + using System . <extra_id_3> ; + using System .
-605	<extra_id_0> a
-606	<extra_id_0> mmm a mmm a mmm a mmm a mmm a
-607	<extra_id_0> mmm
-608	<extra_id_0> using Newtonsoft . <extra_id_1> using Newtonsoft . <extra_id_2> using Newtonsoft . <extra_id_3> using Newtonsoft . <extra_id_4> using Newtonsoft .
-609	<extra_id_0> mmm a
-610	<extra_id_0> mmm a mmm a mmm a mmm a mmm a mmm a mmm a
-611	<extra_id_0> + using System; + using System; + using System; + using System; + using System; + using System; + using System; <extra_id_3>
-612	<extra_id_0> toys
-613	<extra_id_0> poweraccent
-614	<extra_id_0> mmm a
-615	<extra_id_0> mmm a
-616	<extra_id_0> automatic - issue - deduplication <extra_id_1> : + issues : + types : <extra_id_2> : + permissions : + models : <extra_id_3> : <extra_id_4> : +
-617	<extra_id_0> / src / modules / previewpane /
-618	<extra_id_0> poweraccent
-619	<extra_id_0> mmm
-620	<extra_id_0> / plugins / Wox <extra_id_1> : " 2140FC9819AD43A3A616E2735816E27358
-621	<extra_id_0> plugin
-622	<extra_id_0> mmm a
-623	<extra_id_0> mmm
-624	<extra_id_0> target_state
-625	<extra_id_0> mmm a
-626	<extra_id_0> mmm a
-627	<extra_id_0> kbd>Alt< / kbd> + <kbd>Space< / kbd> + - Context <extra_id_1> : <kbd>
-628	<extra_id_0> DocViewFrm . Designer . cs + <extra_id_1> + / / / <summary> + / / <extra_id_2> + / / <extra_id_3> + / /
-629	<extra_id_0> https://github.com/Microsoft/Microsoft-Corporation/blob/master/src/settings-ui/PowerToys.js#
-630	<extra_id_0> to use JetBrains
-631	<extra_id_0> tray icon service for user controls .
-632	<extra_id_0> :
-633	<extra_id_0> mmm
-634	<extra_id_0> mmm
-635	<extra_id_0> / lib / lib / lib /
-636	<extra_id_0> mmm
-637	<extra_id_0> mmm
-638	<extra_id_0> mmm a
-639	<extra_id_0> mmm
-640	<extra_id_0> for
-641	<extra_id_0> + Write - Host " Config : $config <extra_id_1> string ] $ solution + <extra_id_2> string ] $ solution + <extra_id_3> string <extra_id_4> string ] $ solution +
-642	<extra_id_0> for
-643	<extra_id_0> $path = $env : APPVEYOR_BUILD_FOLDER + " \Deploy\wox . nuspec . ps1 <extra_id_1>
-644	<extra_id_0> mmm a
-645	<extra_id_0> = " Microsoft <extra_id_1> " > + ﻿<Project <extra_id_2> " > + ﻿<Project <extra_id_3> " > + �
-646	<extra_id_0> mmm a
-647	<extra_id_0> mmm a mmm a mmm a mmm a mmm a
-648	<extra_id_0> . Infrastructure / Storage / BinaryStorage . cs <extra_id_1> . Infrastructure . Storage . BinaryStorage ; <extra_id_2> . Infrastructure . BinaryStorage ; <extra_id_3>
-649	<extra_id_0> mmm
-650	<extra_id_0> mmm
-651	<extra_id_0> mmm a
-652	<extra_id_0> mmm
-653	<extra_id_0> - using System . Collections . Generic ; - using System.IO ; - using System.Linq ;
-654	<extra_id_0> mmm a
-655	<extra_id_0> mmm
-656	<extra_id_0> mmm a
-657	<extra_id_0> :
-658	<extra_id_0> mmm a mmm a mmm a mmm a mmm a
-659	<extra_id_0> - ' modules\ColorPicker\ColorPicker action_runner exe exe exe exe exe exe exe exe exe exe exe exe exe
-660	<extra_id_0> a
-661	<extra_id_0> action_runner
-662	<extra_id_0> mmm
-663	<extra_id_0> result panel
-664	<extra_id_0> mmm a
-665	<extra_id_0> for
-666	<extra_id_0> / src / modules / launcher /
-667	<extra_id_0> mmm a
-668	<extra_id_0> mmm a
-669	<extra_id_0> mmm
-670	<extra_id_0> version of Windows 10 . ⚠️ PowerToys
-671	<extra_id_0> a
-672	<extra_id_0> target_state
-673	<extra_id_0> mmm a
-674	<extra_id_0> mmm
-675	<extra_id_0> mmm
-676	<extra_id_0> / src / modules / fancyzones / editor / FancyZonesEditor /
-677	<extra_id_0> mmm a
-678	<extra_id_0> mmm a
-679	<extra_id_0> :
-680	<extra_id_0> mmm a
-681	<extra_id_0> mmm a
-682	<extra_id_0> mmm
-683	<extra_id_0> colorPicker
-684	<extra_id_0> src / modules / powerrename / lib <extra_id_1> include " resource . h " + <extra_id_2> include " resource . h " <extra_id_3> include " resource . h
-685	<extra_id_0> mmm a mmm a
-686	<extra_id_0> set PYTHONPATH = set PYTHONPATH = set PYTHONPATH =
-687	<extra_id_0> mmm a
-688	<extra_id_0> light switch – Microsoft Learn ] ( https://developer.microsoft.com/en-us/library/microsoft-learn
-689	<extra_id_0> a
-690	<extra_id_0> include <winrt / Windows . h> include <winrt / Windows . h> include <winrt/Windows.h> include <
-691	<extra_id_0> mmm a mmm a mmm a mmm a
-692	<extra_id_0> mmm a
-693	<extra_id_0> for
-694	<extra_id_0> a
-695	<extra_id_0> mmm
-696	<extra_id_0> to use this manifest for testing .  function ( )
-697	<extra_id_0> mmm a
-698	<extra_id_0> - # include <FancyZonesLib / FancyZonesLib > - - # include <FancyZonesLib/FancyZonesLib>
-699	<extra_id_0> / gabime / spdlog . git + <extra_id_1> / gabime / spdlog . git + <extra_id_2> deps / cxxopts
-700	<extra_id_0> icon_helpers . get_icon_index_from_path ( path <extra_id_1> icon_helpers . get_icon_index_from_path
-701	<extra_id_0> a
-702	<extra_id_0> / schemas / microsoft . com / developer <extra_id_1> / msbuild / 2003 <extra_id_2> / schemas / microsoft . com / msbuild / 200
-703	<extra_id_0> mmm a
-704	<extra_id_0> / Deploy / Nuget / pack . ps1 ﻿用户的版本
-705	<extra_id_0> mmm a mmm a
-706	<extra_id_0> mmm a
-707	<extra_id_0> mmm a
-708	<extra_id_0> mmm a
-709	<extra_id_0> xml version = " 1 . 0 <extra_id_1> xml version = " 1 . 0 <extra_id_2> xml version = " 1 . 0 <extra_id_3> xml version = " 1
-710	<extra_id_0> to be used to be used to be
-711	<extra_id_0> for
-712	<extra_id_0> mmm a
-713	<extra_id_0> mmm
-714	<extra_id_0> mmm a
-715	<extra_id_0> mmm a mmm a mmm a mmm a mmm a
-716	<extra_id_0> build and run tests for NET Desktop or Windows
-717	<extra_id_0> mmm a
-718	<extra_id_0> mmm a mmm a mmm a mmm a
-719	<extra_id_0> a
-720	<extra_id_0> mmm a mmm a mmm a mmm a
-721	<extra_id_0> Visual Studio Solution File Format Version 11 . 00 ——————
-722	<extra_id_0> colorPickerUI
-723	<extra_id_0> version = 1 . 0 encoding = utf8 encoding = utf8
-724	<extra_id_0> mmm
-725	<extra_id_0> mmm a
-726	<extra_id_0> to be used in <extra_id_1> to be used in <extra_id_2> to be used in <extra_id_3> to be used in <extra_id_4> to be used in <extra_id_5> to be used in
-727	<extra_id_0> previewpane / previewpane
-728	<extra_id_0> + using NAppUpdate ; + <extra_id_1> ; + using NAppUpdate ; <extra_id_2> ; + using NAppUpdate <extra_id_3> ; + using NAppUpdate
-729	<extra_id_0> + using Newtonsoft . Json ; + <extra_id_1> ; + using Newtonsoft . Json ; <extra_id_2> ; + using Newtonsoft . Json <extra_id_3>
-730	<extra_id_0> / src / modules / fancyzones / editor / FancyZonesEditor /
-731	<extra_id_0> mmm
-732	<extra_id_0> mmm a
-733	<extra_id_0> to
-734	<extra_id_0> - ﻿using System . IO ; - ﻿using System . IO ;
-735	<extra_id_0> mmm a
-736	<extra_id_0> poweraccent
-737	<extra_id_0> mmm
-738	<extra_id_0> image_resizer
-739	<extra_id_0> mmm a
-740	<extra_id_0> for
-741	<extra_id_0> mmm a
-742	<extra_id_0> using System . Threading . Tasks ; using System.Threading.Diagnostics; using System.Threading.Tasks; using System.Thread
-743	<extra_id_0> / Plugins / Wox . Plugin . <extra_id_1> ( ) { <extra_id_2> ( ) { } } <extra_id_3> ( ) { } } <extra_id_4> ( ) { }
-744	<extra_id_0> : / schemas / microsoft . com / winfx / 2006 / xaml / presentation >
-745	<extra_id_0> a
-746	<extra_id_0> + using System . <extra_id_1> + using System . <extra_id_2> ; + using System . <extra_id_3> ; + using System . <extra_id_4> ; + using System . <extra_id_5> ;
-747	<extra_id_0> :
-748	<extra_id_0> netstandard2 . netstandard2 . netstandard2 . netstandard2 . netstandard2 . netstandard2 . netstandard2 . net
-749	<extra_id_0> BuildPlatform , + + [ Parameter <extra_id_1> ] $ BuildPlatform , + <extra_id_2> [ Parameter ( Mandatory = <extra_id_3> true ) ] + [ Parameter <extra_id_4>
-750	<extra_id_0> mmm a
-751	<extra_id_0> mmm
-752	<extra_id_0> mmm a
-753	<extra_id_0> mmm mmm mmm mmm
-754	<extra_id_0> mmm
-755	<extra_id_0> + using System ; + using System . Threading ; <extra_id_1> ; + using System . Threading . <extra_id_2> ; + using System . Threading .
-756	<extra_id_0> - ﻿using System . Windows ; using System . Collections . Generic ;
-757	<extra_id_0> to : ' Build_MSIX_Package_Output ' include : - - <extra_id_1> : Build_MSIX_Package_Output ' include :
-758	<extra_id_0> of OOBE Dialog - - - <img align="right" src="/images/Logo.png" / >
-759	<extra_id_0> mmm
-760	<extra_id_0> a
-761	<extra_id_0> the readme style is not available in the readme.txt file .
-762	<extra_id_0> - Subproject commit
-763	<extra_id_0> mmm a
-764	<extra_id_0> mmm
-765	<extra_id_0> ) { return new List<int>(); }  public class FuzzyMatcherTest { public FuzzyMatcherTest ( ) { } <extra_id_3>
-766	<extra_id_0> mmm a
-767	<extra_id_0> https : / opensource_code_of_conduct / code_of_conduct / code_of_conduct
-768	<extra_id_0> / applicationhost . config / applicationhost . config <extra_id_1> configuration sections . + + <extra_id_2> configuration sections . + + <extra_id_3> configuration sections . + + <extra_id_4>
-769	<extra_id_0> a
-770	<extra_id_0> mmm a mmm a mmm a mmm a mmm a
-771	<extra_id_0> :
-772	<extra_id_0> to
-773	<extra_id_0> :
-774	<extra_id_0> mmm a mmm a mmm a mmm a mmm a mmm a
-775	<extra_id_0> mmm a
-776	<extra_id_0> mmm a
-777	<extra_id_0> mmm
-778	<extra_id_0> + using System . <extra_id_1> ; + using System . Windows . <extra_id_2> ; + using System . Windows . <extra_id_3> ; + using System . Windows . <extra_id_4>
-779	<extra_id_0> / PowerToys . sln / <extra_id_1> > + <PowerToys . sln <extra_id_2> > + <PowerToys . sln <extra_id_3>
-780	<extra_id_0> mmm a
-781	<extra_id_0> mmm
-782	<extra_id_0> mmm
-783	<extra_id_0> app_data = 0 run_as_admin = 0 run_as_admin = 1 run_as_admin = 2 run_as
-784	<extra_id_0> mmm
-785	<extra_id_0> mmm a
-786	<extra_id_0> mmm
-787	<extra_id_0> mmm
-788	<extra_id_0> : / schemas / microsoft . com / winfx / 2006 / xaml / presentation >
-789	<extra_id_0> ] = process . title + <extra_id_1> ] = process . pid + <extra_id_2> res [ "Process" ] = process <extra_id_3> res [ "Process" ]
-790	<extra_id_0> / lib / lib / lib /
-791	<extra_id_0> a
-792	<extra_id_0> mmm a / src / modules / powerrename / testrename / testrename / testrename / testrename
-793	<extra_id_0> using System . Collections . Generic <extra_id_1> using System . Linq ; <extra_id_2> using System . Linq <extra_id_3> using System . Linq <extra_id_4> using System .
-794	<extra_id_0> for each powertoy in the settings folder for each powertoy.
-795	<extra_id_0> mmm a mmm a mmm a mmm a mmm a
-796	<extra_id_0> mmm a
-797	<extra_id_0> mmm a
-798	<extra_id_0> mmm a
-799	<extra_id_0> a
-800	<extra_id_0> / Wox . Plugin . Folder / Main . cs <extra_id_1> / Wox . Plugin . Folder / Main . <extra_id_2> System . Windows . Media <extra_id_3>
-801	<extra_id_0> :
-802	<extra_id_0>  public class PowerToysSln { <extra_id_1> power toys sln : PowerToysSln <extra_id_2> . sln : PowerToys
-803	<extra_id_0> for the
-804	<extra_id_0> mmm a
-805	<extra_id_0> for
-806	<extra_id_0> mmm a
-807	<extra_id_0> fancyzones
-808	<extra_id_0> the
-809	<extra_id_0> fancyzones
-810	<extra_id_0> System . Collections . Generic ; + using System.Linq ;
-811	<extra_id_0> mmm a mmm a mmm a mmm a mmm a mmm a
-812	<extra_id_0> + using System . Runtime . InteropServices ; <extra_id_1> ; + using System . <extra_id_2> ; + using System . <extra_id_3> ; + using System . <extra_id_4>
-813	<extra_id_0> mmm
-814	<extra_id_0> mmm a
-815	<extra_id_0> mmm a
-816	<extra_id_0> to agree to a + Contributor License Agreement ( CLA ) <extra_id_3> to agree to a + Contributor License <extra_id_4> to agree to
-817	<extra_id_0> for
-818	<extra_id_0> mmm a
-819	<extra_id_0> mmm a mmm a mmm a mmm a
-820	<extra_id_0> UI . Lib / PowerLauncherProperties .
-821	<extra_id_0> mmm
-822	<extra_id_0> + using System . Runtime . Serialization <extra_id_1> + using System . Runtime . Serialization <extra_id_2> ; + using System . Runtime . Serialization <extra_id_3> ; + using System
-823	<extra_id_0> mmm
-824	<extra_id_0> for
-825	<extra_id_0> target_state
-826	<extra_id_0> class Internationalization { public Internationalization ( ) { }
-827	<extra_id_0> mmm a
-828	<extra_id_0> Wox . Plugin . Clipboard = new Wox.Plugin.Clipboard(); <extra_id_1> = new Wox . Plugin . Clipboard
-829	<extra_id_0> mmm a
-830	<extra_id_0> mmm
-831	<extra_id_0> mmm a
-832	<extra_id_0> + xmlns : xaml = <extra_id_1> schemas . microsoft . com / winfx / 2006 <extra_id_2> + xmlns : xaml = " <extra_id_3> xaml
-833	<extra_id_0> mmm a
-834	<extra_id_0> - using System . Runtime . InteropServices ; - using GloablHotkey
-835	<extra_id_0> mmm
-836	<extra_id_0> mmm a
-837	<extra_id_0> wox . Core . i18n . AvailableLanguages .
-838	<extra_id_0> action_runner
-839	<extra_id_0> / / Copyright ( c ) Brice Lambson + / / Copyright(c) Brice Lambson+ / / Copyright(c
-840	<extra_id_0> using System . Windows . Text ; <extra_id_1> using System . Windows . Markup ; <extra_id_2> using System . Windows . Markup <extra_id_3> using System . Windows . Markup
-841	<extra_id_0> class ConvertorBase : Wox . Converters . ConvertorBase { <extra_id_1> : ConvertorBase { } } <extra_id_2> : ConvertorBase {
-842	<extra_id_0> mmm
-843	<extra_id_0> the
-844	<extra_id_0> - / / <summary> - / / <summary>
-845	<extra_id_0> fancyzones
-846	<extra_id_0> versionNumber → → → → → → �
-847	<extra_id_0> + using Wox . Core ; <extra_id_1> ; + using Wox . Core <extra_id_2> ; + using Wox . Core <extra_id_3> ; + using Wox
-848	<extra_id_0> :
-849	<extra_id_0> mmm a
-850	<extra_id_0> mmm a
-851	<extra_id_0> a video GIF capture spec . <extra_id_1> + # # 1.1.1.1.1.1.1.1.1.1
-852	<extra_id_0> a
-853	<extra_id_0> version of InnoSetup version
-854	<extra_id_0> mmm a
-855	<extra_id_0> mmm a mmm a
-856	<extra_id_0> for
-857	<extra_id_0> mmm a mmm a mmm a mmm a mmm a
-858	<extra_id_0> version : 3 . 0 . 0 . 0 . 0
-859	<extra_id_0> mmm a
-860	<extra_id_0> the class in this module doesn’t implement any HTTP request .  public class HackerNewsHttpServerBaseClass { <extra_id_3>
-861	<extra_id_0> mmm
-862	<extra_id_0> for the
-863	<extra_id_0> mmm a
-864	<extra_id_0> mmm
-865	<extra_id_0> mmm a
-866	<extra_id_0> mmm a
-867	<extra_id_0> a
-868	<extra_id_0> mmm a
-869	<extra_id_0> mmm a
-870	<extra_id_0> - using System . Collections . Generic ; - using System.Collections.ObjectModel; - using System.Collections.Specialized;
-871	<extra_id_0> mmm
-872	<extra_id_0> will install the following items : -
-873	<extra_id_0> a
-874	<extra_id_0> mmm
-875	<extra_id_0> mmm
-876	<extra_id_0> mmm a
-877	<extra_id_0> mmm a
-878	<extra_id_0> mmm a
-879	<extra_id_0> mmm a mmm a mmm a mmm a mmm a mmm a
-880	<extra_id_0> mmm
-881	<extra_id_0> addProgramSource . xaml + > ﻿﻿﻿﻿﻿﻿�
-882	<extra_id_0> https://github.com/mmma/mmma/blob/master/src/common/monitors.cpp#L
-883	<extra_id_0> mmm a
-884	<extra_id_0> mmm a
-885	<extra_id_0> version = " 1 . 0 . 0
-886	<extra_id_0> mmm
-887	<extra_id_0> a
-888	<extra_id_0> > + ﻿<Project Sdk = " Microsoft <extra_id_1> " > + ﻿<Project Sdk = <extra_id_2> " > +
-889	<extra_id_0> mmm a
-890	<extra_id_0> in the ` Solutions Configuration <extra_id_1> in the ` Solutions Configuration` <extra_id_2> in Visual Studio <extra_id_3> in Visual Studio <extra_id_4> in Visual
-891	<extra_id_0> Wox . Plugin . BrowserBookmark ﻿namespace Wox . Plugin . BrowserBookmark﻿namespace Wox . Plugin . Browser
-892	<extra_id_0> xmlns : xaml = " http : // <extra_id_1> . com / winfx / 2006 / xaml <extra_id_2> xmlns : xaml = " http :
-893	<extra_id_0> plugin
-894	<extra_id_0> Wox
-895	<extra_id_0> mmm a
-896	<extra_id_0> mmm a
-897	<extra_id_0> mmm
-898	<extra_id_0> mmm a
-899	<extra_id_0> mmm a mmm a
-900	<extra_id_0> mmm a
-901	<extra_id_0> mmm
-902	<extra_id_0> mmm
-903	<extra_id_0> mmm a
-904	<extra_id_0> + # include <extra_id_1> . h> + # include <extra_id_2> . h> + # include <extra_id_3> . h> + # include <extra_id_4> . h> +
-905	<extra_id_0> / schemas / microsoft / com / winfx / 2006 / xaml / presentation >
-906	<extra_id_0> mmm a mmm a mmm a mmm a
-907	<extra_id_0> System . Runtime . InteropServices . <extra_id_1> System . Runtime . InteropServices . <extra_id_2> System . Runtime . InteropServices <extra_id_3> System . Runtime
-908	<extra_id_0> mmm
-909	<extra_id_0> issue1 issue2 issue1 issue2 issue1 issue2 issue
-910	<extra_id_0> mmm
-911	<extra_id_0> mmm a
-912	<extra_id_0> mmm a
-913	<extra_id_0> :
-914	<extra_id_0> mmm
-915	<extra_id_0> https://github.com/imageresizer/imageresizer/blob/master/src/modules/imageresizer/
-916	<extra_id_0> mmm a
-917	<extra_id_0> mmm a
-918	<extra_id_0> a
-919	<extra_id_0> https : // github . com / powertoys / <extra_id_1> .  def enable_powertoys_community_support ( ) : <extra_id_2>
-920	<extra_id_0> a
-921	<extra_id_0> mmm a
-922	<extra_id_0> version = utf - 8 encoding = utf - 8 encoding = utf
-923	<extra_id_0> for
-924	<extra_id_0> colorPicker
-925	<extra_id_0> :
-926	<extra_id_0> mmm a
-927	<extra_id_0> mmm a
-928	<extra_id_0> mmm a
-929	<extra_id_0> - ' modules\ImageResizer\Microsoft . PowerToys .
-930	<extra_id_0> mmm a
-931	<extra_id_0> / espresso / Shell / Core / APIHelper . cs﻿using Newtonsoft . Json ; + <extra_id_1> ] public Espress
-932	<extra_id_0> mmm a
-933	<extra_id_0> mmm
-934	<extra_id_0> mmm a / Wox <extra_id_1> mmm a / Wox <extra_id_2> mmm a / Wox <extra_id_3> mmm a / Plugins / Wox
-935	<extra_id_0> mmm a
-936	<extra_id_0> :
-937	<extra_id_0> issue + description : 📖 Localization / Translation issue + <extra_id_1> incorrect translations + author : 📖 Localization
-938	<extra_id_0> for
-939	<extra_id_0> mmm a
-940	<extra_id_0> mmm
-941	<extra_id_0> - ﻿<Application x : Class = " <extra_id_1> - ﻿<Application x : Class = " settings_v2
-942	<extra_id_0> mmm a mmm a
-943	<extra_id_0> .  public class PowerToysSettings {
-944	<extra_id_0> mmm
-945	<extra_id_0> to use System . Collections . Generic in System.Linq and System.Text in System.Linq.
-946	<extra_id_0> https : // gist . github . com / <extra_id_1> . github . com / <extra_id_2> . github . com / <extra_id_3> . github . com / <extra_id_4> .
-947	<extra_id_0> mmm
-948	<extra_id_0> mmm a
-949	<extra_id_0> mmm
-950	<extra_id_0> https://github.com/Microsoft/Microsoft/PowerToys/blob/master/src/modules/launcher/Plugins/Community
-951	<extra_id_0> mmma mmma mmma mmma mmma mmma
-952	<extra_id_0> custom action settings control
-953	<extra_id_0> mmm a
-954	<extra_id_0> using System . Collections . Generic ; - using System.Linq ; - using System.Text; - using System.Linq;
-955	<extra_id_0> :
-956	<extra_id_0> mmm a
-957	<extra_id_0> mmm a
-958	<extra_id_0> mmm
-959	<extra_id_0> mmm
-960	<extra_id_0> mmm
-961	<extra_id_0> mmm a
-962	<extra_id_0> :
-963	<extra_id_0> plugin
-964	<extra_id_0> include " pch . h " + <extra_id_1> the edit keyboard window .  def edit_keyboard_window ( ) <extra_id_2> the edit keyboard window
-965	<extra_id_0> mmm
-966	<extra_id_0> for
-967	<extra_id_0> test results + TestResults + + <extra_id_1> test results + TestResults + + <extra_id_2> test results + TestResults + <extra_id_3> test results + TestResults +
-968	<extra_id_0> mmm a
-969	<extra_id_0> mmm a mmm a
-970	<extra_id_0> mmm
-971	<extra_id_0> Wox . Plugin . BrowserBookmark ﻿namespace Wox . Plugin . BrowserBookmark﻿namespace Wox . Plugin . Browser
-972	<extra_id_0> using System . <extra_id_1> using System . <extra_id_2> using System . <extra_id_3> using System . <extra_id_4> using System . <extra_id_5> using System . <extra_id_6> using System . <extra_id_7> using
-973	<extra_id_0> / installer / PowerToysBootstrapper
-974	<extra_id_0> for
-975	<extra_id_0> > + <Project ToolsVersion = " 4 . 0 <extra_id_1> xml version = " 1 . 0 <extra_id_2> encoding = " utf - 8 <extra_id_3> > +
-976	<extra_id_0> to any person obtaining a copy + to any person obtaining a copy + to any person obtaining a copy + to any person obtaining
-977	<extra_id_0> ' office - ui - fabric - react <extra_id_1> ' office - ui - fabric <extra_id_2> ' office - ui - fabric <extra_id_3> ' office
-978	<extra_id_0> espresso
-979	<extra_id_0> mmm a
-980	<extra_id_0> mmm a
-981	<extra_id_0> mmm a
-982	<extra_id_0> System . Collections . Generic ; using System . Diagnostics ; using System.Collections.Generic; using System.Collections.Generic; using System.Collections
-983	<extra_id_0> / WinAlfred . Plugin . System / BaseSystemPlugin . cs ﻿namespace WinAlfred . Plugin . System <extra_id_1>
-984	<extra_id_0> shortcut_guide
-985	<extra_id_0> mmm a
-986	<extra_id_0> plugins / WinAlfred .
-987	<extra_id_0> mmm
-988	<extra_id_0> / installer /
-989	<extra_id_0> mmm
-990	<extra_id_0> mmm a
-991	<extra_id_0> https://github.com/spellcheck/spellcheck/blob/master/src/spellcheck/expect.js#L
-992	<extra_id_0> fancyzones
-993	<extra_id_0> mmm a
-994	<extra_id_0> - using System . Collections . Generic ; - using System.Linq ; - using System.Text; - using System.Linq
-995	<extra_id_0> / schemas / microsoft / com / winfx / 2006 / xaml / presentation >
-996	<extra_id_0> to
-997	<extra_id_0> mmm a
-998	<extra_id_0> mmm a mmm a mmm a mmm a mmm a
-999	<extra_id_0> mmm a
-1000	<extra_id_0> mmm a
-1001	<extra_id_0> mmm a mmm a mmm a mmm a mmm a
-1002	<extra_id_0> . + # # + # <extra_id_1> . gitignore + # # <extra_id_2> . gitignore + # # + # <extra_id_3> . gitignore + # #
-1003	<extra_id_0> .
-1004	<extra_id_0> a
-1005	<extra_id_0> mmm mmm mmm mmm
-1006	<extra_id_0> mmm a
-1007	<extra_id_0> fancyzones
-1008	<extra_id_0> mmm a
-1009	<extra_id_0> Wox . Plugin . BrowserBookmark ﻿namespace Wox . Plugin . BrowserBookmark﻿namespace Wox . Plugin . Browser
-1010	<extra_id_0> wixproj
-1011	<extra_id_0> mmm
-1012	<extra_id_0> result panel
-1013	<extra_id_0> mmm a
-1014	<extra_id_0> mmm
-1015	<extra_id_0> Wox
-1016	<extra_id_0> mmm a
-1017	<extra_id_0> - ﻿using Squirrel ; - ﻿using Squirrel ;
-1018	<extra_id_0> mmm
-1019	<extra_id_0> :
-1020	<extra_id_0> mmm a
-1021	<extra_id_0> / src / modules / launcher / plugins /
-1022	<extra_id_0> class PowertoyModuleIface ; + class PowertoyModuleIface ; + class PowertoyModuleIface ;
-1023	<extra_id_0> mmm a
-1024	<extra_id_0> to use the UI selector for the window.
-1025	<extra_id_0> mmm a
-1026	<extra_id_0> System . Collections . Generic ; using System.IO; using System.Collections.Generic; using System.IO; using System.IO; using
-1027	<extra_id_0> using System . <extra_id_1> using System . <extra_id_2> using System . <extra_id_3> using System . <extra_id_4> using System . <extra_id_5> using System . <extra_id_6> using System . <extra_id_7> using
-1028	<extra_id_0> System . Collections . Generic ; + using System.Linq; + using System.Text; + using System.Linq; +
-1029	<extra_id_0> mmm a
-1030	<extra_id_0> mmm
-1031	<extra_id_0> mmm
-1032	<extra_id_0> mmm a
-1033	<extra_id_0> mmm a mmm a mmm a mmm a mmm a
-1034	<extra_id_0> mmm a
-1035	<extra_id_0> a
-1036	<extra_id_0> mmm a mmm a mmm a mmm a
-1037	<extra_id_0> mmm a
-1038	<extra_id_0> https://github.com/wox/wox/blob/master/Wox.Infrastructure/HttpRequest.cs + using System;
-1039	<extra_id_0> to any person obtaining a copy + of this software and associated documentation files.
-1040	<extra_id_0> : [ + { + " <extra_id_1> : [ + { + " <extra_id_2> " , + " LocItems " : <extra_id_3> + { + " <extra_id_4> "
-1041	<extra_id_0> for
-1042	<extra_id_0> include <common / logger / call_tracer . h > <extra_id_1> include <common / logger / call_tracer . h> + <extra_id_2>
-1043	<extra_id_0> mmm a
-1044	<extra_id_0> mmm
-1045	<extra_id_0> this file .  public class FuzzyMatcherTest {
-1046	<extra_id_0> mmm a
-1047	<extra_id_0> mmm
-1048	<extra_id_0> mmm a
-1049	<extra_id_0> - ﻿using NLog ; + ﻿using System . log ;
-1050	<extra_id_0> / src / core / Microsoft . PowerToys . Settings . UI / Resources . resw . lcl <extra_id_3> / Resources . resw <extra_id_4>
-1051	<extra_id_0> mmm a
-1052	<extra_id_0> version = " 1 . 0 encoding = "utf - 8"? > - <Project ToolsVersion = "1.0.0"?
-1053	<extra_id_0> : Changeset registry : : Changeset ; + <extra_id_1> : Changeset registry : : Changeset <extra_id_2> : Changeset registry : : Changeset <extra_id_3>
-1054	<extra_id_0> / espresso / shell / core / TrayHelper . cs :
-1055	<extra_id_0> mmm
-1056	<extra_id_0> mmm a
-1057	<extra_id_0> mmm
-1058	<extra_id_0> . wox - launcher / Wox . svg <extra_id_1> . wox . svg ) <extra_id_2> . wox . svg ) <extra_id_3> . wox .
-1059	<extra_id_0> version = " 1 ﻿using System
-1060	<extra_id_0> espresso
-1061	<extra_id_0> for
-1062	<extra_id_0> mmm a
-1063	<extra_id_0> dll / s + del NLog . dll / s + del NLog . dll / s + del NLog .
-1064	<extra_id_0> / src / modules / fancyzones / editor / FancyZonesEditor /
-1065	<extra_id_0> mmm
-1066	<extra_id_0> mmm
-1067	<extra_id_0> version : 1 <extra_id_1> build configuration : <extra_id_2> version : 1 <extra_id_3> build configuration : <extra_id_4> version : 1 <extra_id_5> build configuration : build configuration : <extra_id_6> version :
-1068	<extra_id_0> :
-1069	<extra_id_0> a
-1070	<extra_id_0> mmm
-1071	<extra_id_0> and running as Administrator ] ( https : // http://www.powertoys.com )
-1072	<extra_id_0> version = 1 . 0 encoding = utf8 encoding = utf8
-1073	<extra_id_0> mmm
-1074	<extra_id_0> to use System . Threading . Tasks <extra_id_1> using System . Threading . Tasks ; <extra_id_2> using System . Threading . Tasks ; <extra_id_3> using <extra_id_4>
-1075	<extra_id_0> - > + - END MICROSOFT SECURITY . md + + <extra_id_1> + + + <extra_id_2> + + <extra_id_3> + + <extra_id_4> + + <extra_id_5>
-1076	<extra_id_0> . PowerToys . Settings . UI . csproj = <extra_id_1> . Settings . UI . csproj = <extra_id_2> . <extra_id_3> . Settings . UI .
-1077	<extra_id_0> mmm a
-1078	<extra_id_0> a
-1079	<extra_id_0> toys
-1080	<extra_id_0> fancyzones
-1081	<extra_id_0> / TargetName> + <RestoreGitSubmodulesImported>true< / RestoreGitSubmodulesImported> + <extra_id_1> / TargetName> + <
-1082	<extra_id_0> mmm
-1083	<extra_id_0> from office - ui - fabric - settings_objects . cpp import settings_objects from office_ui_fabric_settings_objects
-1084	<extra_id_0> mmm
-1085	<extra_id_0> mmm a
-1086	<extra_id_0> : Class = " Wox <extra_id_1> CustomPluginHotkeySetting " + ﻿<Window x : Class = <extra_id_2> CustomPluginHotkey
-1087	<extra_id_0> https://github.com/fancyzones/FancyZonesLib/blob/master/src/fancyzones/FancyZonesLib
-1088	<extra_id_0> fancyzones
-1089	<extra_id_0> mmm a
-1090	<extra_id_0> mmm
-1091	<extra_id_0> from WebSearch to WebSearch .
-1092	<extra_id_0> mmm a
-1093	<extra_id_0> to be maintained by @ happlebao for about 2 month <extra_id_1> project will not be maintained by @ happlebao for about
-1094	<extra_id_0> mmm
-1095	<extra_id_0> result panel
-1096	<extra_id_0> a
-1097	<extra_id_0> :
-1098	<extra_id_0> mmm a
-1099	<extra_id_0> mmm a
-1100	<extra_id_0> System . Collections . Generic ; + using System.Diagnostics; + using System.Diagnostics; + using System.Diagnostics; + using
-1101	<extra_id_0> mmm a
-1102	<extra_id_0> mmm a
-1103	<extra_id_0> action_runner
-1104	<extra_id_0> mmm a
-1105	<extra_id_0> / src / modules /
-1106	<extra_id_0> espresso
-1107	<extra_id_0> Wox
-1108	<extra_id_0> https : / / civeyor . com / status / bfktntbivg32e103 ) ]
-1109	<extra_id_0> mmm
-1110	<extra_id_0> + using System . Threading ; + <extra_id_1> using System . Threading . <extra_id_2> using System . Threading . <extra_id_3> using System . Threading .
-1111	<extra_id_0> https : // code . google . com / <extra_id_1> https : // code . google . com / <extra_id_2> https : // code . google . com <extra_id_3>
-1112	<extra_id_0> mmm a
-1113	<extra_id_0> :
-1114	<extra_id_0> mmm
-1115	<extra_id_0> mmm a
-1116	<extra_id_0> mmm a
-1117	<extra_id_0> :
-1118	<extra_id_0> . PowerToys . Settings . UI . <extra_id_1> . PowerToys . Settings . UI . <extra_id_2> . PowerToys . Settings . UI .
-1119	<extra_id_0> action_runner
-1120	<extra_id_0> mmm a
-1121	<extra_id_0> mmm a
-1122	<extra_id_0> file to you under the MIT license .
-1123	<extra_id_0> mmm
-1124	<extra_id_0> mmm a
-1125	<extra_id_0> fancyzones
-1126	<extra_id_0> mmm a
-1127	<extra_id_0> mmm
-1128	<extra_id_0> for
-1129	<extra_id_0> espresso
-1130	<extra_id_0> mmm
-1131	<extra_id_0> a
-1132	<extra_id_0> for
-1133	<extra_id_0> to
-1134	<extra_id_0> :
-1135	<extra_id_0> mmm a mmm a mmm a mmm a
-1136	<extra_id_0> mmm a
-1137	<extra_id_0> mmm
-1138	<extra_id_0> mmm
-1139	<extra_id_0> mmm a
-1140	<extra_id_0> mmm
-1141	<extra_id_0> mmm a
-1142	<extra_id_0> mmm a
-1143	<extra_id_0> + using Newtonsoft . Json ; + <extra_id_1> ; + using Newtonsoft . Json <extra_id_2> ; + using Newtonsoft . Json . Json
-1144	<extra_id_0> mmm a
-1145	<extra_id_0> mmm a
-1146	<extra_id_0> :
-1147	<extra_id_0> mmm
-1148	<extra_id_0> colorPickerUI
-1149	<extra_id_0> for hotkey_conflict_detector . h in hotkey_conflict_detector . h in hotkey_conflict_detector .
-1150	<extra_id_0> for
-1151	<extra_id_0> process_path
-1152	<extra_id_0> . / theme_helpers . cpp <extra_id_1> . cpp <extra_id_2> / <extra_id_3> / theme_helpers . cpp <extra_id_4> theme_helpers . cpp
-1153	<extra_id_0> mmm a
-1154	<extra_id_0> mmm
-1155	<extra_id_0> mmm
-1156	<extra_id_0> mmm a
-1157	<extra_id_0> mmm a mmm a mmm a mmm a mmm a
-1158	<extra_id_0> mmm a
-1159	<extra_id_0> / WebSearch / Commands / SearchWeb .
-1160	<extra_id_0> mmm a
-1161	<extra_id_0> + using System ; + using System ; <extra_id_1> System . <extra_id_2> ; + using System . <extra_id_3> ; + using System . <extra_id_4> ; + using System .
-1162	<extra_id_0> mmm a
-1163	<extra_id_0> mmm a
-1164	<extra_id_0> https://github.com/Microsoft/PowerToys/blob/master/src/core/Microsoft.PowerToys.Settings.UI
-1165	<extra_id_0> mmm a
-1166	<extra_id_0> mmm a
-1167	<extra_id_0> assembly : AssemblyConfiguration ( " Debug" ) ] <extra_id_1> assembly : AssemblyConfiguration ( " Debug" ) ] <extra_id_2> assembly : AssemblyConfiguration
-1168	<extra_id_0> c ) . NET Foundation and contributors . <extra_id_1> . NET Foundation and contributors .  public class PTLicenseDlg <extra_id_2> . NET
-1169	<extra_id_0> mmm a
-1170	<extra_id_0> plugin project name pattern : <extra_id_1> plugin project name pattern : <extra_id_2> ` - [ ] <extra_id_3> plugin project name pattern : <extra_id_4> plugin project name pattern : <extra_id_5>
-1171	<extra_id_0> :
-1172	<extra_id_0> mmm a
-1173	<extra_id_0> :
-1174	<extra_id_0> a
-1175	<extra_id_0> - using Wox . Core . AssemblyHelper . AssemblyHelper
-1176	<extra_id_0> mmm a
-1177	<extra_id_0> a
-1178	<extra_id_0>  public class PowerToysSln { <extra_id_1> power toys sln : PowerToysSln <extra_id_2> . sln : PowerToys
-1179	<extra_id_0> - using System ;  public class MainPanel {
-1180	<extra_id_0> mmm a
-1181	<extra_id_0> a
-1182	<extra_id_0> + using IWshRuntimeLibrary ; + using IWshRuntimeLibrary ; + <extra_id_1> + using IWshRuntimeLibrary ; + <extra_id_2> +
-1183	<extra_id_0> mmm a
-1184	<extra_id_0> mmm a
-1185	<extra_id_0> / src / settings - ui / <extra_id_1> settings - ui / <extra_id_2> settings - ui / <extra_id_3> settings - ui / <extra_id_4> settings - ui / <extra_id_5> /
-1186	<extra_id_0> . PowerToys . Settings . UI / Strings / en - us/Resources . resw . rsw . rsw . rsw <extra_id_3>
-1187	<extra_id_0> mmm a
-1188	<extra_id_0> gitattributes <extra_id_1> # # # # <extra_id_2> # # # # # # # # # # # # <extra_id_3> # <extra_id_4> # # # # # #
-1189	<extra_id_0> :
-1190	<extra_id_0> awake
-1191	<extra_id_0> mmm a
-1192	<extra_id_0> : Class : Wox . Plugin
-1193	<extra_id_0> for
-1194	<extra_id_0> mmm a mmm a mmm a mmm a mmm a mmm a mmm a mmm a
-1195	<extra_id_0> - WindowsUIEx 2 <extra_id_1> - - WindowsUIEx 2 <extra_id_2> - - WindowsUIEx 2 <extra_id_3> - - WindowsUIEx 2
-1196	<extra_id_0> mmm a
-1197	<extra_id_0> :
-1198	<extra_id_0> mmm
-1199	<extra_id_0> - - - - - - - - - -
-1200	<extra_id_0> / src / modules / colorConverter
-1201	<extra_id_0> mmm
-1202	<extra_id_0> - using System . Collections . Generic ; - using System . IO ;
-1203	<extra_id_0> mmm a mmm a mmm a mmm a mmm a
-1204	<extra_id_0> mmm a
-1205	<extra_id_0> for
-1206	<extra_id_0> Wox = = = = = = = = = = = = = = = = = = = =
-1207	<extra_id_0> using System ; + using System . <extra_id_1> System . <extra_id_2> ; + using System . <extra_id_3> ; + using System . <extra_id_4> ; + using System . <extra_id_5>
-1208	<extra_id_0> mmm a mmm a mmm
-1209	<extra_id_0> mmm a
-1210	<extra_id_0> a
-1211	<extra_id_0> fancyzones
-1212	<extra_id_0> wox . Update . NewVersionWindow . xaml . cs <extra_id_1> xmlns : xaml = " http://schemas.microsoft.com/win
-1213	<extra_id_0> :
-1214	<extra_id_0> mmm a
-1215	<extra_id_0> / BrowserBookmark / Commands / Bookmarks . cs + <extra_id_1> . BrowserBookmark . Commands / Bookmarks . cs + <extra_id_2> . BrowserBookmark . Commands
-1216	<extra_id_0> mmm a
-1217	<extra_id_0> mmm a
-1218	<extra_id_0> / Plugins / Wox . Core . Plugin <extra_id_1> static class PluginIndicator { <extra_id_2> static PluginIndicator pluginIndicator = new PluginIndicator ( ) { <extra_id_3>
-1219	<extra_id_0> fancyzones
-1220	<extra_id_0> mmm a mmm a mmm a mmm a mmm a
-1221	<extra_id_0> a
-1222	<extra_id_0> import ast - from _markerlib . markers import default_environment <extra_id_1> from _markerlib . markers import default_environment , compile , interpret <extra_id_2>
-1223	<extra_id_0> System . WindowOpener ; + using System.WindowOpener; + using System.WindowOpener;
-1224	<extra_id_0> mmm a mmm a mmm a mmm a mmm a mmm a
-1225	<extra_id_0> fancyzones
-1226	<extra_id_0> :
-1227	<extra_id_0> mmm a
-1228	<extra_id_0> mmm
-1229	<extra_id_0> https://msdn.microsoft.com/en-us/library/microsoft.powertoys.settings.UI.Library/ColorPicker
-1230	<extra_id_0> / WebSearchPlugin
-1231	<extra_id_0> result panel
-1232	<extra_id_0> mmm
-1233	<extra_id_0> / netcoreapp3 . 1< / PropertyGroup > + <extra_id_1> <IsPackable>true< / IsPackable> + + <extra_id_2>
-1234	<extra_id_0> mmm a
-1235	<extra_id_0> a
-1236	<extra_id_0> :
-1237	<extra_id_0> mmm
-1238	<extra_id_0> mmm
-1239	<extra_id_0> mmm
-1240	<extra_id_0> for
-1241	<extra_id_0> mmm a
-1242	<extra_id_0> / / - GlobalKeyboardHook : class to enable <extra_id_1> + / / / - GlobalKeyboardHook : class to enable <extra_id_2> + / / - <extra_id_3>
-1243	<extra_id_0> System . Collections . Generic ; + using System.Linq; + using System.Text; + using System.Text;
-1244	<extra_id_0> : <extra_id_1> : + release : + types <extra_id_2> : + types : [ published ] <extra_id_3> + release : + release : <extra_id_4> : + release : +
-1245	<extra_id_0> mmm
-1246	<extra_id_0> mmm a mmm a mmm a mmm a mmm a
-1247	<extra_id_0> poweraccent
-1248	<extra_id_0> mmm
-1249	<extra_id_0> mmm
-1250	<extra_id_0> Wox . Plugin . QueryHistory = <extra_id_1> . QueryHistory = new QueryHistory ( ) <extra_id_2> . QueryHistory = new QueryHistory ( ) <extra_id_3>
-1251	<extra_id_0> mmm a
-1252	<extra_id_0> mmm
-1253	<extra_id_0> mmm a
-1254	<extra_id_0> a
-1255	<extra_id_0> colorPicker
-1256	<extra_id_0> mmm
-1257	<extra_id_0> mmm a
-1258	<extra_id_0> a
-1259	<extra_id_0> mmm
-1260	<extra_id_0> mmm
-1261	<extra_id_0> :
-1262	<extra_id_0> a
-1263	<extra_id_0> UI / Strings / en - us / Resources
-1264	<extra_id_0> . Runtime . Serialization . Formatters . <extra_id_1> . Runtime . Serialization . Formatters <extra_id_2> . Runtime . Serialization . Formatters <extra_id_3> . Runtime . Serialization
-1265	<extra_id_0> :
-1266	<extra_id_0> for
-1267	<extra_id_0> colorPickerUI
-1268	<extra_id_0> for
-1269	<extra_id_0> mmm
-1270	<extra_id_0> :
-1271	<extra_id_0> :
-1272	<extra_id_0> / 有关程序配置序配置
-1273	<extra_id_0> :
-1274	<extra_id_0> mmm a
-1275	<extra_id_0> mmm
-1276	<extra_id_0> - using System . Collections . Generic ; - using System.IOErrors ; - using System.IOErrors ;
-1277	<extra_id_0> Wox . Plugin . BrowserBookmark ﻿namespace Wox . Plugin . BrowserBookmark﻿namespace Wox . Plugin . Browser
-1278	<extra_id_0> version <extra_id_1> = " utf - 8 " <extra_id_2> xml version = " 1 <extra_id_3> encoding = " utf - 8 <extra_id_4> xml version = " 1.0
-1279	<extra_id_0> . output_from_webview ) === 'function' ) <extra_id_1> . output_from_webview ) <extra_id_2> output_from_webview
-1280	<extra_id_0> # include " restart_elevated . h <extra_id_1> restart_elevated . h " + # <extra_id_2> restart_elevated . h
-1281	<extra_id_0> fancyzones
-1282	<extra_id_0> mmm
-1283	<extra_id_0> Wox
-1284	<extra_id_0> + using System ; + using System; + using System; + using System; + using System; + using System; + using System; <extra_id_3>
-1285	<extra_id_0> mmm a
-1286	<extra_id_0> mmm a
-1287	<extra_id_0> mmm a
-1288	<extra_id_0> class CustomPluginHotkey + { + public class CustomUserSettingsPluginHotkey { + public class CustomUserSettingsPluginHotkey { + <extra_id_3>
-1289	<extra_id_0> interop - tests
-1290	<extra_id_0> issue -
-1291	<extra_id_0> mmm a
-1292	<extra_id_0> mmm
-1293	<extra_id_0> / src / modules / launcher /
-1294	<extra_id_0> mmm
-1295	<extra_id_0> fancyzones
-1296	<extra_id_0> mmm a
-1297	<extra_id_0> mmm a
-1298	<extra_id_0> mmm a
-1299	<extra_id_0> mmm a
-1300	<extra_id_0> mmm a mmm a mmm a mmm a
-1301	<extra_id_0> browserbookmarks
-1302	<extra_id_0> mmm a mmm a mmm a mmm a mmm a
-1303	<extra_id_0> mmm a
-1304	<extra_id_0> mmm
-1305	<extra_id_0> / src / modules / fancyzones / editor / FancyZonesEditor /
-1306	<extra_id_0> mmm a
-1307	<extra_id_0> mmm
-1308	<extra_id_0> mmm
-1309	<extra_id_0> for
-1310	<extra_id_0> import { BaseSettingsControl } from ' . <extra_id_1> import { Dropdown } from ' office - ui <extra_id_2> . / Dropdown ' ; <extra_id_3>
-1311	<extra_id_0> awake
-1312	<extra_id_0> mmm a
-1313	<extra_id_0> to be used in the test.xml file
-1314	<extra_id_0> mmm a
-1315	<extra_id_0> src / modules / espresso / espresso / espresso / <extra_id_1> + / <extra_id_2> + / / <extra_id_3> / / / / /
-1316	<extra_id_0> a
-1317	<extra_id_0> license : https://github.com/Microsoft/Microsoft-Corporation/blob/master/LICENSE.md#license
-1318	<extra_id_0> / include / asdl_c . py / <extra_id_1> struct _mod * mod_ty ; + <extra_id_2> struct _mod * mod_ty_
-1319	<extra_id_0> fancyzones
-1320	<extra_id_0> mmm a
-1321	<extra_id_0> mmm a
-1322	<extra_id_0> mmm
-1323	<extra_id_0> mmm
-1324	<extra_id_0> mmm a
-1325	<extra_id_0> - after_build : - - after_test : - - after_build : - - after_test : - - after_build :
-1326	<extra_id_0> mmm
-1327	<extra_id_0> a
-1328	<extra_id_0> mmm
-1329	<extra_id_0> mmm a
-1330	<extra_id_0> mmm a
-1331	<extra_id_0> mmm
-1332	<extra_id_0> mmm a mmm a
-1333	<extra_id_0> mmm a
-1334	<extra_id_0> mmm a
-1335	<extra_id_0> :
-1336	<extra_id_0> mmm a
-1337	<extra_id_0> mmm a
-1338	<extra_id_0> mmm
-1339	<extra_id_0> mmm
-1340	<extra_id_0> mmm
-1341	<extra_id_0> a
-1342	<extra_id_0> brice lambson licenses this file to Brice Lambson.com.  public class BriceLambson {
-1343	<extra_id_0> using System . Collections . Generic ; + using System.ComponentModel; using System.ComponentModel; using System.ComponentModel; using System.
-1344	<extra_id_0> using System . Collections . Generic ; - using System.Linq ;
-1345	<extra_id_0> mmm
-1346	<extra_id_0> a
-1347	<extra_id_0> mmm a mmm a mmm a mmm a
-1348	<extra_id_0> fancyzones editor
-1349	<extra_id_0> mmm a
-1350	<extra_id_0> a
-1351	<extra_id_0> mmm
-1352	<extra_id_0> mmm a
-1353	<extra_id_0> for
-1354	<extra_id_0> + using <extra_id_1> ; + using System . Threading . <extra_id_2> ; + using System . Threading . <extra_id_3> ; + using System . Threading <extra_id_4>
-1355	<extra_id_0> / Wox . Infrastructure / Image / ImageCache . cs <extra_id_1> / Wox . Infrastructure / Image / ImageCache . cs <extra_id_2> .
-1356	<extra_id_0> / src / modules / fancyzones / editor / FancyZonesEditor /
-1357	<extra_id_0> mmm
-1358	<extra_id_0> mmm a
-1359	<extra_id_0> - using System . Collections . Generic ; + ﻿using Collections . Generic ;
-1360	<extra_id_0> using System . Collections . Generic ; - using System.Linq ; - using System.Text ;
-1361	<extra_id_0> fancyzones
-1362	<extra_id_0> $ versionNumber = $ this -> versionNumber ; if ( $ versionNumber ) { $ versionNumber = $ versionNumber ; }
-1363	<extra_id_0> :
-1364	<extra_id_0> mmm
-1365	<extra_id_0> https://github.com/spell-check/spell-check/blob/master/spell-check.md#license-
-1366	<extra_id_0> mmm a
-1367	<extra_id_0> mmm a mmm a mmm a mmm a mmm a mmm a
-1368	<extra_id_0> to use CommonStorage to use CommonStorage
-1369	<extra_id_0> - ' modules\launcher\Plugins\Calculator\Microsoft . PowerToys . Run . Plugin . Calculator
-1370	<extra_id_0> mmm
-1371	<extra_id_0> fancyzones
-1372	<extra_id_0> mmm a
-1373	<extra_id_0> mmm a
-1374	<extra_id_0> mmm
-1375	<extra_id_0> - using System . Collections . Generic ; using System.Collections.Generic; using System.Collections.Generic; using System.Collections.Generic;
-1376	<extra_id_0> / wox . py / wox . py <extra_id_1> / wox . py / wox . py <extra_id_2> / wox . py / w
-1377	<extra_id_0> for more information. <extra_id_1> for more information.  public class Interop { <extra_id_2> interop . cpp <extra_id_3> . <extra_id_4> . cpp <extra_id_5>
-1378	<extra_id_0> mmm
-1379	<extra_id_0> plugin
-1380	<extra_id_0> license . + / /  public class IconMarginConverter { }
-1381	<extra_id_0> mmm
-1382	<extra_id_0> $root = ( split - path - parent <extra_id_1> ) + <extra_id_2> $ MyInvocation . MyCommand . Definition ) + <extra_id_3> $ MyInvocation . <extra_id_4>
-1383	<extra_id_0> xmlns : xaml = " http : // <extra_id_1> . com / winfx / 2006 / xaml <extra_id_2> xmlns : xaml = " http :
-1384	<extra_id_0> mmm a
-1385	<extra_id_0> mmm a
-1386	<extra_id_0> / src / modules / fancyzones / editor / FancyZonesEditor /
-1387	<extra_id_0> mmm
-1388	<extra_id_0> - ﻿namespace Wox . Infrastructure . Exception + ﻿namespace
-1389	<extra_id_0> a
-1390	<extra_id_0> mmm a
-1391	<extra_id_0> fancyzones
-1392	<extra_id_0> mmm
-1393	<extra_id_0> mmm a
-1394	<extra_id_0> mmm a
-1395	<extra_id_0> mmm a mmm a mmm a mmm a mmm a mmm a
-1396	<extra_id_0> using System . Runtime . CompilerServices ; + using System.Log; + using System.Log; + using NLog;
-1397	<extra_id_0> mmm a
-1398	<extra_id_0> previewpane / SvgPreviewHandler / SvgPreviewHandler . previewpane . previewpane . previewpane . previewpane . previewpane . preview
-1399	<extra_id_0> wox
-1400	<extra_id_0> launcher
-1401	<extra_id_0> mmm
-1402	<extra_id_0> mmm a
-1403	<extra_id_0> mmm a mmm a mmm a mmm a mmm a
-1404	<extra_id_0> toys
-1405	<extra_id_0> version <extra_id_1> encoding = " utf - 8 <extra_id_2> encoding = " utf - 8 <extra_id_3> xml version = <extra_id_4> encoding = " utf - 8 <extra_id_5> encoding =
-1406	<extra_id_0> mmm
-1407	<extra_id_0> mmm a
-1408	<extra_id_0> mmm
-1409	<extra_id_0> reset wox by delete % APPDATA % \WOXDATA% \WOXDATA% \WOXDATA% \W
-1410	<extra_id_0> mmm
-1411	<extra_id_0> mmm a
-1412	<extra_id_0> mmm
-1413	<extra_id_0> mmm a
-1414	<extra_id_0> mmm a / src / editor / settings / vcxproj .
-1415	<extra_id_0> mmm a
-1416	<extra_id_0> mmm a
-1417	<extra_id_0> mmm a
-1418	<extra_id_0> mmm a
-1419	<extra_id_0> mmm a
-1420	<extra_id_0> mmm
-1421	<extra_id_0> bookmark  public class BrowserBookmark : Wox . Plugin <extra_id_1> . BrowserBookmark . Models <extra_id_2> . BrowserBookmark . Models <extra_id_3> . BrowserBookmark
-1422	<extra_id_0> using System . Runtime . CompilerServices ; + using System.Log; + using System.Log; + using NLog;
-1423	<extra_id_0> mmm
-1424	<extra_id_0> mmm a
-1425	<extra_id_0> mmm a
-1426	<extra_id_0> issue bugs : https : // https://github.com/wox-launcher/Wox - launcher / Wox / wiki / bugs
-1427	<extra_id_0> + using System . Globalization ; + using System.Windows.Data; + using System.Windows.Globalization; + using System.Windows
+0	add support for common . h
+1	add support for dll rename
+2	add support for binary programs
+3	add license for Microsoft Corporation
+4	add ruleset ruleset ruleset ruleset
+5	add support for README .
+6	mmm mmm
+7	add support for expect - check
+8	add support for fancyzones
+9	mmm mmm mmm mmm
+10	add support for bitmap metadata extension
+11	add support for resource dictionary
+12	<extra_id_0> https : //
+13	add support for toyssetup
+14	add test framework to test adapter
+15	add drop iterator support for drop iterator
+16	add support for power toys
+17	add support for expect - check
+18	add support for wxs
+19	add support for old version of ppp
+20	add spell - check to project .
+21	add support for uwp application
+22	add support for system memory status
+23	mmm mmm mmm
+24	add support for fancyzones
+25	add support for this
+26	add support for wxs setup
+27	add support for imageresizer
+28	add support for ocrHelpers
+29	add support for dpi_aware
+30	mmm / runner / main
+31	mmm mmm mmm
+32	add support for powerocr .
+33	add support for mmm
+34	add support for keyboardhook
+35	add support for user interface .
+36	add support for expect - check
+37	add support for system commands plugin
+38	add support for datagrid and markdown
+39	<extra_id_0> https : // github . com /
+40	add license for Microsoft Corporation
+41	add support for wox . plugin
+42	add support for xaml
+43	add support for resources . resw
+44	add griddraghandles to griddraghandles editor
+45	add support for xaml settings
+46	add support for mmm
+47	add support for fancyzones
+48	add support for pch . h
+49	add support for file system watcher
+50	add support for AdvancedPasteXAML
+51	mmm mmm mmm
+52	add support for README .
+53	add support for README .
+54	add support for spell - check .
+55	move to main window editor .
+56	add preview control to preview handler
+57	add calculate helper to calculate helper
+58	add support for onenote
+59	add support for codeoWNERS
+60	add support for README .
+61	add logging to sqlclient
+62	add support for bcl . asyncinterfaces
+63	add support for user interface .
+64	add README / README / README
+65	add support for apppathsprogramsource .
+66	add license for Microsoft Corporation
+67	add support for githubbot . json
+68	add support for README .
+69	add support for readme .
+70	replace listitemviewmodel with listitemviewmodel .
+71	add support for interop and helpers
+72	add support for fancyzones
+73	add support for mouse without borders module
+74	remove Zoomit / Zoomit / Zoomit
+75	add support for openai .
+76	add support for wox plugin
+77	add support for expect - check
+78	add support for Win32Tests
+79	use StringMatcher instead of StringMatcher
+80	add installAndConfiguration . dsc . yaml to
+81	add support for README .
+82	add time unit tests to run
+83	add support for fancyzones
+84	add precheck for powertoys
+85	add support for reinstall_msix .
+86	add support for power launching properties
+87	add support for image resizer
+88	add support for expect - check
+89	run mmm a / b / c
+90	add test for ci - tests
+91	add support for power toys interop
+92	add support for mmm
+93	add support for windows desktop
+94	add support for README .
+95	use previewpane instead of previewpane
+96	add doc / doc / doc /
+97	add support for xaml settings
+98	add queryhistory to queryhistory
+99	add support for general settings
+100	add support for build status
+101	add support for expect - check
+102	add support for README .
+103	add a reply to a resolved issue
+104	add a rule set for ppp .
+105	add support for xaml .
+106	add support for hwnd data cache
+107	add support for expect - check
+108	add support for xaml
+109	add bootstrapper for vcxproj
+110	add support for basic tests in cmdpal
+111	add support for xaml .
+112	add new files to WXS
+113	add previewhandlercontrol for previewhandlercontrol
+114	add support for filelocksmithUI
+115	add support for extension form
+116	add support for contentpageviewmodel
+117	add support for README .
+118	use CMDSetting instead of CMDSetting .
+119	add support for ESRPSigning core
+120	add support for Windows . Forms .
+121	add a reply to our internal localization team
+122	add support for bkmeneguello
+123	add unit test for unit handler tests
+124	add support for incorrect translations
+125	add support for mmm
+126	add support for expect - check
+127	add support for Microsoft Corporation .
+128	add support for mmm
+129	add plugin to main module .
+130	add support for expect - check
+131	add support for DriveOrSharedFolderTests
+132	add logging to sqlclient
+133	add support for README .
+134	add support for user settings
+135	add fixup tool for Microsoft Visual Studio
+136	add support for fancyzones
+137	add support for u0001F4DA
+138	add support for alwaysontop
+139	add support for README .
+140	use xaml . xaml . xaml . cpp .
+141	add support for fancyzones
+142	add support for expect - check
+143	add tools / tools / MainReportTool
+144	add support for wmm
+145	add support for jsonhelper .
+146	add support for fancyzonespage
+147	add support for expect - check
+148	add support for README .
+149	add support for expect - check
+150	add license for Microsoft Corporation
+151	add keyboardmanager / keyboardmanagerenginelib / keyboardeventhandlers
+152	add workflow dispatch to Windows Store
+153	add support for lazycache
+154	add support for ColorPickerUI
+155	add support for overlay_window .
+156	add support for Microsoft Corporation
+157	add support for openwindows .
+158	add support for mmm
+159	add support for interop / interop
+160	add support for filelocksmithUI
+161	add special handling for frmScreen .
+162	add support for imageloader .
+163	include calltracer .
+164	add support for readme .
+165	add resize operation tests for resize operation
+166	add support for oobe new
+167	add support for unsupported file preview
+168	add support for wmm
+169	add projects to powerrename uwpui . rc
+170	add support for Brice Lambson .
+171	add support for user interface .
+172	add index helper to index helper
+173	add support for wox . plugins
+174	add support for powertoys .
+175	add previewpane / previewpane / previewpane
+176	add file item result to project list .
+177	add support for powerrename regexex
+178	add title bar for PeekXAML
+179	add additional parameters for download .
+180	add support for unit tests
+181	add support for shift key hook
+182	add support for user control
+183	add support for fancyzones
+184	add build - project . yml to project . yml
+185	add main window to main window
+186	add support for appcommand
+187	add support for Wox . Infrastructure . PeHeaderReader
+188	add support for editor settings
+189	add support for MSBuild caching
+190	use StringMatcher instead of StringMatcher
+191	add previewpane / previewpane / GcodeThumbnailProviderCpp / GcodeThumbnailProvider
+192	add support for gpowrapper
+193	add support for powerrename
+194	add support for wmm
+195	add support for expect - check
+196	add license for uitestautomation .
+197	add support for README .
+198	add support for spell - check .
+199	add support for fuzzing tests .
+200	add support for winapi_error .
+201	add support for findmymouse
+202	add license for Microsoft Corporation
+203	add support for plugin index .
+204	add support for general settings
+205	add support for wmm
+206	add support for ColorRepresentationHelper
+207	mmm mmm mmm mmm
+208	add mouseinfoprovider to mouseinfoprovider
+209	add support for wix
+210	add resource dictionary namespace to resource dictionary
+211	add support for wxs setup
+212	add support for general viewmodels
+213	add support for gitignore
+214	add support for resources . resw
+215	add support for toyssetup
+216	add support for markdown preview handler .
+217	<extra_id_0> https : // github . com /
+218	add codeAnalysis for global suppressions
+219	add installation for Visual Studio 2022
+220	add support for native methods
+221	add resource dictionary for xaml presentation
+222	add support for release
+223	add support for PowerAccent - PowerOCR
+224	add using System . ComponentModel
+225	add support for cutguide .
+226	add support for COMMUNITY
+227	add support for README .
+228	add support for search results page
+229	add installWiX
+230	add support for System . IO
+231	add support for wxs setup
+232	add logging to sqlclient
+233	change encoding to UTF - 8
+234	add winuiex : WindowEx to winuiex
+235	add support for README .
+236	add support for user interface .
+237	mmm mmm mmm
+238	add support for launchpage
+239	add support for dropping result from a query .
+240	add support for color picker page
+241	add support for codeoWNERS
+242	add support for color selection
+243	add support for version and signcheck .
+244	add support for OobeCmdPal
+245	add support for shiftDRAG
+246	add support for resources . resw
+247	add support for helpermanager
+248	add installWiX
+249	add support for extension service
+250	add build - project . yml to job - build - project . yml
+251	add support for README .
+252	add reportgpovalues to reportgpovalues
+253	add program source to xaml source
+254	add support for ShellViewModel
+255	add support for expect - check
+256	add support for yaml - language - server
+257	add checkbox with description control to checkbox
+258	add support for Microsoft Corporation .
+259	add license for Microsoft Corporation
+260	add support for powertoys
+261	add support for findmymouse
+262	add support for versioning
+263	add support for pluginmanager .
+264	move viewmodel to mainviewmodel
+265	add support for xaml
+266	add support for powerup / powerup
+267	add support for settings . xaml .
+268	add support for wox . infrastructure . dll
+269	add support for expect - check
+270	add support for README .
+271	add support for Microsoft Corporation .
+272	include fancyzones_notifications . h in
+273	add support for backlog
+274	mmmm mmmm
+275	add common / common / common /
+276	add support for mmm
+277	add support for winalfred
+278	add support for fancyzones data
+279	add support for powertoys
+280	add support for host service
+281	add support for extension object viewmodel
+282	add support for Microsoft Corporation
+283	add support for oobewhatsnew
+284	add support for rename context menu
+285	add support for mmm
+286	add support for mmscl .
+287	add support for plugin index .
+288	remove Zoomit / Zoomit / Zoomit
+289	add support for power toys setup
+290	add plugin to csproj .
+291	add support for unused member
+292	add support for resource calculations
+293	add support for net6 .
+294	add query tests to shell
+295	add logging to the logger
+296	add support for exploreritemtemplateselector
+297	add support for locksmith context menu
+298	mmmm mmmm
+299	add support for README .
+300	add support for resource dictionary
+301	add spelling configuration for check spelling .
+302	add support for general viewmodels
+303	add support for README .
+304	add event listener to registrypreview
+305	add support for theme helpers
+306	add support for helpermanager
+307	add support for vanara
+308	add license for Microsoft Corporation
+309	add support for xaml settings
+310	add support for FancyZonesLib
+311	add watchers to program file system watcher
+312	add support for fancyzones
+313	add support for general_settings
+314	add support for browserbookmark
+315	add license for Microsoft Corporation
+316	add support for README .
+317	add excludes to check . spelling . config
+318	add support for fancyzones
+319	add support for README .
+320	add support for README .
+321	add support for powertosetupcustomactions .
+322	use process_path instead of process_path .
+323	add support for user input .
+324	add support for mmm
+325	add support for null reference exception
+326	add support for rename uilib
+327	add resource manager to resource manager
+328	add support for shortcutguidesettings
+329	add support for custom slider
+330	add support for wxs setup
+331	add commandletbinding to generateallfilecomponents
+332	add support for locksmithext
+333	add support for Wmm / Helper
+334	add support for fancyzones editor
+335	add plugin uri to main . xml
+336	add registry / registry / registry /
+337	add fancyzones to zoneset
+338	add aliasmanager to viewmodels
+339	add support for unitconverter
+340	add support for native methods
+341	mmmm mmmm mmmm
+342	add support for fancyzones
+343	add support for ImageResizerViewModel
+344	add license for Microsoft Corporation
+345	add support for fancyzones
+346	add support for mainlistpage .
+347	add support for xaml
+348	add support for cmdpal . ext . shell .
+349	add support for power launcher for power users
+350	add support for README .
+351	add support for oobe new
+352	add support for xaml
+353	<extra_id_0> licensed under the MIT license .
+354	add mousepointercrosshairs crosshairs
+355	fix a bug in the README
+356	add support for oobewhatsnew
+357	add support for README .
+358	add support for fancyzones
+359	add support for windowwalker viewmodel
+360	mmm mmm mmm
+361	mmm mmm mmm mmm
+362	add support for README .
+363	add support for AdvancedPasteXAML
+364	add support for IWshRuntimeLibrary
+365	add a report to the report list .
+366	add tools / tools / MainReportTool
+367	add support for nuspec
+368	mmm mmm mmm
+369	mmm mmm mmm
+370	add task type to task list .
+371	add support for async navigation requests .
+372	add peek / dllmain / peek
+373	add killpowerlauncher to
+374	add support for user interface .
+375	add support for README .
+376	add support for data_and_PRIVACY
+377	use run . plugin . Calculator .
+378	add support for resources . resw
+379	add support for uwp .
+380	update / update / update / update / update
+381	add support for usersettingstorage
+382	add support for UnicodeInformation
+383	add support for project - test . yml
+384	add support for main window
+385	add plugin to main shell .
+386	infrastructure / usersettings / programsource . cs +
+387	add support for undocumented modules .
+388	add support for README .
+389	add stylecop analyzers to gitignore .
+390	add support for README .
+391	add support for ESRPSigning core
+392	add support for AdvancedPaste
+393	add license for VisualTreeUtils .
+394	add support for color picker settings .
+395	add support for user interface .
+396	add support for dllmain
+397	add support for fancyzones
+398	use hyjiacan . util . p4n
+399	add support for wmm
+400	add support for FancyZonesWindowProcessing .
+401	mmm mmm mmm
+402	add support for windows .
+403	add support for cpnet installation
+404	<extra_id_0> https : // github . com /
+405	add support for submissions
+406	add support for fancyzones
+407	add support for resources . resw
+408	add program argument parser tests for unit tests
+409	add support for plugin indexer .
+410	add support for usersetting
+411	add support for fancyzones data
+412	add support for querybuilder .
+413	add support for image resizer page
+414	add command bar to command bar
+415	add support for superseding async gate
+416	add support for rename context menu
+417	use System . Runtime . InteropServices
+418	add license for Microsoft Corporation
+419	mmmm mmmm
+420	add support for xaml
+421	add support for poweraccent
+422	add lock . json to lock . json
+423	add plugin . json to indexer . json
+424	add support for ISSUE template
+425	add support for xaml .
+426	add support for ISSUE request
+427	add support for websearch
+428	add support for plugin . json
+429	add support for README .
+430	add powertoys - steps . yml
+431	add a summary to the pipeline
+432	add support for readme .
+433	add support for websearch
+434	add support for top level viewmodel
+435	add support for powertoy_create
+436	add support for overlay_window
+437	add support for non - binary files
+438	add support for windows windows
+439	add commit 076e96f6832923ea56b67e37d77806c5d01a343f
+440	add support for native methods
+441	add user control to result listbox
+442	add support for xlink
+443	add support for user interface .
+444	add support for README .
+445	add support for logging .
+446	add support for build status
+447	add support for gitignore
+448	change encoding to utf - 8
+449	add support for plugin config
+450	add support for README .
+451	add support for history plugin .
+452	add support for colorPicker / colorPickerMonitor
+453	add support for CONTRIBUTING
+454	add support for README .
+455	add support for search web .
+456	move grideditorwindow to grideditorwindow
+457	add test tests for entry tests
+458	add plugin indicator to plugin indicator
+459	add support for ShellPage
+460	add support for expect - check
+461	add support for fundamentals editor
+462	add viewmodel to resultviewmodel
+463	add support for README .
+464	add apprename / apprenameuilib

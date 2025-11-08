@@ -1,6 +1,6 @@
 # optimizer
 lr=5e-5
-batch_size=16
+batch_size=4
 beam_size=10
 epochs=2
 
@@ -9,8 +9,8 @@ source_length=200
 target_length=30
 
 # data
-repo=og_javascript
-data_dir=dataset/old_javascript/process
+repo=og_csharp
+data_dir=dataset/old_csharp_data/process
 cache_dir=$data_dir/cache
 train_file=$data_dir/train.jsonl
 dev_file=$data_dir/valid.jsonl

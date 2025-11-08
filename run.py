@@ -350,7 +350,10 @@ def parse_args():
     )
 
     parser.add_argument(
-        "--train_batch_size", default=8, type=int, help="Batch size per GPU/CPU for training."
+        "--train_batch_size",
+        default=4,
+        type=int,
+        help="Batch size per GPU/CPU for training.",  # Reduced from 8 to 4
     )
     parser.add_argument(
         "--eval_batch_size", default=8, type=int, help="Batch size per GPU/CPU for evaluation."
@@ -358,7 +361,7 @@ def parse_args():
     parser.add_argument(
         "--gradient_accumulation_steps",
         type=int,
-        default=1,
+        default=2,  # Increased from 1 to 2 for memory efficiency
         help="Number of updates steps to accumulate before performing a backward/update pass.",
     )
     parser.add_argument(
@@ -1013,6 +1016,9 @@ def ECMG(args):
                     optimizer.zero_grad()
                     scheduler.step()
                     global_step += 1
+                    # Add MPS cache emptying here for better memory management
+                    if args.device.type == "mps":
+                        torch.mps.empty_cache()
                     train_loss = round(tr_loss * args.gradient_accumulation_steps / (nb_tr_steps + 1), 4)
                     if sys.stderr.isatty():
                         bar.set_description("[{}] Train loss {}".format(cur_epoch, round(train_loss, 3)))
